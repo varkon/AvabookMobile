@@ -1,16 +1,20 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 'Google Inc.:Google APIs:16'
-    buildToolsVersion "21.1.2"
-
+    signingConfigs {
+    }
+    compileSdkVersion 22
+    buildToolsVersion '24.0.0 rc3'
     defaultConfig {
-        applicationId "com.miadzin.shelves"
+        jackOptions {
+            enabled true
+        }
+        applicationId 'biz.varkon.shelvesom'
         minSdkVersion 7
-        targetSdkVersion 17
+        targetSdkVersion 22
         compileOptions {
-            sourceCompatibility JavaVersion.VERSION_1_5
-            targetCompatibility JavaVersion.VERSION_1_5
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
         }
 
         def envFile = new File('secrets.env').exists() ? new File('secrets.env') : new File('secrets_sample.env')
@@ -20,7 +24,6 @@ android {
             buildConfigField "String", split_line[0], split_line[1]
         }
     }
-
     buildTypes {
         release {
             minifyEnabled true
@@ -29,6 +32,12 @@ android {
         debug {
             debuggable true
         }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    productFlavors {
     }
 }
 
