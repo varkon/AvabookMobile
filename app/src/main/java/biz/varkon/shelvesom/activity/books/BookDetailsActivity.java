@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.miadzin.shelves.activity.books;
+package biz.varkon.shelvesom.activity.books;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -29,15 +29,15 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.miadzin.shelves.R;
-import com.miadzin.shelves.activity.SettingsActivity;
-import com.miadzin.shelves.base.BaseDetailsActivity;
-import com.miadzin.shelves.drawable.FastBitmapDrawable;
-import com.miadzin.shelves.provider.books.BooksManager;
-import com.miadzin.shelves.provider.books.BooksStore;
-import com.miadzin.shelves.util.ImageUtilities;
-import com.miadzin.shelves.util.TextUtilities;
-import com.miadzin.shelves.util.UIUtilities;
+import biz.varkon.shelvesom.R;
+import biz.varkon.shelvesom.activity.SettingsActivity;
+import biz.varkon.shelvesom.base.BaseDetailsActivity;
+import biz.varkon.shelvesom.drawable.FastBitmapDrawable;
+import biz.varkon.shelvesom.provider.books.BooksManager;
+import biz.varkon.shelvesom.provider.books.BooksStore;
+import biz.varkon.shelvesom.util.ImageUtilities;
+import biz.varkon.shelvesom.util.TextUtilities;
+import biz.varkon.shelvesom.util.UIUtilities;
 
 public class BookDetailsActivity extends BaseDetailsActivity {
 	private static final String EXTRA_BOOK = "shelves.extra.book_id";

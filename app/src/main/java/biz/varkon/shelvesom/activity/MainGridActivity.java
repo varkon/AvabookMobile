@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.miadzin.shelves.activity;
+package biz.varkon.shelvesom.activity;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -50,36 +50,36 @@ import android.widget.TextView;
 
 import com.google.ads.AdRequest;
 import com.google.ads.AdView;
-import com.miadzin.shelves.R;
-import com.miadzin.shelves.ShelvesApplication;
-import com.miadzin.shelves.activity.apparel.ApparelActivity;
-import com.miadzin.shelves.activity.boardgames.BoardGamesActivity;
-import com.miadzin.shelves.activity.books.BooksActivity;
-import com.miadzin.shelves.activity.comics.ComicsActivity;
-import com.miadzin.shelves.activity.gadgets.GadgetsActivity;
-import com.miadzin.shelves.activity.movies.MoviesActivity;
-import com.miadzin.shelves.activity.music.MusicActivity;
-import com.miadzin.shelves.activity.software.SoftwareActivity;
-import com.miadzin.shelves.activity.tools.ToolsActivity;
-import com.miadzin.shelves.activity.toys.ToysActivity;
-import com.miadzin.shelves.activity.videogames.VideoGamesActivity;
-import com.miadzin.shelves.base.BaseItem;
-import com.miadzin.shelves.base.BaseItemActivity;
-import com.miadzin.shelves.provider.apparel.ApparelStore;
-import com.miadzin.shelves.provider.boardgames.BoardGamesStore;
-import com.miadzin.shelves.provider.books.BooksStore;
-import com.miadzin.shelves.provider.comics.ComicsStore;
-import com.miadzin.shelves.provider.gadgets.GadgetsStore;
-import com.miadzin.shelves.provider.movies.MoviesStore;
-import com.miadzin.shelves.provider.music.MusicStore;
-import com.miadzin.shelves.provider.software.SoftwareStore;
-import com.miadzin.shelves.provider.tools.ToolsStore;
-import com.miadzin.shelves.provider.toys.ToysStore;
-import com.miadzin.shelves.provider.videogames.VideoGamesStore;
-import com.miadzin.shelves.server.ServerInfo;
-import com.miadzin.shelves.util.Preferences;
-import com.miadzin.shelves.util.TextUtilities;
-import com.miadzin.shelves.util.UIUtilities;
+import biz.varkon.shelvesom.R;
+import biz.varkon.shelvesom.ShelvesomApplication;
+import biz.varkon.shelvesom.activity.apparel.ApparelActivity;
+import biz.varkon.shelvesom.activity.boardgames.BoardGamesActivity;
+import biz.varkon.shelvesom.activity.books.BooksActivity;
+import biz.varkon.shelvesom.activity.comics.ComicsActivity;
+import biz.varkon.shelvesom.activity.gadgets.GadgetsActivity;
+import biz.varkon.shelvesom.activity.movies.MoviesActivity;
+import biz.varkon.shelvesom.activity.music.MusicActivity;
+import biz.varkon.shelvesom.activity.software.SoftwareActivity;
+import biz.varkon.shelvesom.activity.tools.ToolsActivity;
+import biz.varkon.shelvesom.activity.toys.ToysActivity;
+import biz.varkon.shelvesom.activity.videogames.VideoGamesActivity;
+import biz.varkon.shelvesom.base.BaseItem;
+import biz.varkon.shelvesom.base.BaseItemActivity;
+import biz.varkon.shelvesom.provider.apparel.ApparelStore;
+import biz.varkon.shelvesom.provider.boardgames.BoardGamesStore;
+import biz.varkon.shelvesom.provider.books.BooksStore;
+import biz.varkon.shelvesom.provider.comics.ComicsStore;
+import biz.varkon.shelvesom.provider.gadgets.GadgetsStore;
+import biz.varkon.shelvesom.provider.movies.MoviesStore;
+import biz.varkon.shelvesom.provider.music.MusicStore;
+import biz.varkon.shelvesom.provider.software.SoftwareStore;
+import biz.varkon.shelvesom.provider.tools.ToolsStore;
+import biz.varkon.shelvesom.provider.toys.ToysStore;
+import biz.varkon.shelvesom.provider.videogames.VideoGamesStore;
+import biz.varkon.shelvesom.server.ServerInfo;
+import biz.varkon.shelvesom.util.Preferences;
+import biz.varkon.shelvesom.util.TextUtilities;
+import biz.varkon.shelvesom.util.UIUtilities;
 
 public class MainGridActivity extends Activity {
 	// GJT: Added this for What's New launch
@@ -424,7 +424,7 @@ public class MainGridActivity extends Activity {
 					try {
 						startActivity(new Intent(
 								Intent.ACTION_VIEW,
-								Uri.parse("market://search?q=pname:com.miadzin.shelves.unlocker")));
+								Uri.parse("market://search?q=pname:biz.varkon.shelvesom.unlocker")));
 						finish();
 					} catch (ActivityNotFoundException e) {
 						Log.e("MarketNotFound", e.toString());
@@ -600,7 +600,7 @@ public class MainGridActivity extends Activity {
 				String page = (lastVersion == 0) ? HelpActivity.DEFAULT_PAGE
 						: HelpActivity.WHATS_NEW_PAGE;
 				if (lastVersion == 0)
-					ShelvesApplication.mFirstRun = true;
+					ShelvesomApplication.mFirstRun = true;
 				intent.putExtra(HelpActivity.REQUESTED_PAGE_KEY, page);
 				startActivityForResult(intent, CHANGE_LOCALE_EXPLANATION_DIALOG);
 			}

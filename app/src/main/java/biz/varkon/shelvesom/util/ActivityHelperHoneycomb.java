@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.miadzin.shelves.util;
+package biz.varkon.shelvesom.util;
 
 import android.annotation.TargetApi;
 import android.app.ActionBar;

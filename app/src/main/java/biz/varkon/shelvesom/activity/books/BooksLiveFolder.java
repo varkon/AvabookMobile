@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package com.miadzin.shelves.activity.books;
+package biz.varkon.shelvesom.activity.books;
 
 import android.app.Activity;
 import android.content.Context;
@@ -25,8 +25,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.provider.LiveFolders;
 
-import com.miadzin.shelves.R;
-import com.miadzin.shelves.provider.books.BooksStore;
+import biz.varkon.shelvesom.R;
+import biz.varkon.shelvesom.provider.books.BooksStore;
 
 public class BooksLiveFolder extends Activity {
 	public static final Uri CONTENT_URI = Uri

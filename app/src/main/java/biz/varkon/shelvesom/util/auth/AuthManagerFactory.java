@@ -13,7 +13,8 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.miadzin.shelves.util.auth;
+
+package biz.varkon.shelvesom.util.auth;
 
 import android.app.Activity;
 import android.os.Build;

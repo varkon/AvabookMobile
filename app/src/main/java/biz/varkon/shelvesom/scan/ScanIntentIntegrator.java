@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.miadzin.shelves.scan;
+package biz.varkon.shelvesom.scan;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -31,7 +31,7 @@ import android.content.pm.ResolveInfo;
 import android.net.Uri;
 import android.util.Log;
 
-import com.miadzin.shelves.R;
+import biz.varkon.shelvesom.R;
 
 /**
  * <p>

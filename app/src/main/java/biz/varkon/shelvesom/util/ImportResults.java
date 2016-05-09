@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.miadzin.shelves.util;
+package biz.varkon.shelvesom.util;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -29,7 +29,7 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.miadzin.shelves.R;
+import biz.varkon.shelvesom.R;
 
 public class ImportResults extends Activity {
 

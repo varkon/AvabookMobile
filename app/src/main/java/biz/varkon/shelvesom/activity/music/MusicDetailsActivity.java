@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.miadzin.shelves.activity.music;
+package biz.varkon.shelvesom.activity.music;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -28,15 +28,15 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.miadzin.shelves.R;
-import com.miadzin.shelves.activity.SettingsActivity;
-import com.miadzin.shelves.base.BaseDetailsActivity;
-import com.miadzin.shelves.drawable.FastBitmapDrawable;
-import com.miadzin.shelves.provider.music.MusicManager;
-import com.miadzin.shelves.provider.music.MusicStore;
-import com.miadzin.shelves.util.ImageUtilities;
-import com.miadzin.shelves.util.TextUtilities;
-import com.miadzin.shelves.util.UIUtilities;
+import biz.varkon.shelvesom.R;
+import biz.varkon.shelvesom.activity.SettingsActivity;
+import biz.varkon.shelvesom.base.BaseDetailsActivity;
+import biz.varkon.shelvesom.drawable.FastBitmapDrawable;
+import biz.varkon.shelvesom.provider.music.MusicManager;
+import biz.varkon.shelvesom.provider.music.MusicStore;
+import biz.varkon.shelvesom.util.ImageUtilities;
+import biz.varkon.shelvesom.util.TextUtilities;
+import biz.varkon.shelvesom.util.UIUtilities;
 
 public class MusicDetailsActivity extends BaseDetailsActivity {
 	private static final String EXTRA_MUSIC = "shelves.extra.music_id";

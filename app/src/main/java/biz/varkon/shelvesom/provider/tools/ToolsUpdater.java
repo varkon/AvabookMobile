@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.miadzin.shelves.provider.tools;
+package biz.varkon.shelvesom.provider.tools;
 
 import java.io.IOException;
 import java.text.ParseException;
@@ -36,11 +36,11 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.os.Process;
 
-import com.miadzin.shelves.base.BaseItem;
-import com.miadzin.shelves.util.HttpManager;
-import com.miadzin.shelves.util.ImageUtilities;
-import com.miadzin.shelves.util.ImportUtilities;
-import com.miadzin.shelves.util.Preferences;
+import biz.varkon.shelvesom.base.BaseItem;
+import biz.varkon.shelvesom.util.HttpManager;
+import biz.varkon.shelvesom.util.ImageUtilities;
+import biz.varkon.shelvesom.util.ImportUtilities;
+import biz.varkon.shelvesom.util.Preferences;
 
 public class ToolsUpdater implements Runnable {
 	private static final String LOG_TAG = "ToolsUpdater";

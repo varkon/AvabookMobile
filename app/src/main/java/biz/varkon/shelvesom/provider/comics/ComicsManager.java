@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.miadzin.shelves.provider.comics;
+package biz.varkon.shelvesom.provider.comics;
 
 import android.content.ContentResolver;
 import android.content.Context;
@@ -23,13 +23,13 @@ import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.net.Uri;
 
-import com.miadzin.shelves.base.BaseItem;
-import com.miadzin.shelves.provider.comics.ComicsStore.Comic;
-import com.miadzin.shelves.util.IOUtilities;
-import com.miadzin.shelves.util.ImageUtilities;
-import com.miadzin.shelves.util.ImportUtilities;
-import com.miadzin.shelves.util.Preferences;
-import com.miadzin.shelves.util.loan.Calendars;
+import biz.varkon.shelvesom.base.BaseItem;
+import biz.varkon.shelvesom.provider.comics.ComicsStore.Comic;
+import biz.varkon.shelvesom.util.IOUtilities;
+import biz.varkon.shelvesom.util.ImageUtilities;
+import biz.varkon.shelvesom.util.ImportUtilities;
+import biz.varkon.shelvesom.util.Preferences;
+import biz.varkon.shelvesom.util.loan.Calendars;
 
 public class ComicsManager {
 	static int COMIC_COVER_WIDTH;

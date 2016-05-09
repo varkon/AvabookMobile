@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.miadzin.shelves.activity.videogames;
+package biz.varkon.shelvesom.activity.videogames;
 
 import android.app.Activity;
 import android.content.Context;
@@ -23,8 +23,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.provider.LiveFolders;
 
-import com.miadzin.shelves.R;
-import com.miadzin.shelves.provider.videogames.VideoGamesStore;
+import biz.varkon.shelvesom.R;
+import biz.varkon.shelvesom.provider.videogames.VideoGamesStore;
 
 public class VideoGamesLiveFolder extends Activity {
 	public static final Uri CONTENT_URI = Uri

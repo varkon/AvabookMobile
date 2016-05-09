@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.miadzin.shelves.provider.software;
+package biz.varkon.shelvesom.provider.software;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -41,14 +41,14 @@ import android.os.Parcelable;
 import android.provider.BaseColumns;
 import android.util.Log;
 
-import com.miadzin.shelves.base.BaseItem;
-import com.miadzin.shelves.base.BaseItem.ImageSize;
-import com.miadzin.shelves.server.ServerInfo;
-import com.miadzin.shelves.util.IOUtilities;
-import com.miadzin.shelves.util.IOUtilities.inputTypes;
-import com.miadzin.shelves.util.ImageUtilities;
-import com.miadzin.shelves.util.Preferences;
-import com.miadzin.shelves.util.TextUtilities;
+import biz.varkon.shelvesom.base.BaseItem;
+import biz.varkon.shelvesom.base.BaseItem.ImageSize;
+import biz.varkon.shelvesom.server.ServerInfo;
+import biz.varkon.shelvesom.util.IOUtilities;
+import biz.varkon.shelvesom.util.IOUtilities.inputTypes;
+import biz.varkon.shelvesom.util.ImageUtilities;
+import biz.varkon.shelvesom.util.Preferences;
+import biz.varkon.shelvesom.util.TextUtilities;
 
 /**
  * Utility class to load software from a software store.
@@ -518,7 +518,7 @@ public class SoftwareStore extends ServerInfo {
 
 	/**
 	 * Creates an instance of
-	 * {@link com.miadzin.shelves.provider.software.SoftwareStore.Software} with
+	 * {@link biz.varkon.shelvesom.provider.software.SoftwareStore.Software} with
 	 * this software store's name.
 	 * 
 	 * @return A new instance of Software.
@@ -567,7 +567,7 @@ public class SoftwareStore extends ServerInfo {
 
 	/**
 	 * Listener invoked by
-	 * {@link com.miadzin.shelves.provider.software.SoftwareStore#searchSoftware(String, com.miadzin.shelves.provider.software.SoftwareStore.SoftwareSearchListener)}
+	 * {@link biz.varkon.shelvesom.provider.software.SoftwareStore#searchSoftware(String, biz.varkon.shelvesom.provider.software.SoftwareStore.SoftwareSearchListener)}
 	 * .
 	 */
 	public static interface SoftwareSearchListener {

@@ -522,7 +522,7 @@ public class ApparelStore extends ServerInfo {
 
 	/**
 	 * Creates an instance of
-	 * {@link com.miadzin.shelves.provider.apparel.ApparelStore.Apparel} with
+	 * {@link biz.varkon.shelvesom.provider.apparel.ApparelStore.Apparel} with
 	 * this apparel store's name.
 	 * 
 	 * @return A new instance of Apparel.
@@ -571,7 +571,7 @@ public class ApparelStore extends ServerInfo {
 
 	/**
 	 * Listener invoked by
-	 * {@link com.miadzin.shelves.provider.apparel.ApparelStore#searchApparel(String, com.miadzin.shelves.provider.apparel.ApparelStore.ApparelSearchListener)}
+	 * {@link biz.varkon.shelvesom.provider.apparel.ApparelStore#searchApparel(String, biz.varkon.shelvesom.provider.apparel.ApparelStore.ApparelSearchListener)}
 	 * .
 	 */
 	public static interface ApparelSearchListener {

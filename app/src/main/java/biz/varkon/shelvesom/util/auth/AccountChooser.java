@@ -13,7 +13,8 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.miadzin.shelves.util.auth;
+
+package biz.varkon.shelvesom.util.auth;
 
 import android.accounts.Account;
 import android.accounts.AccountManager;
@@ -22,7 +23,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.util.Log;
 
-import com.miadzin.shelves.R;
+import biz.varkon.shelvesom.R;
 
 /**
  * Choose which account to upload track information to.

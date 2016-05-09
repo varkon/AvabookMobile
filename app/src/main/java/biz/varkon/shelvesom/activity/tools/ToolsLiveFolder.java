@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.miadzin.shelves.activity.tools;
+package biz.varkon.shelvesom.activity.tools;
 
 import android.app.Activity;
 import android.content.Context;
@@ -23,8 +23,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.provider.LiveFolders;
 
-import com.miadzin.shelves.R;
-import com.miadzin.shelves.provider.tools.ToolsStore;
+import biz.varkon.shelvesom.R;
+import biz.varkon.shelvesom.provider.tools.ToolsStore;
 
 public class ToolsLiveFolder extends Activity {
 	public static final Uri CONTENT_URI = Uri

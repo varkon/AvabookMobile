@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.miadzin.shelves.provider.videogames;
+package biz.varkon.shelvesom.provider.videogames;
 
 import android.content.ContentResolver;
 import android.content.Context;
@@ -22,13 +22,13 @@ import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.net.Uri;
 
-import com.miadzin.shelves.base.BaseItem;
-import com.miadzin.shelves.provider.videogames.VideoGamesStore.VideoGame;
-import com.miadzin.shelves.util.IOUtilities;
-import com.miadzin.shelves.util.ImageUtilities;
-import com.miadzin.shelves.util.ImportUtilities;
-import com.miadzin.shelves.util.Preferences;
-import com.miadzin.shelves.util.loan.Calendars;
+import biz.varkon.shelvesom.base.BaseItem;
+import biz.varkon.shelvesom.provider.videogames.VideoGamesStore.VideoGame;
+import biz.varkon.shelvesom.util.IOUtilities;
+import biz.varkon.shelvesom.util.ImageUtilities;
+import biz.varkon.shelvesom.util.ImportUtilities;
+import biz.varkon.shelvesom.util.Preferences;
+import biz.varkon.shelvesom.util.loan.Calendars;
 
 // GJT: Note that this item doesn't have an ISBN column
 public class VideoGamesManager {

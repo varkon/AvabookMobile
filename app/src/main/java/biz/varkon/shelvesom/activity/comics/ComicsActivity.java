@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.miadzin.shelves.activity.comics;
+package biz.varkon.shelvesom.activity.comics;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -40,34 +40,34 @@ import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.miadzin.shelves.R;
-import com.miadzin.shelves.activity.LoanActivity;
-import com.miadzin.shelves.activity.RateActivity;
-import com.miadzin.shelves.activity.SettingsActivity;
-import com.miadzin.shelves.activity.TagActivity;
-import com.miadzin.shelves.base.BaseItem;
-import com.miadzin.shelves.base.BaseItemActivity;
-import com.miadzin.shelves.base.BaseItemAdapter;
-import com.miadzin.shelves.base.BaseItemProvider;
-import com.miadzin.shelves.base.BaseItemViewHolder;
-import com.miadzin.shelves.provider.ItemImport;
-import com.miadzin.shelves.provider.comics.ComicsManager;
-import com.miadzin.shelves.provider.comics.ComicsStore;
-import com.miadzin.shelves.provider.comics.ComicsStore.Comic;
-import com.miadzin.shelves.provider.comics.ComicsUpdater;
-import com.miadzin.shelves.scan.ScanIntent;
-import com.miadzin.shelves.scan.ScanIntentIntegrator;
-import com.miadzin.shelves.scan.ScanIntentResult;
-import com.miadzin.shelves.util.IOUtilities;
-import com.miadzin.shelves.util.IOUtilities.inputTypes;
-import com.miadzin.shelves.util.ImageUtilities;
-import com.miadzin.shelves.util.ImportResults;
-import com.miadzin.shelves.util.ImportUtilities;
-import com.miadzin.shelves.util.Preferences;
-import com.miadzin.shelves.util.TextUtilities;
-import com.miadzin.shelves.util.UIUtilities;
-import com.miadzin.shelves.util.loan.Calendars;
-import com.miadzin.shelves.view.ShelvesView;
+import biz.varkon.shelvesom.R;
+import biz.varkon.shelvesom.activity.LoanActivity;
+import biz.varkon.shelvesom.activity.RateActivity;
+import biz.varkon.shelvesom.activity.SettingsActivity;
+import biz.varkon.shelvesom.activity.TagActivity;
+import biz.varkon.shelvesom.base.BaseItem;
+import biz.varkon.shelvesom.base.BaseItemActivity;
+import biz.varkon.shelvesom.base.BaseItemAdapter;
+import biz.varkon.shelvesom.base.BaseItemProvider;
+import biz.varkon.shelvesom.base.BaseItemViewHolder;
+import biz.varkon.shelvesom.provider.ItemImport;
+import biz.varkon.shelvesom.provider.comics.ComicsManager;
+import biz.varkon.shelvesom.provider.comics.ComicsStore;
+import biz.varkon.shelvesom.provider.comics.ComicsStore.Comic;
+import biz.varkon.shelvesom.provider.comics.ComicsUpdater;
+import biz.varkon.shelvesom.scan.ScanIntent;
+import biz.varkon.shelvesom.scan.ScanIntentIntegrator;
+import biz.varkon.shelvesom.scan.ScanIntentResult;
+import biz.varkon.shelvesom.util.IOUtilities;
+import biz.varkon.shelvesom.util.IOUtilities.inputTypes;
+import biz.varkon.shelvesom.util.ImageUtilities;
+import biz.varkon.shelvesom.util.ImportResults;
+import biz.varkon.shelvesom.util.ImportUtilities;
+import biz.varkon.shelvesom.util.Preferences;
+import biz.varkon.shelvesom.util.TextUtilities;
+import biz.varkon.shelvesom.util.UIUtilities;
+import biz.varkon.shelvesom.util.loan.Calendars;
+import biz.varkon.shelvesom.view.ShelvesView;
 
 public class ComicsActivity extends BaseItemActivity {
 	private static final String LOG_TAG = "ComicsActivity";

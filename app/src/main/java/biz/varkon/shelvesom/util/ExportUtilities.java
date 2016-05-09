@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.miadzin.shelves.util;
+package biz.varkon.shelvesom.util;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -26,132 +26,132 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.util.Log;
 
-import com.miadzin.shelves.R;
-import com.miadzin.shelves.ShelvesApplication;
-import com.miadzin.shelves.base.BaseItem;
-import com.miadzin.shelves.provider.apparel.ApparelStore;
-import com.miadzin.shelves.provider.boardgames.BoardGamesStore;
-import com.miadzin.shelves.provider.books.BooksStore;
-import com.miadzin.shelves.provider.comics.ComicsStore;
-import com.miadzin.shelves.provider.gadgets.GadgetsStore;
-import com.miadzin.shelves.provider.movies.MoviesStore;
-import com.miadzin.shelves.provider.music.MusicStore;
-import com.miadzin.shelves.provider.software.SoftwareStore;
-import com.miadzin.shelves.provider.tools.ToolsStore;
-import com.miadzin.shelves.provider.toys.ToysStore;
-import com.miadzin.shelves.provider.videogames.VideoGamesStore;
-import com.miadzin.shelves.server.ServerInfo;
+import biz.varkon.shelvesom.R;
+import biz.varkon.shelvesom.ShelvesomApplication;
+import biz.varkon.shelvesom.base.BaseItem;
+import biz.varkon.shelvesom.provider.apparel.ApparelStore;
+import biz.varkon.shelvesom.provider.boardgames.BoardGamesStore;
+import biz.varkon.shelvesom.provider.books.BooksStore;
+import biz.varkon.shelvesom.provider.comics.ComicsStore;
+import biz.varkon.shelvesom.provider.gadgets.GadgetsStore;
+import biz.varkon.shelvesom.provider.movies.MoviesStore;
+import biz.varkon.shelvesom.provider.music.MusicStore;
+import biz.varkon.shelvesom.provider.software.SoftwareStore;
+import biz.varkon.shelvesom.provider.tools.ToolsStore;
+import biz.varkon.shelvesom.provider.toys.ToysStore;
+import biz.varkon.shelvesom.provider.videogames.VideoGamesStore;
+import biz.varkon.shelvesom.server.ServerInfo;
 
 public final class ExportUtilities extends IOUtilities {
 	private static final String LOG_TAG = "ExportUtilities";
 
 	public static String[] header;
 
-	private static final String EXPORT_FILE_DL_APPAREL = ShelvesApplication
+	private static final String EXPORT_FILE_DL_APPAREL = ShelvesomApplication
 			.getContext().getString(R.string.EXPORT_FILE_DL_APPAREL);
-	public static final String EXPORT_FILE_SHELVES_APPAREL = ShelvesApplication
+	public static final String EXPORT_FILE_SHELVES_APPAREL = ShelvesomApplication
 			.getContext().getString(R.string.EXPORT_FILE_SHELVES_APPAREL);
 
-	public static final String EXPORT_FILE_SHELVES_BOARDGAMES = ShelvesApplication
+	public static final String EXPORT_FILE_SHELVES_BOARDGAMES = ShelvesomApplication
 			.getContext().getString(R.string.EXPORT_FILE_SHELVES_BOARDGAMES);
 
-	private static final String EXPORT_FILE_DL_BOOKS = ShelvesApplication
+	private static final String EXPORT_FILE_DL_BOOKS = ShelvesomApplication
 			.getContext().getString(R.string.EXPORT_FILE_DL_BOOKS);
-	private static final String EXPORT_FILE_SHELFARI_BOOKS = ShelvesApplication
+	private static final String EXPORT_FILE_SHELFARI_BOOKS = ShelvesomApplication
 			.getContext().getString(R.string.EXPORT_FILE_SHELFARI_BOOKS);
 	private static final String EXPORT_FILE_GOOGLE_LIBRARY_BOOKS = "Shelves_to_Google_Books.txt";
-	private static final String EXPORT_FILE_LIBRARY_THING_BOOKS = ShelvesApplication
+	private static final String EXPORT_FILE_LIBRARY_THING_BOOKS = ShelvesomApplication
 			.getContext().getString(R.string.EXPORT_FILE_LIBRARY_THING_BOOKS);
-	private static final String EXPORT_FILE_MEDIAMAN_BOOKS = ShelvesApplication
+	private static final String EXPORT_FILE_MEDIAMAN_BOOKS = ShelvesomApplication
 			.getContext().getString(R.string.EXPORT_FILE_MEDIAMAN_BOOKS);
-	public static final String EXPORT_FILE_SHELVES_BOOKS = ShelvesApplication
+	public static final String EXPORT_FILE_SHELVES_BOOKS = ShelvesomApplication
 			.getContext().getString(R.string.EXPORT_FILE_SHELVES_BOOKS);
 
-	public static final String EXPORT_FILE_SHELVES_COMICS = ShelvesApplication
+	public static final String EXPORT_FILE_SHELVES_COMICS = ShelvesomApplication
 			.getContext().getString(R.string.EXPORT_FILE_SHELVES_COMICS);
 
-	private static final String EXPORT_FILE_DL_GADGETS = ShelvesApplication
+	private static final String EXPORT_FILE_DL_GADGETS = ShelvesomApplication
 			.getContext().getString(R.string.EXPORT_FILE_DL_GADGETS);
-	public static final String EXPORT_FILE_SHELVES_GADGETS = ShelvesApplication
+	public static final String EXPORT_FILE_SHELVES_GADGETS = ShelvesomApplication
 			.getContext().getString(R.string.EXPORT_FILE_SHELVES_GADGETS);
 
-	private static final String EXPORT_FILE_DL_MOVIES = ShelvesApplication
+	private static final String EXPORT_FILE_DL_MOVIES = ShelvesomApplication
 			.getContext().getString(R.string.EXPORT_FILE_DL_MOVIES);
-	public static final String EXPORT_FILE_SHELVES_MOVIES = ShelvesApplication
+	public static final String EXPORT_FILE_SHELVES_MOVIES = ShelvesomApplication
 			.getContext().getString(R.string.EXPORT_FILE_SHELVES_MOVIES);
-	private static final String EXPORT_FILE_MEDIAMAN_MOVIES = ShelvesApplication
+	private static final String EXPORT_FILE_MEDIAMAN_MOVIES = ShelvesomApplication
 			.getContext().getString(R.string.EXPORT_FILE_MEDIAMAN_MOVIES);
 
-	private static final String EXPORT_FILE_DL_MUSIC = ShelvesApplication
+	private static final String EXPORT_FILE_DL_MUSIC = ShelvesomApplication
 			.getContext().getString(R.string.EXPORT_FILE_DL_MUSIC);
-	public static final String EXPORT_FILE_SHELVES_MUSIC = ShelvesApplication
+	public static final String EXPORT_FILE_SHELVES_MUSIC = ShelvesomApplication
 			.getContext().getString(R.string.EXPORT_FILE_SHELVES_MUSIC);
-	private static final String EXPORT_FILE_MEDIAMAN_MUSIC = ShelvesApplication
+	private static final String EXPORT_FILE_MEDIAMAN_MUSIC = ShelvesomApplication
 			.getContext().getString(R.string.EXPORT_FILE_MEDIAMAN_MUSIC);
 
-	private static final String EXPORT_FILE_DL_SOFTWARE = ShelvesApplication
+	private static final String EXPORT_FILE_DL_SOFTWARE = ShelvesomApplication
 			.getContext().getString(R.string.EXPORT_FILE_DL_SOFTWARE);
-	public static final String EXPORT_FILE_SHELVES_SOFTWARE = ShelvesApplication
+	public static final String EXPORT_FILE_SHELVES_SOFTWARE = ShelvesomApplication
 			.getContext().getString(R.string.EXPORT_FILE_SHELVES_SOFTWARE);
 
-	private static final String EXPORT_FILE_DL_TOOLS = ShelvesApplication
+	private static final String EXPORT_FILE_DL_TOOLS = ShelvesomApplication
 			.getContext().getString(R.string.EXPORT_FILE_DL_TOOLS);
-	public static final String EXPORT_FILE_SHELVES_TOOLS = ShelvesApplication
+	public static final String EXPORT_FILE_SHELVES_TOOLS = ShelvesomApplication
 			.getContext().getString(R.string.EXPORT_FILE_SHELVES_TOOLS);
 
-	private static final String EXPORT_FILE_DL_TOYS = ShelvesApplication
+	private static final String EXPORT_FILE_DL_TOYS = ShelvesomApplication
 			.getContext().getString(R.string.EXPORT_FILE_DL_TOYS);
-	public static final String EXPORT_FILE_SHELVES_TOYS = ShelvesApplication
+	public static final String EXPORT_FILE_SHELVES_TOYS = ShelvesomApplication
 			.getContext().getString(R.string.EXPORT_FILE_SHELVES_TOYS);
 
-	private static final String EXPORT_FILE_DL_VIDEOGAMES = ShelvesApplication
+	private static final String EXPORT_FILE_DL_VIDEOGAMES = ShelvesomApplication
 			.getContext().getString(R.string.EXPORT_FILE_DL_VIDEOGAMES);
-	public static final String EXPORT_FILE_SHELVES_VIDEOGAMES = ShelvesApplication
+	public static final String EXPORT_FILE_SHELVES_VIDEOGAMES = ShelvesomApplication
 			.getContext().getString(R.string.EXPORT_FILE_SHELVES_VIDEOGAMES);
-	private static final String EXPORT_FILE_MEDIAMAN_VIDEOGAMES = ShelvesApplication
+	private static final String EXPORT_FILE_MEDIAMAN_VIDEOGAMES = ShelvesomApplication
 			.getContext().getString(R.string.EXPORT_FILE_MEDIAMAN_VIDEOGAMES);
 
 	private ExportUtilities() {
 	}
 
 	public static String determineShelvesFileName(String nameToMatch) {
-		if (ShelvesApplication.getContext()
+		if (ShelvesomApplication.getContext()
 				.getString(R.string.apparel_label_big).contains(nameToMatch))
 			return EXPORT_FILE_SHELVES_APPAREL;
-		else if (ShelvesApplication.getContext()
+		else if (ShelvesomApplication.getContext()
 				.getString(R.string.boardgame_label_plural_big)
 				.contains(nameToMatch))
 			return EXPORT_FILE_SHELVES_BOARDGAMES;
-		else if (ShelvesApplication.getContext()
+		else if (ShelvesomApplication.getContext()
 				.getString(R.string.book_label_plural_big)
 				.contains(nameToMatch))
 			return EXPORT_FILE_SHELVES_BOOKS;
-		else if (ShelvesApplication.getContext()
+		else if (ShelvesomApplication.getContext()
 				.getString(R.string.comic_label_plural_big)
 				.contains(nameToMatch))
 			return EXPORT_FILE_SHELVES_COMICS;
-		else if (ShelvesApplication.getContext()
+		else if (ShelvesomApplication.getContext()
 				.getString(R.string.gadget_label_plural_big)
 				.contains(nameToMatch))
 			return EXPORT_FILE_SHELVES_GADGETS;
-		else if (ShelvesApplication.getContext()
+		else if (ShelvesomApplication.getContext()
 				.getString(R.string.movie_label_plural_big)
 				.contains(nameToMatch))
 			return EXPORT_FILE_SHELVES_MOVIES;
-		else if (ShelvesApplication.getContext()
+		else if (ShelvesomApplication.getContext()
 				.getString(R.string.music_label_big).contains(nameToMatch))
 			return EXPORT_FILE_SHELVES_MUSIC;
-		else if (ShelvesApplication.getContext()
+		else if (ShelvesomApplication.getContext()
 				.getString(R.string.software_label_big).contains(nameToMatch))
 			return EXPORT_FILE_SHELVES_SOFTWARE;
-		else if (ShelvesApplication.getContext()
+		else if (ShelvesomApplication.getContext()
 				.getString(R.string.tool_label_plural_big)
 				.contains(nameToMatch))
 			return EXPORT_FILE_SHELVES_TOOLS;
-		else if (ShelvesApplication.getContext()
+		else if (ShelvesomApplication.getContext()
 				.getString(R.string.toy_label_plural_big).contains(nameToMatch))
 			return EXPORT_FILE_SHELVES_TOYS;
-		else if (ShelvesApplication.getContext()
+		else if (ShelvesomApplication.getContext()
 				.getString(R.string.videogame_label_plural_big)
 				.contains(nameToMatch))
 			return EXPORT_FILE_SHELVES_VIDEOGAMES;

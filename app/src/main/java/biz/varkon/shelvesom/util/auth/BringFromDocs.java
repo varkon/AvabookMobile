@@ -14,7 +14,8 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.miadzin.shelves.util.auth;
+
+package biz.varkon.shelvesom.util.auth;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -39,11 +40,11 @@ import com.google.wireless.gdata.client.HttpException;
 import com.google.wireless.gdata.docs.DocumentsClient;
 import com.google.wireless.gdata.docs.SpreadsheetsClient;
 import com.google.wireless.gdata.docs.XmlDocsGDataParserFactory;
-import com.miadzin.shelves.R;
-import com.miadzin.shelves.activity.SettingsActivity;
-import com.miadzin.shelves.util.IOUtilities;
-import com.miadzin.shelves.util.TextUtilities;
-import com.miadzin.shelves.util.UIUtilities;
+import biz.varkon.shelvesom.R;
+import biz.varkon.shelvesom.activity.SettingsActivity;
+import biz.varkon.shelvesom.util.IOUtilities;
+import biz.varkon.shelvesom.util.TextUtilities;
+import biz.varkon.shelvesom.util.UIUtilities;
 
 /**
  * A helper class used to transmit tracks statistics from Google Docs/Trix.

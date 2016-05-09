@@ -1,4 +1,4 @@
-package com.miadzin.shelves.util;
+package biz.varkon.shelvesom.util;
 
 import java.io.UnsupportedEncodingException;
 import java.security.InvalidAlgorithmParameterException;

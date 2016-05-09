@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.miadzin.shelves.util.loan;
+package biz.varkon.shelvesom.util.loan;
 
 import android.content.ContentResolver;
 import android.content.Intent;

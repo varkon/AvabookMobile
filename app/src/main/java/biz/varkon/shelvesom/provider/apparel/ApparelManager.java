@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.miadzin.shelves.provider.apparel;
+package biz.varkon.shelvesom.provider.apparel;
 
 import android.content.ContentResolver;
 import android.content.Context;
@@ -22,13 +22,13 @@ import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.net.Uri;
 
-import com.miadzin.shelves.base.BaseItem;
-import com.miadzin.shelves.provider.apparel.ApparelStore.Apparel;
-import com.miadzin.shelves.util.IOUtilities;
-import com.miadzin.shelves.util.ImageUtilities;
-import com.miadzin.shelves.util.ImportUtilities;
-import com.miadzin.shelves.util.Preferences;
-import com.miadzin.shelves.util.loan.Calendars;
+import biz.varkon.shelvesom.base.BaseItem;
+import biz.varkon.shelvesom.provider.apparel.ApparelStore.Apparel;
+import biz.varkon.shelvesom.util.IOUtilities;
+import biz.varkon.shelvesom.util.ImageUtilities;
+import biz.varkon.shelvesom.util.ImportUtilities;
+import biz.varkon.shelvesom.util.Preferences;
+import biz.varkon.shelvesom.util.loan.Calendars;
 
 public class ApparelManager {
 	static int APPAREL_COVER_WIDTH;

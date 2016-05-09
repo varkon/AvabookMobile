@@ -1,4 +1,4 @@
-package com.miadzin.shelves.activity;
+package biz.varkon.shelvesom.activity;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -30,53 +30,53 @@ import android.widget.TextView;
 
 import com.google.ads.AdRequest;
 import com.google.ads.AdView;
-import com.miadzin.shelves.R;
-import com.miadzin.shelves.ShelvesApplication;
-import com.miadzin.shelves.activity.apparel.ApparelDetailsActivity;
-import com.miadzin.shelves.activity.boardgames.BoardGameDetailsActivity;
-import com.miadzin.shelves.activity.books.BookDetailsActivity;
-import com.miadzin.shelves.activity.gadgets.GadgetDetailsActivity;
-import com.miadzin.shelves.activity.movies.MovieDetailsActivity;
-import com.miadzin.shelves.activity.music.MusicDetailsActivity;
-import com.miadzin.shelves.activity.software.SoftwareDetailsActivity;
-import com.miadzin.shelves.activity.tools.ToolDetailsActivity;
-import com.miadzin.shelves.activity.toys.ToyDetailsActivity;
-import com.miadzin.shelves.activity.videogames.VideoGameDetailsActivity;
-import com.miadzin.shelves.base.BaseItem;
-import com.miadzin.shelves.drawable.FastBitmapDrawable;
-import com.miadzin.shelves.provider.apparel.ApparelManager;
-import com.miadzin.shelves.provider.apparel.ApparelStore;
-import com.miadzin.shelves.provider.apparel.ApparelStore.Apparel;
-import com.miadzin.shelves.provider.boardgames.BoardGamesManager;
-import com.miadzin.shelves.provider.boardgames.BoardGamesStore;
-import com.miadzin.shelves.provider.boardgames.BoardGamesStore.BoardGame;
-import com.miadzin.shelves.provider.books.BooksManager;
-import com.miadzin.shelves.provider.books.BooksStore;
-import com.miadzin.shelves.provider.books.BooksStore.Book;
-import com.miadzin.shelves.provider.gadgets.GadgetsManager;
-import com.miadzin.shelves.provider.gadgets.GadgetsStore;
-import com.miadzin.shelves.provider.gadgets.GadgetsStore.Gadget;
-import com.miadzin.shelves.provider.movies.MoviesManager;
-import com.miadzin.shelves.provider.movies.MoviesStore;
-import com.miadzin.shelves.provider.movies.MoviesStore.Movie;
-import com.miadzin.shelves.provider.music.MusicManager;
-import com.miadzin.shelves.provider.music.MusicStore;
-import com.miadzin.shelves.provider.music.MusicStore.Music;
-import com.miadzin.shelves.provider.software.SoftwareManager;
-import com.miadzin.shelves.provider.software.SoftwareStore;
-import com.miadzin.shelves.provider.software.SoftwareStore.Software;
-import com.miadzin.shelves.provider.tools.ToolsManager;
-import com.miadzin.shelves.provider.tools.ToolsStore;
-import com.miadzin.shelves.provider.tools.ToolsStore.Tool;
-import com.miadzin.shelves.provider.toys.ToysManager;
-import com.miadzin.shelves.provider.toys.ToysStore;
-import com.miadzin.shelves.provider.toys.ToysStore.Toy;
-import com.miadzin.shelves.provider.videogames.VideoGamesManager;
-import com.miadzin.shelves.provider.videogames.VideoGamesStore;
-import com.miadzin.shelves.provider.videogames.VideoGamesStore.VideoGame;
-import com.miadzin.shelves.util.AnalyticsUtils;
-import com.miadzin.shelves.util.ImageUtilities;
-import com.miadzin.shelves.util.UIUtilities;
+import biz.varkon.shelvesom.R;
+import biz.varkon.shelvesom.ShelvesomApplication;
+import biz.varkon.shelvesom.activity.apparel.ApparelDetailsActivity;
+import biz.varkon.shelvesom.activity.boardgames.BoardGameDetailsActivity;
+import biz.varkon.shelvesom.activity.books.BookDetailsActivity;
+import biz.varkon.shelvesom.activity.gadgets.GadgetDetailsActivity;
+import biz.varkon.shelvesom.activity.movies.MovieDetailsActivity;
+import biz.varkon.shelvesom.activity.music.MusicDetailsActivity;
+import biz.varkon.shelvesom.activity.software.SoftwareDetailsActivity;
+import biz.varkon.shelvesom.activity.tools.ToolDetailsActivity;
+import biz.varkon.shelvesom.activity.toys.ToyDetailsActivity;
+import biz.varkon.shelvesom.activity.videogames.VideoGameDetailsActivity;
+import biz.varkon.shelvesom.base.BaseItem;
+import biz.varkon.shelvesom.drawable.FastBitmapDrawable;
+import biz.varkon.shelvesom.provider.apparel.ApparelManager;
+import biz.varkon.shelvesom.provider.apparel.ApparelStore;
+import biz.varkon.shelvesom.provider.apparel.ApparelStore.Apparel;
+import biz.varkon.shelvesom.provider.boardgames.BoardGamesManager;
+import biz.varkon.shelvesom.provider.boardgames.BoardGamesStore;
+import biz.varkon.shelvesom.provider.boardgames.BoardGamesStore.BoardGame;
+import biz.varkon.shelvesom.provider.books.BooksManager;
+import biz.varkon.shelvesom.provider.books.BooksStore;
+import biz.varkon.shelvesom.provider.books.BooksStore.Book;
+import biz.varkon.shelvesom.provider.gadgets.GadgetsManager;
+import biz.varkon.shelvesom.provider.gadgets.GadgetsStore;
+import biz.varkon.shelvesom.provider.gadgets.GadgetsStore.Gadget;
+import biz.varkon.shelvesom.provider.movies.MoviesManager;
+import biz.varkon.shelvesom.provider.movies.MoviesStore;
+import biz.varkon.shelvesom.provider.movies.MoviesStore.Movie;
+import biz.varkon.shelvesom.provider.music.MusicManager;
+import biz.varkon.shelvesom.provider.music.MusicStore;
+import biz.varkon.shelvesom.provider.music.MusicStore.Music;
+import biz.varkon.shelvesom.provider.software.SoftwareManager;
+import biz.varkon.shelvesom.provider.software.SoftwareStore;
+import biz.varkon.shelvesom.provider.software.SoftwareStore.Software;
+import biz.varkon.shelvesom.provider.tools.ToolsManager;
+import biz.varkon.shelvesom.provider.tools.ToolsStore;
+import biz.varkon.shelvesom.provider.tools.ToolsStore.Tool;
+import biz.varkon.shelvesom.provider.toys.ToysManager;
+import biz.varkon.shelvesom.provider.toys.ToysStore;
+import biz.varkon.shelvesom.provider.toys.ToysStore.Toy;
+import biz.varkon.shelvesom.provider.videogames.VideoGamesManager;
+import biz.varkon.shelvesom.provider.videogames.VideoGamesStore;
+import biz.varkon.shelvesom.provider.videogames.VideoGamesStore.VideoGame;
+import biz.varkon.shelvesom.util.AnalyticsUtils;
+import biz.varkon.shelvesom.util.ImageUtilities;
+import biz.varkon.shelvesom.util.UIUtilities;
 
 public class WishlistViewActivity extends ListActivity {
 
@@ -188,7 +188,7 @@ public class WishlistViewActivity extends ListActivity {
 			ContentResolver contentResolver = getContentResolver();
 
 			HashSet<Uri> uris = new HashSet<Uri>(
-					ShelvesApplication.TYPES_TO_URI.values());
+					ShelvesomApplication.TYPES_TO_URI.values());
 
 			try {
 				for (Uri uri : uris) {

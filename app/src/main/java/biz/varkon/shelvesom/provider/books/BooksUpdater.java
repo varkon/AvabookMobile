@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.miadzin.shelves.provider.books;
+package biz.varkon.shelvesom.provider.books;
 
 import java.io.IOException;
 import java.text.ParseException;
@@ -37,11 +37,11 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.os.Process;
 
-import com.miadzin.shelves.base.BaseItem;
-import com.miadzin.shelves.util.HttpManager;
-import com.miadzin.shelves.util.ImageUtilities;
-import com.miadzin.shelves.util.ImportUtilities;
-import com.miadzin.shelves.util.Preferences;
+import biz.varkon.shelvesom.base.BaseItem;
+import biz.varkon.shelvesom.util.HttpManager;
+import biz.varkon.shelvesom.util.ImageUtilities;
+import biz.varkon.shelvesom.util.ImportUtilities;
+import biz.varkon.shelvesom.util.Preferences;
 
 public class BooksUpdater implements Runnable {
 	private static final String LOG_TAG = "BooksUpdater";

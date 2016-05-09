@@ -13,6 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
+
 package com.google.android.apps.mytracks.io.docs;
 
 import java.io.BufferedReader;
@@ -37,8 +38,8 @@ import com.google.wireless.gdata.docs.SpreadsheetsClient.WorksheetEntry;
 import com.google.wireless.gdata.parser.GDataParser;
 import com.google.wireless.gdata.parser.ParseException;
 import com.google.wireless.gdata2.client.AuthenticationException;
-import com.miadzin.shelves.R;
-import com.miadzin.shelves.util.ResourceUtils;
+import biz.varkon.shelvesom.R;
+import biz.varkon.shelvesom.util.ResourceUtils;
 
 /**
  * This class contains helper methods for interacting with Google Docs and

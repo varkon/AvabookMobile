@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.miadzin.shelves.activity;
+package biz.varkon.shelvesom.activity;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -29,10 +29,10 @@ import android.widget.Button;
 import android.widget.NumberPicker;
 import android.widget.TextView;
 
-import com.miadzin.shelves.R;
-import com.miadzin.shelves.base.BaseItem;
-import com.miadzin.shelves.base.BaseItemActivity;
-import com.miadzin.shelves.util.AnalyticsUtils;
+import biz.varkon.shelvesom.R;
+import biz.varkon.shelvesom.base.BaseItem;
+import biz.varkon.shelvesom.base.BaseItemActivity;
+import biz.varkon.shelvesom.util.AnalyticsUtils;
 
 @TargetApi(11)
 public class QuantityActivity extends Activity {

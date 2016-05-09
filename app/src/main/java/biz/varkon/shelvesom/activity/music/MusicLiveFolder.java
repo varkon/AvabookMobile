@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.miadzin.shelves.activity.music;
+package biz.varkon.shelvesom.activity.music;
 
 import android.app.Activity;
 import android.content.Context;
@@ -23,8 +23,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.provider.LiveFolders;
 
-import com.miadzin.shelves.R;
-import com.miadzin.shelves.provider.music.MusicStore;
+import biz.varkon.shelvesom.R;
+import biz.varkon.shelvesom.provider.music.MusicStore;
 
 public class MusicLiveFolder extends Activity {
 	public static final Uri CONTENT_URI = Uri

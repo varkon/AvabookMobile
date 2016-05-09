@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.miadzin.shelves.provider.movies;
+package biz.varkon.shelvesom.provider.movies;
 
 import java.util.HashMap;
 import java.util.regex.Pattern;
@@ -36,11 +36,11 @@ import android.provider.BaseColumns;
 import android.provider.LiveFolders;
 import android.util.Log;
 
-import com.miadzin.shelves.R;
-import com.miadzin.shelves.ShelvesApplication;
-import com.miadzin.shelves.activity.SettingsActivity;
-import com.miadzin.shelves.base.BaseItem;
-import com.miadzin.shelves.util.TextUtilities;
+import biz.varkon.shelvesom.R;
+import biz.varkon.shelvesom.ShelvesomApplication;
+import biz.varkon.shelvesom.activity.SettingsActivity;
+import biz.varkon.shelvesom.base.BaseItem;
+import biz.varkon.shelvesom.util.TextUtilities;
 
 public class MoviesProvider extends ContentProvider {
 	private static final String LOG_TAG = "MoviesProvider";
@@ -193,9 +193,9 @@ public class MoviesProvider extends ContentProvider {
 	public String getType(Uri uri) {
 		switch (URI_MATCHER.match(uri)) {
 		case MOVIES:
-			return "vnd.android.cursor.dir/vnd.com.miadzin.shelves.movies";
+			return "vnd.android.cursor.dir/vnd.biz.varkon.shelvesom.movies";
 		case MOVIE_ID:
-			return "vnd.android.cursor.item/vnd.com.miadzin.shelves.movies";
+			return "vnd.android.cursor.item/vnd.biz.varkon.shelvesom.movies";
 		default:
 			throw new IllegalArgumentException("Unknown URI " + uri);
 		}
@@ -223,7 +223,7 @@ public class MoviesProvider extends ContentProvider {
 			Uri insertUri = ContentUris.withAppendedId(
 					MoviesStore.Movie.CONTENT_URI, rowId);
 			getContext().getContentResolver().notifyChange(uri, null);
-			ShelvesApplication.dataChanged();
+			ShelvesomApplication.dataChanged();
 			return insertUri;
 		}
 
@@ -287,7 +287,7 @@ public class MoviesProvider extends ContentProvider {
 		}
 
 		getContext().getContentResolver().notifyChange(uri, null);
-		ShelvesApplication.dataChanged();
+		ShelvesomApplication.dataChanged();
 
 		return count;
 	}
@@ -320,7 +320,7 @@ public class MoviesProvider extends ContentProvider {
 			throw new IllegalArgumentException("Unknown URI " + uri);
 		}
 		getContext().getContentResolver().notifyChange(uri, null);
-		ShelvesApplication.dataChanged();
+		ShelvesomApplication.dataChanged();
 		return count;
 	}
 

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.miadzin.shelves.activity.apparel;
+package biz.varkon.shelvesom.activity.apparel;
 
 import android.app.Activity;
 import android.content.Context;
@@ -23,8 +23,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.provider.LiveFolders;
 
-import com.miadzin.shelves.R;
-import com.miadzin.shelves.provider.apparel.ApparelStore;
+import biz.varkon.shelvesom.R;
+import biz.varkon.shelvesom.provider.apparel.ApparelStore;
 
 public class ApparelLiveFolder extends Activity {
 	public static final Uri CONTENT_URI = Uri

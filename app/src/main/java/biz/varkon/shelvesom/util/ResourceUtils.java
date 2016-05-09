@@ -13,7 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.miadzin.shelves.util;
+
+package biz.varkon.shelvesom.util;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;

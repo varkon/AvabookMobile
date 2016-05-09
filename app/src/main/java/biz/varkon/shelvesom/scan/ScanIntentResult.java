@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.miadzin.shelves.scan;
+package biz.varkon.shelvesom.scan;
 
 /**
  * <p>

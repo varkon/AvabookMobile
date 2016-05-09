@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.miadzin.shelves.provider.music;
+package biz.varkon.shelvesom.provider.music;
 
 import java.util.HashMap;
 import java.util.regex.Pattern;
@@ -36,11 +36,11 @@ import android.provider.BaseColumns;
 import android.provider.LiveFolders;
 import android.util.Log;
 
-import com.miadzin.shelves.R;
-import com.miadzin.shelves.ShelvesApplication;
-import com.miadzin.shelves.activity.SettingsActivity;
-import com.miadzin.shelves.base.BaseItem;
-import com.miadzin.shelves.util.TextUtilities;
+import biz.varkon.shelvesom.R;
+import biz.varkon.shelvesom.ShelvesomApplication;
+import biz.varkon.shelvesom.activity.SettingsActivity;
+import biz.varkon.shelvesom.base.BaseItem;
+import biz.varkon.shelvesom.util.TextUtilities;
 
 public class MusicProvider extends ContentProvider {
 	private static final String LOG_TAG = "MusicProvider";
@@ -187,9 +187,9 @@ public class MusicProvider extends ContentProvider {
 	public String getType(Uri uri) {
 		switch (URI_MATCHER.match(uri)) {
 		case MUSIC:
-			return "vnd.android.cursor.dir/vnd.com.miadzin.shelves.music";
+			return "vnd.android.cursor.dir/vnd.biz.varkon.shelvesom.music";
 		case MUSIC_ID:
-			return "vnd.android.cursor.item/vnd.com.miadzin.shelves.music";
+			return "vnd.android.cursor.item/vnd.biz.varkon.shelvesom.music";
 		default:
 			throw new IllegalArgumentException("Unknown URI " + uri);
 		}
@@ -217,7 +217,7 @@ public class MusicProvider extends ContentProvider {
 			Uri insertUri = ContentUris.withAppendedId(
 					MusicStore.Music.CONTENT_URI, rowId);
 			getContext().getContentResolver().notifyChange(uri, null);
-			ShelvesApplication.dataChanged();
+			ShelvesomApplication.dataChanged();
 			return insertUri;
 		}
 
@@ -281,7 +281,7 @@ public class MusicProvider extends ContentProvider {
 		}
 
 		getContext().getContentResolver().notifyChange(uri, null);
-		ShelvesApplication.dataChanged();
+		ShelvesomApplication.dataChanged();
 
 		return count;
 	}
@@ -314,7 +314,7 @@ public class MusicProvider extends ContentProvider {
 			throw new IllegalArgumentException("Unknown URI " + uri);
 		}
 		getContext().getContentResolver().notifyChange(uri, null);
-		ShelvesApplication.dataChanged();
+		ShelvesomApplication.dataChanged();
 		return count;
 	}
 

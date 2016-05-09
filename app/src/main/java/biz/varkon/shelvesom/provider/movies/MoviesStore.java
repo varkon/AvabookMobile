@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.miadzin.shelves.provider.movies;
+package biz.varkon.shelvesom.provider.movies;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -42,14 +42,14 @@ import android.os.Parcelable;
 import android.provider.BaseColumns;
 import android.util.Log;
 
-import com.miadzin.shelves.base.BaseItem;
-import com.miadzin.shelves.base.BaseItem.ImageSize;
-import com.miadzin.shelves.server.ServerInfo;
-import com.miadzin.shelves.util.IOUtilities;
-import com.miadzin.shelves.util.IOUtilities.inputTypes;
-import com.miadzin.shelves.util.ImageUtilities;
-import com.miadzin.shelves.util.Preferences;
-import com.miadzin.shelves.util.TextUtilities;
+import biz.varkon.shelvesom.base.BaseItem;
+import biz.varkon.shelvesom.base.BaseItem.ImageSize;
+import biz.varkon.shelvesom.server.ServerInfo;
+import biz.varkon.shelvesom.util.IOUtilities;
+import biz.varkon.shelvesom.util.IOUtilities.inputTypes;
+import biz.varkon.shelvesom.util.ImageUtilities;
+import biz.varkon.shelvesom.util.Preferences;
+import biz.varkon.shelvesom.util.TextUtilities;
 
 /**
  * Utility class to load movies from a movies store.
@@ -587,7 +587,7 @@ public class MoviesStore extends ServerInfo {
 
 	/**
 	 * Creates an instance of
-	 * {@link com.miadzin.shelves.provider.movies.MoviesStore.Movie} with this
+	 * {@link biz.varkon.shelvesom.provider.movies.MoviesStore.Movie} with this
 	 * movie store's name.
 	 * 
 	 * @return A new instance of Movie.
@@ -636,7 +636,7 @@ public class MoviesStore extends ServerInfo {
 
 	/**
 	 * Listener invoked by
-	 * {@link com.miadzin.shelves.provider.movies.MoviesStore#searchMovies(String, com.miadzin.shelves.provider.movies.MoviesStore.MovieSearchListener)}
+	 * {@link biz.varkon.shelvesom.provider.movies.MoviesStore#searchMovies(String, biz.varkon.shelvesom.provider.movies.MoviesStore.MovieSearchListener)}
 	 * .
 	 */
 	public static interface MovieSearchListener {

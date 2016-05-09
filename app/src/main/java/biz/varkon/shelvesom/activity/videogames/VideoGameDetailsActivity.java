@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.miadzin.shelves.activity.videogames;
+package biz.varkon.shelvesom.activity.videogames;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -28,15 +28,15 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.miadzin.shelves.R;
-import com.miadzin.shelves.activity.SettingsActivity;
-import com.miadzin.shelves.base.BaseDetailsActivity;
-import com.miadzin.shelves.drawable.FastBitmapDrawable;
-import com.miadzin.shelves.provider.videogames.VideoGamesManager;
-import com.miadzin.shelves.provider.videogames.VideoGamesStore;
-import com.miadzin.shelves.util.ImageUtilities;
-import com.miadzin.shelves.util.TextUtilities;
-import com.miadzin.shelves.util.UIUtilities;
+import biz.varkon.shelvesom.R;
+import biz.varkon.shelvesom.activity.SettingsActivity;
+import biz.varkon.shelvesom.base.BaseDetailsActivity;
+import biz.varkon.shelvesom.drawable.FastBitmapDrawable;
+import biz.varkon.shelvesom.provider.videogames.VideoGamesManager;
+import biz.varkon.shelvesom.provider.videogames.VideoGamesStore;
+import biz.varkon.shelvesom.util.ImageUtilities;
+import biz.varkon.shelvesom.util.TextUtilities;
+import biz.varkon.shelvesom.util.UIUtilities;
 
 public class VideoGameDetailsActivity extends BaseDetailsActivity {
 	private static final String EXTRA_VIDEOGAME = "shelves.extra.videogame_id";
