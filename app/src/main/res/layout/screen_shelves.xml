@@ -16,7 +16,7 @@
 		<include layout="@layout/actionbar" />
 		<include layout="@layout/ad_banner" />
 
-		<com.miadzin.shelves.view.ShelvesView
+		<net.avabook.shelves.view.ShelvesView
 			android:id="@+id/grid_shelves" android:layout_width="fill_parent"
 			android:layout_height="fill_parent" android:cacheColorHint="#00000000"
 			android:listSelector="@android:color/transparent"

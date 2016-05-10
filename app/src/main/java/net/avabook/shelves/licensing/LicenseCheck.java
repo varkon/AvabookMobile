@@ -1,6 +1,6 @@
 package net.avabook.shelves.licensing;
 
-import com.miadzin.shelves.BuildConfig;
+import net.avabook.shelves.BuildConfig;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.util.Log;

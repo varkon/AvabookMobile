@@ -12,7 +12,7 @@
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     android:installLocation="auto"
-    package="biz.varkon.shelvesom"
+    package="net.avabook.shelves"
     android:versionCode="1"
     android:versionName="1.0.0">
 
@@ -60,7 +60,7 @@
 
     <application
         android:name="ShelvesApplication"
-        android:backupAgent=".util.backup.ShelvesomBackupAgent"
+        android:backupAgent=".util.backup.ShelvesBackupAgent"
         android:allowBackup = "true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/application_name"
@@ -358,7 +358,7 @@
 
                 <category android:name="android.intent.category.DEFAULT" />
 
-                <data android:mimeType="vnd.android.cursor.item/vnd.com.miadzin.shelves.apparel" />
+                <data android:mimeType="vnd.android.cursor.item/vnd.net.avabook.shelves.apparel" />
             </intent-filter>
         </activity>
         <activity
@@ -372,7 +372,7 @@
 
                 <category android:name="android.intent.category.DEFAULT" />
 
-                <data android:mimeType="vnd.android.cursor.item/vnd.com.miadzin.shelves.boardgames" />
+                <data android:mimeType="vnd.android.cursor.item/vnd.net.avabook.shelves.boardgames" />
             </intent-filter>
         </activity>
         <activity
@@ -386,7 +386,7 @@
 
                 <category android:name="android.intent.category.DEFAULT" />
 
-                <data android:mimeType="vnd.android.cursor.item/vnd.com.miadzin.shelves.books" />
+                <data android:mimeType="vnd.android.cursor.item/vnd.net.avabook.shelves.books" />
             </intent-filter>
         </activity>
         <activity
@@ -400,7 +400,7 @@
 
                 <category android:name="android.intent.category.DEFAULT" />
 
-                <data android:mimeType="vnd.android.cursor.item/vnd.com.miadzin.shelves.comics" />
+                <data android:mimeType="vnd.android.cursor.item/vnd.net.avabook.shelves.comics" />
             </intent-filter>
         </activity>
         <activity
@@ -414,7 +414,7 @@
 
                 <category android:name="android.intent.category.DEFAULT" />
 
-                <data android:mimeType="vnd.android.cursor.item/vnd.com.miadzin.shelves.gadgets" />
+                <data android:mimeType="vnd.android.cursor.item/vnd.net.avabook.shelves.gadgets" />
             </intent-filter>
         </activity>
         <activity
@@ -428,7 +428,7 @@
 
                 <category android:name="android.intent.category.DEFAULT" />
 
-                <data android:mimeType="vnd.android.cursor.item/vnd.com.miadzin.shelves.movies" />
+                <data android:mimeType="vnd.android.cursor.item/vnd.net.avabook.shelves.movies" />
             </intent-filter>
         </activity>
         <activity
@@ -442,7 +442,7 @@
 
                 <category android:name="android.intent.category.DEFAULT" />
 
-                <data android:mimeType="vnd.android.cursor.item/vnd.com.miadzin.shelves.music" />
+                <data android:mimeType="vnd.android.cursor.item/vnd.net.avabook.shelves.music" />
             </intent-filter>
         </activity>
         <activity
@@ -456,7 +456,7 @@
 
                 <category android:name="android.intent.category.DEFAULT" />
 
-                <data android:mimeType="vnd.android.cursor.item/vnd.com.miadzin.shelves.software" />
+                <data android:mimeType="vnd.android.cursor.item/vnd.net.avabook.shelves.software" />
             </intent-filter>
         </activity>
         <activity
@@ -470,7 +470,7 @@
 
                 <category android:name="android.intent.category.DEFAULT" />
 
-                <data android:mimeType="vnd.android.cursor.item/vnd.com.miadzin.shelves.tools" />
+                <data android:mimeType="vnd.android.cursor.item/vnd.net.avabook.shelves.tools" />
             </intent-filter>
         </activity>
         <activity
@@ -484,7 +484,7 @@
 
                 <category android:name="android.intent.category.DEFAULT" />
 
-                <data android:mimeType="vnd.android.cursor.item/vnd.com.miadzin.shelves.toys" />
+                <data android:mimeType="vnd.android.cursor.item/vnd.net.avabook.shelves.toys" />
             </intent-filter>
         </activity>
         <activity
@@ -498,7 +498,7 @@
 
                 <category android:name="android.intent.category.DEFAULT" />
 
-                <data android:mimeType="vnd.android.cursor.item/vnd.com.miadzin.shelves.videogames" />
+                <data android:mimeType="vnd.android.cursor.item/vnd.net.avabook.shelves.videogames" />
             </intent-filter>
         </activity>
 

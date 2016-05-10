@@ -488,7 +488,7 @@ public class SettingsActivity extends PreferenceActivity implements
 			findPreference("version")
 					.setSummary(
 							getPackageManager().getPackageInfo(
-									"com.miadzin.shelves", 0).versionName);
+									"net.avabook.shelves", 0).versionName);
 		} catch (NameNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

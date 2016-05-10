@@ -83,7 +83,7 @@ import net.avabook.shelves.util.UIUtilities;
 
 public class MainGridActivity extends Activity {
 	// GJT: Added this for What's New launch
-	private static final String PACKAGE_NAME = "com.miadzin.shelves";
+	private static final String PACKAGE_NAME = "net.avabook.shelves";
 
 	public static final int ADD_REMOVE_ITEM_DIALOG = 1;
 	private static final int NO_ITEM_DIALOG = 2;

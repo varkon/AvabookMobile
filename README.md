@@ -19,7 +19,7 @@ Shelves lets you organize your collection by:
 
 You can loan items to friends in your contact list, or rate items for your personal use. You can also opt to place items in a separate wishlist category.
 
-[Grab the app on Google Play](https://play.google.com/store/apps/details?id=com.miadzin.shelves&hl=en)!
+[Grab the app on Google Play](https://play.google.com/store/apps/details?id=net.avabook.shelves&hl=en)!
 
 ## Differences Between This App and the Published Version
 
@@ -64,7 +64,7 @@ My infinite gratitude to the people who downloaded and supported this app,  as w
 
 ## Donation
 
-If this code or app helped you out in any way, you might want to consider [buying the unlocker on Google Play](https://play.google.com/store/apps/details?id=com.miadzin.shelves.unlocker&hl=en). It'd be a nice gesture! :grinning:
+If this code or app helped you out in any way, you might want to consider [buying the unlocker on Google Play](https://play.google.com/store/apps/details?id=net.avabook.shelves.unlocker&hl=en). It'd be a nice gesture! :grinning:
 
 ## License
 

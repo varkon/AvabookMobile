@@ -1,5 +1,5 @@
 Timestamp	REPORT_ID	APP_VERSION_CODE	APP_VERSION_NAME	PACKAGE_NAME	FILE_PATH	PHONE_MODEL	BRAND	PRODUCT	ANDROID_VERSION	BUILD	TOTAL_MEM_SIZE	AVAILABLE_MEM_SIZE	CUSTOM_DATA	IS_SILENT	STACK_TRACE	INITIAL_CONFIGURATION	CRASH_CONFIGURATION	DISPLAY	USER_COMMENT	USER_EMAIL	USER_APP_START_DATE	USER_CRASH_DATE	DUMPSYS_MEMINFO	DROPBOX	LOGCAT	EVENTSLOG	RADIOLOG	DEVICE_ID	INSTALLATION_ID	DEVICE_FEATURES	ENVIRONMENT	SHARED_PREFERENCES	SETTINGS_SYSTEM	SETTINGS_SECURE
-8/19/2011 10:39:17	fbcf34f3-f27e-44ce-a4f8-dbba75b96301	45	3.0.2	com.miadzin.shelves	/data/data/com.miadzin.shelves/files	ADR6400L	verizon_wwe	htc_mecha	2.2.1	"BOARD=mecha
+8/19/2011 10:39:17	fbcf34f3-f27e-44ce-a4f8-dbba75b96301	45	3.0.2	net.avabook.shelves	/data/data/net.avabook.shelves/files	ADR6400L	verizon_wwe	htc_mecha	2.2.1	"BOARD=mecha
 BOOTLOADER=1.04.0000
 BRAND=verizon_wwe
 CPU_ABI=armeabi-v7a
@@ -22,9 +22,9 @@ USER=root
 "	2800533504	696397824			"java.lang.OutOfMemoryError: bitmap size exceeds VM budget(Heap Size=7095KB, Allocated=5745KB, Bitmap Size=17143KB)
 	at android.graphics.BitmapFactory.nativeDecodeStream(Native Method)
 	at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:605)
-	at com.miadzin.shelves.util.c.c(ImageUtilities.java:379)
-	at com.miadzin.shelves.util.c.a(ImageUtilities.java:168)
-	at com.miadzin.shelves.activity.af.bindView(BaseItemAdapter.java:222)
+	at net.avabook.shelves.util.c.c(ImageUtilities.java:379)
+	at net.avabook.shelves.util.c.a(ImageUtilities.java:168)
+	at net.avabook.shelves.activity.af.bindView(BaseItemAdapter.java:222)
 	at android.widget.CursorAdapter.getView(CursorAdapter.java:186)
 	at android.widget.AbsListView.obtainView(AbsListView.java:1336)
 	at android.widget.GridView.makeAndAddView(GridView.java:1219)
@@ -99,7 +99,7 @@ metrics.xdpi=217.71428
 metrics.ydpi=216.17021"		N/A	2011-08-19T12:32:26.000-05:00	2011-08-19T12:39:29.000-05:00	"Applications Memory Usage (kB):
 Uptime: 29403310 Realtime: 48104620
 
-** MEMINFO in pid 11289 [com.miadzin.shelves] **
+** MEMINFO in pid 11289 [net.avabook.shelves] **
                     native   dalvik    other    total    limit   bitmap nativeBmp
             size:    31320     6839      N/A    38159    24576      N/A      N/A
        allocated:    30834     5814      N/A    36648      N/A    17143        0
@@ -310,7 +310,7 @@ WIFI_NUM_ALLOWED_CHANNELS=11
 WIFI_ON=1
 WIFI_PWR_ACTIVE_MODE=0
 "
-8/21/2011 9:22:22	3bd2cd14-3810-4d90-b93d-bb6c13fc9dee	45	3.0.2	com.miadzin.shelves	/data/data/com.miadzin.shelves/files	T-Mobile myTouch 3G Slide	tmobile	htc_espresso	2.1-update1	"BOARD=espresso
+8/21/2011 9:22:22	3bd2cd14-3810-4d90-b93d-bb6c13fc9dee	45	3.0.2	net.avabook.shelves	/data/data/net.avabook.shelves/files	T-Mobile myTouch 3G Slide	tmobile	htc_espresso	2.1-update1	"BOARD=espresso
 BRAND=tmobile
 CPU_ABI=armeabi
 DEVICE=espresso
@@ -328,9 +328,9 @@ USER=root
 "	152174592	17051648			"java.lang.OutOfMemoryError: bitmap size exceeds VM budget
 	at android.graphics.BitmapFactory.nativeDecodeStream(Native Method)
 	at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:476)
-	at com.miadzin.shelves.util.c.c(ImageUtilities.java:379)
-	at com.miadzin.shelves.util.c.a(ImageUtilities.java:168)
-	at com.miadzin.shelves.activity.af.bindView(BaseItemAdapter.java:222)
+	at net.avabook.shelves.util.c.c(ImageUtilities.java:379)
+	at net.avabook.shelves.util.c.a(ImageUtilities.java:168)
+	at net.avabook.shelves.activity.af.bindView(BaseItemAdapter.java:222)
 	at android.widget.CursorAdapter.getView(CursorAdapter.java:186)
 	at android.widget.AbsListView.obtainView(AbsListView.java:1256)
 	at android.widget.GridView.makeAndAddView(GridView.java:1218)
@@ -402,7 +402,7 @@ DUMP OF SERVICE meminfo:
 Applications Memory Usage (kB):
 Uptime: 263253922 Realtime: 483407262
 
-** MEMINFO in pid 9135 [com.miadzin.shelves] **
+** MEMINFO in pid 9135 [net.avabook.shelves] **
                     native   dalvik    other    total    limit   bitmap nativeBmp
             size:    21036     8327      N/A    29363    16384      N/A      N/A
        allocated:    17093     4658      N/A    21751      N/A     8027        0
@@ -538,7 +538,7 @@ WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ON=0
 WIFI_NUM_ALLOWED_CHANNELS=11
 WIFI_ON=0
 "
-8/22/2011 0:56:20	643d2149-5944-4109-a04d-87154bfd2924	45	3.0.2	com.miadzin.shelves	/data/data/com.miadzin.shelves/files	Ls 670	sprint	LGE	2.2.2	"BOARD=thunderc
+8/22/2011 0:56:20	643d2149-5944-4109-a04d-87154bfd2924	45	3.0.2	net.avabook.shelves	/data/data/net.avabook.shelves/files	Ls 670	sprint	LGE	2.2.2	"BOARD=thunderc
 BOOTLOADER=2.2
 BRAND=sprint
 CPU_ABI=armeabi
@@ -634,7 +634,7 @@ metrics.xdpi=159.37254
 metrics.ydpi=160.42105"		N/A	2011-08-22T01:56:19.000-06:00	2011-08-22T01:56:30.000-06:00	"Applications Memory Usage (kB):
 Uptime: 7239392 Realtime: 50625690
 
-** MEMINFO in pid 2914 [com.miadzin.shelves] **
+** MEMINFO in pid 2914 [net.avabook.shelves] **
                     native   dalvik    other    total
             size:     8140     4807      N/A    12947
        allocated:     7849     4089      N/A    11938
@@ -794,7 +794,7 @@ WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ON=1
 WIFI_NUM_ALLOWED_CHANNELS=11
 WIFI_ON=0
 "
-8/24/2011 14:49:56	5141018f-ecd0-43ce-82a3-a53cb11c3728	45	3.0.2	com.miadzin.shelves	/data/data/com.miadzin.shelves/files	Android-for-Rockchip-2818	sdkDemo	sdkDemo	2.2.1	"BOARD=unknown
+8/24/2011 14:49:56	5141018f-ecd0-43ce-82a3-a53cb11c3728	45	3.0.2	net.avabook.shelves	/data/data/net.avabook.shelves/files	Android-for-Rockchip-2818	sdkDemo	sdkDemo	2.2.1	"BOARD=unknown
 BOOTLOADER=unknown
 BRAND=sdkDemo
 CPU_ABI=armeabi
@@ -814,7 +814,7 @@ TIME=1304481991000
 TYPE=user
 UNKNOWN=unknown
 USER=root
-"	259963904	196974592			"java.lang.RuntimeException: Unable to start activity ComponentInfo{com.miadzin.shelves/com.miadzin.shelves.activity.apparel.ApparelDetailsActivity}: java.lang.NullPointerException
+"	259963904	196974592			"java.lang.RuntimeException: Unable to start activity ComponentInfo{net.avabook.shelves/net.avabook.shelves.activity.apparel.ApparelDetailsActivity}: java.lang.NullPointerException
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2663)
 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2679)
 	at android.app.ActivityThread.access$2300(ActivityThread.java:125)
@@ -828,12 +828,12 @@ USER=root
 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
 	at dalvik.system.NativeStart.main(Native Method)
 Caused by: java.lang.NullPointerException
-	at com.miadzin.shelves.activity.apparel.ApparelDetailsActivity.onCreate(ApparelDetailsActivity.java:53)
+	at net.avabook.shelves.activity.apparel.ApparelDetailsActivity.onCreate(ApparelDetailsActivity.java:53)
 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2627)
 	... 11 more
 java.lang.NullPointerException
-	at com.miadzin.shelves.activity.apparel.ApparelDetailsActivity.onCreate(ApparelDetailsActivity.java:53)
+	at net.avabook.shelves.activity.apparel.ApparelDetailsActivity.onCreate(ApparelDetailsActivity.java:53)
 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2627)
 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2679)
@@ -889,7 +889,7 @@ metrics.xdpi=25.4
 metrics.ydpi=25.4"		N/A	2011-08-05T14:39:36.000+00:00	2011-08-05T14:39:38.000+00:00	"Applications Memory Usage (kB):
 Uptime: 22246273 Realtime: 139050255
 
-** MEMINFO in pid 12990 [com.miadzin.shelves] **
+** MEMINFO in pid 12990 [net.avabook.shelves] **
                     native   dalvik    other    total
             size:     5160     3207      N/A     8367
        allocated:     5120     2805      N/A     7925
@@ -1019,7 +1019,7 @@ USB_MASS_STORAGE_ENABLED=1
 WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ON=0
 WIFI_ON=0
 "
-8/27/2011 12:37:00	e083a480-5814-44e7-9765-b97979602a96	45	3.0.2	com.miadzin.shelves	/data/data/com.miadzin.shelves/files	T-Mobile myTouch 3G Slide	tmobile	htc_espresso	2.1-update1	"BOARD=espresso
+8/27/2011 12:37:00	e083a480-5814-44e7-9765-b97979602a96	45	3.0.2	net.avabook.shelves	/data/data/net.avabook.shelves/files	T-Mobile myTouch 3G Slide	tmobile	htc_espresso	2.1-update1	"BOARD=espresso
 BRAND=tmobile
 CPU_ABI=armeabi
 DEVICE=espresso
@@ -1037,9 +1037,9 @@ USER=root
 "	152174592	16310272			"java.lang.OutOfMemoryError: bitmap size exceeds VM budget
 	at android.graphics.BitmapFactory.nativeDecodeStream(Native Method)
 	at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:476)
-	at com.miadzin.shelves.util.c.c(ImageUtilities.java:379)
-	at com.miadzin.shelves.util.c.a(ImageUtilities.java:168)
-	at com.miadzin.shelves.activity.af.bindView(BaseItemAdapter.java:222)
+	at net.avabook.shelves.util.c.c(ImageUtilities.java:379)
+	at net.avabook.shelves.util.c.a(ImageUtilities.java:168)
+	at net.avabook.shelves.activity.af.bindView(BaseItemAdapter.java:222)
 	at android.widget.CursorAdapter.getView(CursorAdapter.java:186)
 	at android.widget.AbsListView.obtainView(AbsListView.java:1256)
 	at android.widget.GridView.makeAndAddView(GridView.java:1218)
@@ -1111,7 +1111,7 @@ DUMP OF SERVICE meminfo:
 Applications Memory Usage (kB):
 Uptime: 6983287 Realtime: 88525423
 
-** MEMINFO in pid 821 [com.miadzin.shelves] **
+** MEMINFO in pid 821 [net.avabook.shelves] **
                     native   dalvik    other    total    limit   bitmap nativeBmp
             size:    19284     7623      N/A    26907    16384      N/A      N/A
        allocated:    17442     5138      N/A    22580      N/A     8731        0
@@ -1247,7 +1247,7 @@ WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ON=0
 WIFI_NUM_ALLOWED_CHANNELS=11
 WIFI_ON=0
 "
-8/29/2011 0:19:36	c263dcd2-936b-4831-94f9-386ab75936ca	44	3.0.1	com.miadzin.shelves	/data/data/com.miadzin.shelves/files	GT-I9000	samsung	GT-I9000	2.2	"BOARD=GT-I9000
+8/29/2011 0:19:36	c263dcd2-936b-4831-94f9-386ab75936ca	44	3.0.1	net.avabook.shelves	/data/data/net.avabook.shelves/files	GT-I9000	samsung	GT-I9000	2.2	"BOARD=GT-I9000
 BOOTLOADER=unknown
 BRAND=samsung
 CPU_ABI=armeabi-v7a
@@ -1285,8 +1285,8 @@ Caused by: java.lang.IllegalStateException: get field slot from row 1 col 0 fail
 	at android.database.AbstractCursor.moveToPosition(AbstractCursor.java:188)
 	at android.database.AbstractCursor.moveToNext(AbstractCursor.java:256)
 	at android.database.CursorWrapper.moveToNext(CursorWrapper.java:191)
-	at com.miadzin.shelves.activity.u.a(LoadImagesActivity.java:296)
-	at com.miadzin.shelves.activity.u.doInBackground(LoadImagesActivity.java:1)
+	at net.avabook.shelves.activity.u.a(LoadImagesActivity.java:296)
+	at net.avabook.shelves.activity.u.doInBackground(LoadImagesActivity.java:1)
 	at android.os.AsyncTask$2.call(AsyncTask.java:185)
 	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:305)
 	... 4 more
@@ -1299,8 +1299,8 @@ java.lang.IllegalStateException: get field slot from row 1 col 0 failed
 	at android.database.AbstractCursor.moveToPosition(AbstractCursor.java:188)
 	at android.database.AbstractCursor.moveToNext(AbstractCursor.java:256)
 	at android.database.CursorWrapper.moveToNext(CursorWrapper.java:191)
-	at com.miadzin.shelves.activity.u.a(LoadImagesActivity.java:296)
-	at com.miadzin.shelves.activity.u.doInBackground(LoadImagesActivity.java:1)
+	at net.avabook.shelves.activity.u.a(LoadImagesActivity.java:296)
+	at net.avabook.shelves.activity.u.doInBackground(LoadImagesActivity.java:1)
 	at android.os.AsyncTask$2.call(AsyncTask.java:185)
 	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:305)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:137)
@@ -1351,7 +1351,7 @@ metrics.xdpi=234.46153
 metrics.ydpi=236.27907"		N/A	2011-08-03T11:17:39.000+02:00	2011-08-03T11:35:13.000+02:00	"Applications Memory Usage (kB):
 Uptime: 1189195 Realtime: 1189195
 
-** MEMINFO in pid 3224 [com.miadzin.shelves] **
+** MEMINFO in pid 3224 [net.avabook.shelves] **
                     native   dalvik    other    total
             size:    14176     5255      N/A    19431
        allocated:    12249     4351      N/A    16600
@@ -1537,7 +1537,7 @@ VOICE_RECOGNITION_SERVICE=com.google.android.voicesearch/.GoogleRecognitionServi
 WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ON=1
 WIFI_ON=0
 "
-8/29/2011 0:19:40	b5dc17dc-48ac-4e85-8cf7-170b0d89fb97	44	3.0.1	com.miadzin.shelves	/data/data/com.miadzin.shelves/files	GT-I9000	samsung	GT-I9000	2.2	"BOARD=GT-I9000
+8/29/2011 0:19:40	b5dc17dc-48ac-4e85-8cf7-170b0d89fb97	44	3.0.1	net.avabook.shelves	/data/data/net.avabook.shelves/files	GT-I9000	samsung	GT-I9000	2.2	"BOARD=GT-I9000
 BOOTLOADER=unknown
 BRAND=samsung
 CPU_ABI=armeabi-v7a
@@ -1575,8 +1575,8 @@ Caused by: java.lang.IllegalStateException: get field slot from row 1014 col 0 f
 	at android.database.AbstractCursor.moveToPosition(AbstractCursor.java:188)
 	at android.database.AbstractCursor.moveToNext(AbstractCursor.java:256)
 	at android.database.CursorWrapper.moveToNext(CursorWrapper.java:191)
-	at com.miadzin.shelves.activity.u.a(LoadImagesActivity.java:296)
-	at com.miadzin.shelves.activity.u.doInBackground(LoadImagesActivity.java:1)
+	at net.avabook.shelves.activity.u.a(LoadImagesActivity.java:296)
+	at net.avabook.shelves.activity.u.doInBackground(LoadImagesActivity.java:1)
 	at android.os.AsyncTask$2.call(AsyncTask.java:185)
 	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:305)
 	... 4 more
@@ -1589,8 +1589,8 @@ java.lang.IllegalStateException: get field slot from row 1014 col 0 failed
 	at android.database.AbstractCursor.moveToPosition(AbstractCursor.java:188)
 	at android.database.AbstractCursor.moveToNext(AbstractCursor.java:256)
 	at android.database.CursorWrapper.moveToNext(CursorWrapper.java:191)
-	at com.miadzin.shelves.activity.u.a(LoadImagesActivity.java:296)
-	at com.miadzin.shelves.activity.u.doInBackground(LoadImagesActivity.java:1)
+	at net.avabook.shelves.activity.u.a(LoadImagesActivity.java:296)
+	at net.avabook.shelves.activity.u.doInBackground(LoadImagesActivity.java:1)
 	at android.os.AsyncTask$2.call(AsyncTask.java:185)
 	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:305)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:137)
@@ -1641,7 +1641,7 @@ metrics.xdpi=234.46153
 metrics.ydpi=236.27907"		N/A	2011-08-03T13:05:06.000+02:00	2011-08-03T13:08:41.000+02:00	"Applications Memory Usage (kB):
 Uptime: 3536231 Realtime: 6817080
 
-** MEMINFO in pid 5532 [com.miadzin.shelves] **
+** MEMINFO in pid 5532 [net.avabook.shelves] **
                     native   dalvik    other    total
             size:    18988     6087      N/A    25075
        allocated:    18042     4894      N/A    22936
@@ -1827,7 +1827,7 @@ VOICE_RECOGNITION_SERVICE=com.google.android.voicesearch/.GoogleRecognitionServi
 WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ON=1
 WIFI_ON=0
 "
-8/29/2011 0:19:42	ef103641-3ed7-4542-893f-2396ba2bf301	44	3.0.1	com.miadzin.shelves	/data/data/com.miadzin.shelves/files	GT-I9000	samsung	GT-I9000	2.2	"BOARD=GT-I9000
+8/29/2011 0:19:42	ef103641-3ed7-4542-893f-2396ba2bf301	44	3.0.1	net.avabook.shelves	/data/data/net.avabook.shelves/files	GT-I9000	samsung	GT-I9000	2.2	"BOARD=GT-I9000
 BOOTLOADER=unknown
 BRAND=samsung
 CPU_ABI=armeabi-v7a
@@ -1861,8 +1861,8 @@ Caused by: java.lang.OutOfMemoryError: bitmap size exceeds VM budget
 	at android.graphics.Bitmap.createBitmap(Bitmap.java:468)
 	at android.graphics.Bitmap.createBitmap(Bitmap.java:435)
 	at android.graphics.Bitmap.createScaledBitmap(Bitmap.java:340)
-	at com.miadzin.shelves.activity.u.a(LoadImagesActivity.java:286)
-	at com.miadzin.shelves.activity.u.doInBackground(LoadImagesActivity.java:1)
+	at net.avabook.shelves.activity.u.a(LoadImagesActivity.java:286)
+	at net.avabook.shelves.activity.u.doInBackground(LoadImagesActivity.java:1)
 	at android.os.AsyncTask$2.call(AsyncTask.java:185)
 	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:305)
 	... 4 more
@@ -1871,8 +1871,8 @@ java.lang.OutOfMemoryError: bitmap size exceeds VM budget
 	at android.graphics.Bitmap.createBitmap(Bitmap.java:468)
 	at android.graphics.Bitmap.createBitmap(Bitmap.java:435)
 	at android.graphics.Bitmap.createScaledBitmap(Bitmap.java:340)
-	at com.miadzin.shelves.activity.u.a(LoadImagesActivity.java:286)
-	at com.miadzin.shelves.activity.u.doInBackground(LoadImagesActivity.java:1)
+	at net.avabook.shelves.activity.u.a(LoadImagesActivity.java:286)
+	at net.avabook.shelves.activity.u.doInBackground(LoadImagesActivity.java:1)
 	at android.os.AsyncTask$2.call(AsyncTask.java:185)
 	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:305)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:137)
@@ -1923,7 +1923,7 @@ metrics.xdpi=234.46153
 metrics.ydpi=236.27907"		N/A	2011-08-03T13:12:02.000+02:00	2011-08-03T13:17:58.000+02:00	"Applications Memory Usage (kB):
 Uptime: 4073830 Realtime: 7354679
 
-** MEMINFO in pid 5981 [com.miadzin.shelves] **
+** MEMINFO in pid 5981 [net.avabook.shelves] **
                     native   dalvik    other    total
             size:    49628     6087      N/A    55715
        allocated:    49563     5154      N/A    54717
@@ -2101,7 +2101,7 @@ VOICE_RECOGNITION_SERVICE=com.google.android.voicesearch/.GoogleRecognitionServi
 WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ON=1
 WIFI_ON=0
 "
-8/29/2011 0:19:43	60b4a7b8-60f5-4eca-80f1-faf6aaa64f13	44	3.0.1	com.miadzin.shelves	/data/data/com.miadzin.shelves/files	GT-I9000	samsung	GT-I9000	2.2	"BOARD=GT-I9000
+8/29/2011 0:19:43	60b4a7b8-60f5-4eca-80f1-faf6aaa64f13	44	3.0.1	net.avabook.shelves	/data/data/net.avabook.shelves/files	GT-I9000	samsung	GT-I9000	2.2	"BOARD=GT-I9000
 BOOTLOADER=unknown
 BRAND=samsung
 CPU_ABI=armeabi-v7a
@@ -2135,8 +2135,8 @@ Caused by: java.lang.OutOfMemoryError: bitmap size exceeds VM budget
 	at android.graphics.Bitmap.createBitmap(Bitmap.java:468)
 	at android.graphics.Bitmap.createBitmap(Bitmap.java:435)
 	at android.graphics.Bitmap.createScaledBitmap(Bitmap.java:340)
-	at com.miadzin.shelves.activity.u.a(LoadImagesActivity.java:286)
-	at com.miadzin.shelves.activity.u.doInBackground(LoadImagesActivity.java:1)
+	at net.avabook.shelves.activity.u.a(LoadImagesActivity.java:286)
+	at net.avabook.shelves.activity.u.doInBackground(LoadImagesActivity.java:1)
 	at android.os.AsyncTask$2.call(AsyncTask.java:185)
 	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:305)
 	... 4 more
@@ -2145,8 +2145,8 @@ java.lang.OutOfMemoryError: bitmap size exceeds VM budget
 	at android.graphics.Bitmap.createBitmap(Bitmap.java:468)
 	at android.graphics.Bitmap.createBitmap(Bitmap.java:435)
 	at android.graphics.Bitmap.createScaledBitmap(Bitmap.java:340)
-	at com.miadzin.shelves.activity.u.a(LoadImagesActivity.java:286)
-	at com.miadzin.shelves.activity.u.doInBackground(LoadImagesActivity.java:1)
+	at net.avabook.shelves.activity.u.a(LoadImagesActivity.java:286)
+	at net.avabook.shelves.activity.u.doInBackground(LoadImagesActivity.java:1)
 	at android.os.AsyncTask$2.call(AsyncTask.java:185)
 	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:305)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:137)
@@ -2197,7 +2197,7 @@ metrics.xdpi=234.46153
 metrics.ydpi=236.27907"		N/A	2011-08-03T13:18:06.000+02:00	2011-08-03T13:29:21.000+02:00	"Applications Memory Usage (kB):
 Uptime: 4709356 Realtime: 8039651
 
-** MEMINFO in pid 6135 [com.miadzin.shelves] **
+** MEMINFO in pid 6135 [net.avabook.shelves] **
                     native   dalvik    other    total
             size:    50076     6023      N/A    56099
        allocated:    49582     5658      N/A    55240
@@ -2375,7 +2375,7 @@ VOICE_RECOGNITION_SERVICE=com.google.android.voicesearch/.GoogleRecognitionServi
 WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ON=1
 WIFI_ON=0
 "
-1/16/2012 15:55:46	67212048-c0db-4578-8858-f911cfccc727	45	3.0.2	com.miadzin.shelves	/data/data/com.miadzin.shelves/files	Ls 670	sprint	LGE	2.3.3	"BOARD=thunderc
+1/16/2012 15:55:46	67212048-c0db-4578-8858-f911cfccc727	45	3.0.2	net.avabook.shelves	/data/data/net.avabook.shelves/files	Ls 670	sprint	LGE	2.3.3	"BOARD=thunderc
 BOOTLOADER=unknown
 BRAND=sprint
 CPU_ABI=armeabi
@@ -2399,9 +2399,9 @@ USER=lge
 "	172883968	20967424			"java.lang.OutOfMemoryError: bitmap size exceeds VM budget
 	at android.graphics.BitmapFactory.nativeDecodeStream(Native Method)
 	at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:470)
-	at com.miadzin.shelves.util.c.c(ImageUtilities.java:379)
-	at com.miadzin.shelves.util.c.a(ImageUtilities.java:168)
-	at com.miadzin.shelves.activity.af.bindView(BaseItemAdapter.java:222)
+	at net.avabook.shelves.util.c.c(ImageUtilities.java:379)
+	at net.avabook.shelves.util.c.a(ImageUtilities.java:168)
+	at net.avabook.shelves.activity.af.bindView(BaseItemAdapter.java:222)
 	at android.widget.CursorAdapter.getView(CursorAdapter.java:186)
 	at android.widget.AbsListView.obtainView(AbsListView.java:1409)
 	at android.widget.GridView.onMeasure(GridView.java:935)
@@ -2474,7 +2474,7 @@ metrics.xdpi=159.37254
 metrics.ydpi=160.42105"		N/A	2012-01-16T15:33:56.000-08:00	2012-01-16T15:55:58.000-08:00	"Applications Memory Usage (kB):
 Uptime: 8035308 Realtime: 9181759
 
-** MEMINFO in pid 5321 [com.miadzin.shelves] **
+** MEMINFO in pid 5321 [net.avabook.shelves] **
                     native   dalvik    other    total
             size:    38100    10631      N/A    48731
        allocated:    37446     6646      N/A    44092
@@ -2644,7 +2644,7 @@ WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ON=1
 WIFI_NUM_ALLOWED_CHANNELS=11
 WIFI_ON=0
 "
-1/18/2012 5:52:28	55756b82-b259-4cec-80b1-e4995a5e665e	44	3.0.1	com.miadzin.shelves	/data/data/com.miadzin.shelves/files	Nexus S	google	soju	4.0.3	"BOARD=herring
+1/18/2012 5:52:28	55756b82-b259-4cec-80b1-e4995a5e665e	44	3.0.1	net.avabook.shelves	/data/data/net.avabook.shelves/files	Nexus S	google	soju	4.0.3	"BOARD=herring
 BOOTLOADER=I9020XXKL1
 BRAND=google
 CPU_ABI=armeabi-v7a
@@ -2666,7 +2666,7 @@ TIME=1324025803000
 TYPE=user
 UNKNOWN=unknown
 USER=android-build
-"	1056858112	543772672			"java.lang.RuntimeException: Unable to start activity ComponentInfo{com.miadzin.shelves/com.miadzin.shelves.activity.TabSelector}: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.miadzin.shelves/com.miadzin.shelves.activity.MainGridActivity}: java.lang.NullPointerException
+"	1056858112	543772672			"java.lang.RuntimeException: Unable to start activity ComponentInfo{net.avabook.shelves/net.avabook.shelves.activity.TabSelector}: java.lang.RuntimeException: Unable to start activity ComponentInfo{net.avabook.shelves/net.avabook.shelves.activity.MainGridActivity}: java.lang.NullPointerException
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1956)
 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1981)
 	at android.app.ActivityThread.access$600(ActivityThread.java:123)
@@ -2679,7 +2679,7 @@ USER=android-build
 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:784)
 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:551)
 	at dalvik.system.NativeStart.main(Native Method)
-Caused by: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.miadzin.shelves/com.miadzin.shelves.activity.MainGridActivity}: java.lang.NullPointerException
+Caused by: java.lang.RuntimeException: Unable to start activity ComponentInfo{net.avabook.shelves/net.avabook.shelves.activity.MainGridActivity}: java.lang.NullPointerException
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1956)
 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:1797)
 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:135)
@@ -2687,20 +2687,20 @@ Caused by: java.lang.RuntimeException: Unable to start activity ComponentInfo{co
 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:682)
 	at android.widget.TabHost.setCurrentTab(TabHost.java:346)
 	at android.widget.TabHost.addTab(TabHost.java:236)
-	at com.miadzin.shelves.activity.TabSelector.a(TabSelector.java:89)
-	at com.miadzin.shelves.activity.TabSelector.onCreate(TabSelector.java:60)
+	at net.avabook.shelves.activity.TabSelector.a(TabSelector.java:89)
+	at net.avabook.shelves.activity.TabSelector.onCreate(TabSelector.java:60)
 	at android.app.Activity.performCreate(Activity.java:4465)
 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1049)
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1920)
 	... 11 more
 Caused by: java.lang.NullPointerException
-	at com.miadzin.shelves.activity.MainGridActivity.a(MainGridActivity.java:289)
-	at com.miadzin.shelves.activity.MainGridActivity.onCreate(MainGridActivity.java:154)
+	at net.avabook.shelves.activity.MainGridActivity.a(MainGridActivity.java:289)
+	at net.avabook.shelves.activity.MainGridActivity.onCreate(MainGridActivity.java:154)
 	at android.app.Activity.performCreate(Activity.java:4465)
 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1049)
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1920)
 	... 22 more
-java.lang.RuntimeException: Unable to start activity ComponentInfo{com.miadzin.shelves/com.miadzin.shelves.activity.MainGridActivity}: java.lang.NullPointerException
+java.lang.RuntimeException: Unable to start activity ComponentInfo{net.avabook.shelves/net.avabook.shelves.activity.MainGridActivity}: java.lang.NullPointerException
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1956)
 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:1797)
 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:135)
@@ -2708,8 +2708,8 @@ java.lang.RuntimeException: Unable to start activity ComponentInfo{com.miadzin.s
 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:682)
 	at android.widget.TabHost.setCurrentTab(TabHost.java:346)
 	at android.widget.TabHost.addTab(TabHost.java:236)
-	at com.miadzin.shelves.activity.TabSelector.a(TabSelector.java:89)
-	at com.miadzin.shelves.activity.TabSelector.onCreate(TabSelector.java:60)
+	at net.avabook.shelves.activity.TabSelector.a(TabSelector.java:89)
+	at net.avabook.shelves.activity.TabSelector.onCreate(TabSelector.java:60)
 	at android.app.Activity.performCreate(Activity.java:4465)
 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1049)
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1920)
@@ -2725,15 +2725,15 @@ java.lang.RuntimeException: Unable to start activity ComponentInfo{com.miadzin.s
 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:551)
 	at dalvik.system.NativeStart.main(Native Method)
 Caused by: java.lang.NullPointerException
-	at com.miadzin.shelves.activity.MainGridActivity.a(MainGridActivity.java:289)
-	at com.miadzin.shelves.activity.MainGridActivity.onCreate(MainGridActivity.java:154)
+	at net.avabook.shelves.activity.MainGridActivity.a(MainGridActivity.java:289)
+	at net.avabook.shelves.activity.MainGridActivity.onCreate(MainGridActivity.java:154)
 	at android.app.Activity.performCreate(Activity.java:4465)
 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1049)
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1920)
 	... 22 more
 java.lang.NullPointerException
-	at com.miadzin.shelves.activity.MainGridActivity.a(MainGridActivity.java:289)
-	at com.miadzin.shelves.activity.MainGridActivity.onCreate(MainGridActivity.java:154)
+	at net.avabook.shelves.activity.MainGridActivity.a(MainGridActivity.java:289)
+	at net.avabook.shelves.activity.MainGridActivity.onCreate(MainGridActivity.java:154)
 	at android.app.Activity.performCreate(Activity.java:4465)
 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1049)
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1920)
@@ -2743,8 +2743,8 @@ java.lang.NullPointerException
 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:682)
 	at android.widget.TabHost.setCurrentTab(TabHost.java:346)
 	at android.widget.TabHost.addTab(TabHost.java:236)
-	at com.miadzin.shelves.activity.TabSelector.a(TabSelector.java:89)
-	at com.miadzin.shelves.activity.TabSelector.onCreate(TabSelector.java:60)
+	at net.avabook.shelves.activity.TabSelector.a(TabSelector.java:89)
+	at net.avabook.shelves.activity.TabSelector.onCreate(TabSelector.java:60)
 	at android.app.Activity.performCreate(Activity.java:4465)
 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1049)
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1920)
@@ -2969,7 +2969,7 @@ WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ON=1
 WIFI_ON=1
 WIFI_SAVED_STATE=0
 "
-2/22/2012 22:16:49	5902ce7e-0e6a-426f-9711-d512eacaf4b9	45	3.0.2	com.miadzin.shelves	/data/data/com.miadzin.shelves/files	S8	rockchip	rk29sdk	2.3.1	"BOARD=rk29sdk
+2/22/2012 22:16:49	5902ce7e-0e6a-426f-9711-d512eacaf4b9	45	3.0.2	net.avabook.shelves	/data/data/net.avabook.shelves/files	S8	rockchip	rk29sdk	2.3.1	"BOARD=rk29sdk
 BOOTLOADER=unknown
 BRAND=rockchip
 CPU_ABI=armeabi-v7a
@@ -2990,7 +2990,7 @@ TIME=1324693969000
 TYPE=eng
 UNKNOWN=unknown
 USER=zhansb
-"	528424960	391843840			"java.lang.RuntimeException: Unable to start activity ComponentInfo{com.miadzin.shelves/com.miadzin.shelves.activity.books.BookDetailsActivity}: java.lang.NullPointerException
+"	528424960	391843840			"java.lang.RuntimeException: Unable to start activity ComponentInfo{net.avabook.shelves/net.avabook.shelves.activity.books.BookDetailsActivity}: java.lang.NullPointerException
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1622)
 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1638)
 	at android.app.ActivityThread.access$1500(ActivityThread.java:117)
@@ -3004,12 +3004,12 @@ USER=zhansb
 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:597)
 	at dalvik.system.NativeStart.main(Native Method)
 Caused by: java.lang.NullPointerException
-	at com.miadzin.shelves.activity.books.BookDetailsActivity.onCreate(BookDetailsActivity.java:56)
+	at net.avabook.shelves.activity.books.BookDetailsActivity.onCreate(BookDetailsActivity.java:56)
 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1586)
 	... 11 more
 java.lang.NullPointerException
-	at com.miadzin.shelves.activity.books.BookDetailsActivity.onCreate(BookDetailsActivity.java:56)
+	at net.avabook.shelves.activity.books.BookDetailsActivity.onCreate(BookDetailsActivity.java:56)
 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1586)
 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1638)
@@ -3065,7 +3065,7 @@ metrics.xdpi=321.10617
 metrics.ydpi=319.79016"		N/A	2012-02-23T14:16:59.000+08:00	2012-02-23T14:17:04.000+08:00	"Applications Memory Usage (kB):
 Uptime: 5097985 Realtime: 7039278
 
-** MEMINFO in pid 1936 [com.miadzin.shelves] **
+** MEMINFO in pid 1936 [net.avabook.shelves] **
                     native   dalvik    other    total
             size:    31256     5831      N/A    37087
        allocated:    31249     3057      N/A    34306
@@ -3207,7 +3207,7 @@ VOICE_RECOGNITION_SERVICE=com.google.android.voicesearch/.GoogleRecognitionServi
 WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ON=1
 WIFI_ON=1
 "
-2/22/2012 23:09:26	dd5278a3-2724-4307-932c-2976cb53326b	45	3.0.2	com.miadzin.shelves	/data/data/com.miadzin.shelves/files	S8	rockchip	rk29sdk	2.3.1	"BOARD=rk29sdk
+2/22/2012 23:09:26	dd5278a3-2724-4307-932c-2976cb53326b	45	3.0.2	net.avabook.shelves	/data/data/net.avabook.shelves/files	S8	rockchip	rk29sdk	2.3.1	"BOARD=rk29sdk
 BOOTLOADER=unknown
 BRAND=rockchip
 CPU_ABI=armeabi-v7a
@@ -3228,7 +3228,7 @@ TIME=1324693969000
 TYPE=eng
 UNKNOWN=unknown
 USER=zhansb
-"	528424960	426934272			"java.lang.RuntimeException: Unable to start activity ComponentInfo{com.miadzin.shelves/com.miadzin.shelves.activity.books.BookDetailsActivity}: java.lang.NullPointerException
+"	528424960	426934272			"java.lang.RuntimeException: Unable to start activity ComponentInfo{net.avabook.shelves/net.avabook.shelves.activity.books.BookDetailsActivity}: java.lang.NullPointerException
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1622)
 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1638)
 	at android.app.ActivityThread.access$1500(ActivityThread.java:117)
@@ -3242,12 +3242,12 @@ USER=zhansb
 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:597)
 	at dalvik.system.NativeStart.main(Native Method)
 Caused by: java.lang.NullPointerException
-	at com.miadzin.shelves.activity.books.BookDetailsActivity.onCreate(BookDetailsActivity.java:56)
+	at net.avabook.shelves.activity.books.BookDetailsActivity.onCreate(BookDetailsActivity.java:56)
 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1586)
 	... 11 more
 java.lang.NullPointerException
-	at com.miadzin.shelves.activity.books.BookDetailsActivity.onCreate(BookDetailsActivity.java:56)
+	at net.avabook.shelves.activity.books.BookDetailsActivity.onCreate(BookDetailsActivity.java:56)
 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1586)
 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1638)
@@ -3303,7 +3303,7 @@ metrics.xdpi=321.10617
 metrics.ydpi=319.79016"		N/A	2012-02-23T15:09:33.000+08:00	2012-02-23T15:09:37.000+08:00	"Applications Memory Usage (kB):
 Uptime: 720438 Realtime: 720438
 
-** MEMINFO in pid 883 [com.miadzin.shelves] **
+** MEMINFO in pid 883 [net.avabook.shelves] **
                     native   dalvik    other    total
             size:    31248     5831      N/A    37079
        allocated:    31244     3016      N/A    34260
@@ -3446,7 +3446,7 @@ VOICE_RECOGNITION_SERVICE=com.google.android.voicesearch/.GoogleRecognitionServi
 WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ON=1
 WIFI_ON=1
 "
-2/22/2012 23:26:49	2d6fd03f-18b7-4b85-9bb9-50472bbf78c4	45	3.0.2	com.miadzin.shelves	/data/data/com.miadzin.shelves/files	S9	rockchip	rk29sdk	2.3.1	"BOARD=rk29sdk
+2/22/2012 23:26:49	2d6fd03f-18b7-4b85-9bb9-50472bbf78c4	45	3.0.2	net.avabook.shelves	/data/data/net.avabook.shelves/files	S9	rockchip	rk29sdk	2.3.1	"BOARD=rk29sdk
 BOOTLOADER=unknown
 BRAND=rockchip
 CPU_ABI=armeabi-v7a
@@ -3467,7 +3467,7 @@ TIME=1328688915000
 TYPE=eng
 UNKNOWN=unknown
 USER=root
-"	1056858112	785850368			"java.lang.RuntimeException: Unable to start activity ComponentInfo{com.miadzin.shelves/com.miadzin.shelves.activity.apparel.ApparelDetailsActivity}: java.lang.NullPointerException
+"	1056858112	785850368			"java.lang.RuntimeException: Unable to start activity ComponentInfo{net.avabook.shelves/net.avabook.shelves.activity.apparel.ApparelDetailsActivity}: java.lang.NullPointerException
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1622)
 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1638)
 	at android.app.ActivityThread.access$1500(ActivityThread.java:117)
@@ -3481,12 +3481,12 @@ USER=root
 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:597)
 	at dalvik.system.NativeStart.main(Native Method)
 Caused by: java.lang.NullPointerException
-	at com.miadzin.shelves.activity.apparel.ApparelDetailsActivity.onCreate(ApparelDetailsActivity.java:53)
+	at net.avabook.shelves.activity.apparel.ApparelDetailsActivity.onCreate(ApparelDetailsActivity.java:53)
 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1586)
 	... 11 more
 java.lang.NullPointerException
-	at com.miadzin.shelves.activity.apparel.ApparelDetailsActivity.onCreate(ApparelDetailsActivity.java:53)
+	at net.avabook.shelves.activity.apparel.ApparelDetailsActivity.onCreate(ApparelDetailsActivity.java:53)
 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1586)
 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1638)
@@ -3542,7 +3542,7 @@ metrics.xdpi=132.70204
 metrics.ydpi=132.70204"		N/A	2012-02-23T16:26:44.000+09:00	2012-02-23T16:26:47.000+09:00	"Applications Memory Usage (kB):
 Uptime: 7034183 Realtime: 7034183
 
-** MEMINFO in pid 3464 [com.miadzin.shelves] **
+** MEMINFO in pid 3464 [net.avabook.shelves] **
                     native   dalvik    other    total
             size:    29036     5831      N/A    34867
        allocated:    29022     3026      N/A    32048
@@ -3683,7 +3683,7 @@ VOICE_RECOGNITION_SERVICE=com.google.android.voicesearch/.GoogleRecognitionServi
 WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ON=1
 WIFI_ON=1
 "
-2/22/2012 23:27:22	95521cc9-9b97-44d4-b252-4340ea3026b9	45	3.0.2	com.miadzin.shelves	/data/data/com.miadzin.shelves/files	S9	rockchip	rk29sdk	2.3.1	"BOARD=rk29sdk
+2/22/2012 23:27:22	95521cc9-9b97-44d4-b252-4340ea3026b9	45	3.0.2	net.avabook.shelves	/data/data/net.avabook.shelves/files	S9	rockchip	rk29sdk	2.3.1	"BOARD=rk29sdk
 BOOTLOADER=unknown
 BRAND=rockchip
 CPU_ABI=armeabi-v7a
@@ -3704,7 +3704,7 @@ TIME=1328688915000
 TYPE=eng
 UNKNOWN=unknown
 USER=root
-"	1056858112	785821696			"java.lang.RuntimeException: Unable to start activity ComponentInfo{com.miadzin.shelves/com.miadzin.shelves.activity.apparel.ApparelDetailsActivity}: java.lang.NullPointerException
+"	1056858112	785821696			"java.lang.RuntimeException: Unable to start activity ComponentInfo{net.avabook.shelves/net.avabook.shelves.activity.apparel.ApparelDetailsActivity}: java.lang.NullPointerException
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1622)
 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1638)
 	at android.app.ActivityThread.access$1500(ActivityThread.java:117)
@@ -3718,12 +3718,12 @@ USER=root
 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:597)
 	at dalvik.system.NativeStart.main(Native Method)
 Caused by: java.lang.NullPointerException
-	at com.miadzin.shelves.activity.apparel.ApparelDetailsActivity.onCreate(ApparelDetailsActivity.java:53)
+	at net.avabook.shelves.activity.apparel.ApparelDetailsActivity.onCreate(ApparelDetailsActivity.java:53)
 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1586)
 	... 11 more
 java.lang.NullPointerException
-	at com.miadzin.shelves.activity.apparel.ApparelDetailsActivity.onCreate(ApparelDetailsActivity.java:53)
+	at net.avabook.shelves.activity.apparel.ApparelDetailsActivity.onCreate(ApparelDetailsActivity.java:53)
 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1586)
 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1638)
@@ -3779,7 +3779,7 @@ metrics.xdpi=132.70204
 metrics.ydpi=132.70204"		N/A	2012-02-23T16:27:17.000+09:00	2012-02-23T16:27:20.000+09:00	"Applications Memory Usage (kB):
 Uptime: 7067449 Realtime: 7067449
 
-** MEMINFO in pid 3500 [com.miadzin.shelves] **
+** MEMINFO in pid 3500 [net.avabook.shelves] **
                     native   dalvik    other    total
             size:    28920     5767      N/A    34687
        allocated:    28917     3015      N/A    31932
@@ -3920,7 +3920,7 @@ VOICE_RECOGNITION_SERVICE=com.google.android.voicesearch/.GoogleRecognitionServi
 WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ON=1
 WIFI_ON=1
 "
-2/22/2012 23:27:30	20be497e-32d2-4800-8b0a-46d0ee094d01	45	3.0.2	com.miadzin.shelves	/data/data/com.miadzin.shelves/files	S9	rockchip	rk29sdk	2.3.1	"BOARD=rk29sdk
+2/22/2012 23:27:30	20be497e-32d2-4800-8b0a-46d0ee094d01	45	3.0.2	net.avabook.shelves	/data/data/net.avabook.shelves/files	S9	rockchip	rk29sdk	2.3.1	"BOARD=rk29sdk
 BOOTLOADER=unknown
 BRAND=rockchip
 CPU_ABI=armeabi-v7a
@@ -3941,7 +3941,7 @@ TIME=1328688915000
 TYPE=eng
 UNKNOWN=unknown
 USER=root
-"	1056858112	785821696			"java.lang.RuntimeException: Unable to start activity ComponentInfo{com.miadzin.shelves/com.miadzin.shelves.activity.apparel.ApparelDetailsActivity}: java.lang.NullPointerException
+"	1056858112	785821696			"java.lang.RuntimeException: Unable to start activity ComponentInfo{net.avabook.shelves/net.avabook.shelves.activity.apparel.ApparelDetailsActivity}: java.lang.NullPointerException
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1622)
 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1638)
 	at android.app.ActivityThread.access$1500(ActivityThread.java:117)
@@ -3955,12 +3955,12 @@ USER=root
 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:597)
 	at dalvik.system.NativeStart.main(Native Method)
 Caused by: java.lang.NullPointerException
-	at com.miadzin.shelves.activity.apparel.ApparelDetailsActivity.onCreate(ApparelDetailsActivity.java:53)
+	at net.avabook.shelves.activity.apparel.ApparelDetailsActivity.onCreate(ApparelDetailsActivity.java:53)
 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1586)
 	... 11 more
 java.lang.NullPointerException
-	at com.miadzin.shelves.activity.apparel.ApparelDetailsActivity.onCreate(ApparelDetailsActivity.java:53)
+	at net.avabook.shelves.activity.apparel.ApparelDetailsActivity.onCreate(ApparelDetailsActivity.java:53)
 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1586)
 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1638)
@@ -4016,7 +4016,7 @@ metrics.xdpi=132.70204
 metrics.ydpi=132.70204"		N/A	2012-02-23T16:27:27.000+09:00	2012-02-23T16:27:28.000+09:00	"Applications Memory Usage (kB):
 Uptime: 7075495 Realtime: 7075495
 
-** MEMINFO in pid 3534 [com.miadzin.shelves] **
+** MEMINFO in pid 3534 [net.avabook.shelves] **
                     native   dalvik    other    total
             size:    28764     5831      N/A    34595
        allocated:    28721     3020      N/A    31741
@@ -4157,7 +4157,7 @@ VOICE_RECOGNITION_SERVICE=com.google.android.voicesearch/.GoogleRecognitionServi
 WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ON=1
 WIFI_ON=1
 "
-2/22/2012 23:27:37	810a50af-6272-458c-879f-c2a3d80f8c83	45	3.0.2	com.miadzin.shelves	/data/data/com.miadzin.shelves/files	S9	rockchip	rk29sdk	2.3.1	"BOARD=rk29sdk
+2/22/2012 23:27:37	810a50af-6272-458c-879f-c2a3d80f8c83	45	3.0.2	net.avabook.shelves	/data/data/net.avabook.shelves/files	S9	rockchip	rk29sdk	2.3.1	"BOARD=rk29sdk
 BOOTLOADER=unknown
 BRAND=rockchip
 CPU_ABI=armeabi-v7a
@@ -4178,7 +4178,7 @@ TIME=1328688915000
 TYPE=eng
 UNKNOWN=unknown
 USER=root
-"	1056858112	785821696			"java.lang.RuntimeException: Unable to start activity ComponentInfo{com.miadzin.shelves/com.miadzin.shelves.activity.apparel.ApparelDetailsActivity}: java.lang.NullPointerException
+"	1056858112	785821696			"java.lang.RuntimeException: Unable to start activity ComponentInfo{net.avabook.shelves/net.avabook.shelves.activity.apparel.ApparelDetailsActivity}: java.lang.NullPointerException
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1622)
 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1638)
 	at android.app.ActivityThread.access$1500(ActivityThread.java:117)
@@ -4192,12 +4192,12 @@ USER=root
 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:597)
 	at dalvik.system.NativeStart.main(Native Method)
 Caused by: java.lang.NullPointerException
-	at com.miadzin.shelves.activity.apparel.ApparelDetailsActivity.onCreate(ApparelDetailsActivity.java:53)
+	at net.avabook.shelves.activity.apparel.ApparelDetailsActivity.onCreate(ApparelDetailsActivity.java:53)
 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1586)
 	... 11 more
 java.lang.NullPointerException
-	at com.miadzin.shelves.activity.apparel.ApparelDetailsActivity.onCreate(ApparelDetailsActivity.java:53)
+	at net.avabook.shelves.activity.apparel.ApparelDetailsActivity.onCreate(ApparelDetailsActivity.java:53)
 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1586)
 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1638)
@@ -4253,7 +4253,7 @@ metrics.xdpi=132.70204
 metrics.ydpi=132.70204"		N/A	2012-02-23T16:27:34.000+09:00	2012-02-23T16:27:35.000+09:00	"Applications Memory Usage (kB):
 Uptime: 7082881 Realtime: 7082881
 
-** MEMINFO in pid 3567 [com.miadzin.shelves] **
+** MEMINFO in pid 3567 [net.avabook.shelves] **
                     native   dalvik    other    total
             size:    28924     5831      N/A    34755
        allocated:    28919     3027      N/A    31946
@@ -4394,7 +4394,7 @@ VOICE_RECOGNITION_SERVICE=com.google.android.voicesearch/.GoogleRecognitionServi
 WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ON=1
 WIFI_ON=1
 "
-2/22/2012 23:33:14	4cc1d54c-26c8-482f-9178-d38fbc54f551	45	3.0.2	com.miadzin.shelves	/data/data/com.miadzin.shelves/files	S9	rockchip	rk29sdk	2.3.1	"BOARD=rk29sdk
+2/22/2012 23:33:14	4cc1d54c-26c8-482f-9178-d38fbc54f551	45	3.0.2	net.avabook.shelves	/data/data/net.avabook.shelves/files	S9	rockchip	rk29sdk	2.3.1	"BOARD=rk29sdk
 BOOTLOADER=unknown
 BRAND=rockchip
 CPU_ABI=armeabi-v7a
@@ -4415,7 +4415,7 @@ TIME=1328688915000
 TYPE=eng
 UNKNOWN=unknown
 USER=root
-"	1056858112	899137536			"java.lang.RuntimeException: Unable to start activity ComponentInfo{com.miadzin.shelves/com.miadzin.shelves.activity.movies.MovieDetailsActivity}: java.lang.NullPointerException
+"	1056858112	899137536			"java.lang.RuntimeException: Unable to start activity ComponentInfo{net.avabook.shelves/net.avabook.shelves.activity.movies.MovieDetailsActivity}: java.lang.NullPointerException
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1622)
 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1638)
 	at android.app.ActivityThread.access$1500(ActivityThread.java:117)
@@ -4429,12 +4429,12 @@ USER=root
 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:597)
 	at dalvik.system.NativeStart.main(Native Method)
 Caused by: java.lang.NullPointerException
-	at com.miadzin.shelves.activity.movies.MovieDetailsActivity.onCreate(MovieDetailsActivity.java:55)
+	at net.avabook.shelves.activity.movies.MovieDetailsActivity.onCreate(MovieDetailsActivity.java:55)
 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1586)
 	... 11 more
 java.lang.NullPointerException
-	at com.miadzin.shelves.activity.movies.MovieDetailsActivity.onCreate(MovieDetailsActivity.java:55)
+	at net.avabook.shelves.activity.movies.MovieDetailsActivity.onCreate(MovieDetailsActivity.java:55)
 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1586)
 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1638)
@@ -4490,7 +4490,7 @@ metrics.xdpi=132.70204
 metrics.ydpi=132.70204"		N/A	2012-02-23T16:14:59.000+09:00	2012-02-23T16:33:13.000+09:00	"Applications Memory Usage (kB):
 Uptime: 2901317 Realtime: 2901317
 
-** MEMINFO in pid 1003 [com.miadzin.shelves] **
+** MEMINFO in pid 1003 [net.avabook.shelves] **
                     native   dalvik    other    total
             size:    29108     5895      N/A    35003
        allocated:    29105     3127      N/A    32232
@@ -4635,7 +4635,7 @@ VOICE_RECOGNITION_SERVICE=com.google.android.voicesearch/.GoogleRecognitionServi
 WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ON=1
 WIFI_ON=1
 "
-2/23/2012 4:00:55	404d883c-8d40-487d-b490-b0ca381b5bfb	45	3.0.2	com.miadzin.shelves	/data/data/com.miadzin.shelves/files	S9	rockchip	rk29sdk	2.3.1	"BOARD=rk29sdk
+2/23/2012 4:00:55	404d883c-8d40-487d-b490-b0ca381b5bfb	45	3.0.2	net.avabook.shelves	/data/data/net.avabook.shelves/files	S9	rockchip	rk29sdk	2.3.1	"BOARD=rk29sdk
 BOOTLOADER=unknown
 BRAND=rockchip
 CPU_ABI=armeabi-v7a
@@ -4656,7 +4656,7 @@ TIME=1328688915000
 TYPE=eng
 UNKNOWN=unknown
 USER=root
-"	1056858112	873418752			"java.lang.RuntimeException: Unable to start activity ComponentInfo{com.miadzin.shelves/com.miadzin.shelves.activity.gadgets.GadgetDetailsActivity}: java.lang.NullPointerException
+"	1056858112	873418752			"java.lang.RuntimeException: Unable to start activity ComponentInfo{net.avabook.shelves/net.avabook.shelves.activity.gadgets.GadgetDetailsActivity}: java.lang.NullPointerException
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1622)
 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1638)
 	at android.app.ActivityThread.access$1500(ActivityThread.java:117)
@@ -4670,12 +4670,12 @@ USER=root
 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:597)
 	at dalvik.system.NativeStart.main(Native Method)
 Caused by: java.lang.NullPointerException
-	at com.miadzin.shelves.activity.gadgets.GadgetDetailsActivity.onCreate(GadgetDetailsActivity.java:55)
+	at net.avabook.shelves.activity.gadgets.GadgetDetailsActivity.onCreate(GadgetDetailsActivity.java:55)
 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1586)
 	... 11 more
 java.lang.NullPointerException
-	at com.miadzin.shelves.activity.gadgets.GadgetDetailsActivity.onCreate(GadgetDetailsActivity.java:55)
+	at net.avabook.shelves.activity.gadgets.GadgetDetailsActivity.onCreate(GadgetDetailsActivity.java:55)
 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1586)
 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1638)
@@ -4731,7 +4731,7 @@ metrics.xdpi=132.70204
 metrics.ydpi=132.70204"		N/A	2012-02-23T21:00:39.000+09:00	2012-02-23T21:00:51.000+09:00	"Applications Memory Usage (kB):
 Uptime: 23732830 Realtime: 25526407
 
-** MEMINFO in pid 5100 [com.miadzin.shelves] **
+** MEMINFO in pid 5100 [net.avabook.shelves] **
                     native   dalvik    other    total
             size:    30108     5895      N/A    36003
        allocated:    29525     3101      N/A    32626
@@ -4872,7 +4872,7 @@ VOICE_RECOGNITION_SERVICE=com.google.android.voicesearch/.GoogleRecognitionServi
 WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ON=1
 WIFI_ON=1
 "
-2/23/2012 5:22:12	7d9ec964-592f-40ab-9012-f555e89cef57	45	3.0.2	com.miadzin.shelves	/data/data/com.miadzin.shelves/files	S9	rockchip	rk29sdk	2.3.1	"BOARD=rk29sdk
+2/23/2012 5:22:12	7d9ec964-592f-40ab-9012-f555e89cef57	45	3.0.2	net.avabook.shelves	/data/data/net.avabook.shelves/files	S9	rockchip	rk29sdk	2.3.1	"BOARD=rk29sdk
 BOOTLOADER=unknown
 BRAND=rockchip
 CPU_ABI=armeabi-v7a
@@ -4893,7 +4893,7 @@ TIME=1328688915000
 TYPE=eng
 UNKNOWN=unknown
 USER=root
-"	1056858112	810188800			"java.lang.RuntimeException: Unable to start activity ComponentInfo{com.miadzin.shelves/com.miadzin.shelves.activity.apparel.ApparelDetailsActivity}: java.lang.NullPointerException
+"	1056858112	810188800			"java.lang.RuntimeException: Unable to start activity ComponentInfo{net.avabook.shelves/net.avabook.shelves.activity.apparel.ApparelDetailsActivity}: java.lang.NullPointerException
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1622)
 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1638)
 	at android.app.ActivityThread.access$1500(ActivityThread.java:117)
@@ -4907,12 +4907,12 @@ USER=root
 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:597)
 	at dalvik.system.NativeStart.main(Native Method)
 Caused by: java.lang.NullPointerException
-	at com.miadzin.shelves.activity.apparel.ApparelDetailsActivity.onCreate(ApparelDetailsActivity.java:53)
+	at net.avabook.shelves.activity.apparel.ApparelDetailsActivity.onCreate(ApparelDetailsActivity.java:53)
 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1586)
 	... 11 more
 java.lang.NullPointerException
-	at com.miadzin.shelves.activity.apparel.ApparelDetailsActivity.onCreate(ApparelDetailsActivity.java:53)
+	at net.avabook.shelves.activity.apparel.ApparelDetailsActivity.onCreate(ApparelDetailsActivity.java:53)
 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1586)
 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1638)
@@ -4968,7 +4968,7 @@ metrics.xdpi=132.70204
 metrics.ydpi=132.70204"		N/A	2012-02-23T22:20:26.000+09:00	2012-02-23T22:22:09.000+09:00	"Applications Memory Usage (kB):
 Uptime: 4883074 Realtime: 4883074
 
-** MEMINFO in pid 3226 [com.miadzin.shelves] **
+** MEMINFO in pid 3226 [net.avabook.shelves] **
                     native   dalvik    other    total
             size:    28944     5831      N/A    34775
        allocated:    28906     3154      N/A    32060
@@ -5112,7 +5112,7 @@ VOICE_RECOGNITION_SERVICE=com.google.android.voicesearch/.GoogleRecognitionServi
 WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ON=1
 WIFI_ON=1
 "
-2/23/2012 5:36:54	ea3ea253-ab95-443a-aa7d-2c67218fec02	45	3.0.2	com.miadzin.shelves	/data/data/com.miadzin.shelves/files	S9	rockchip	rk29sdk	2.3.1	"BOARD=rk29sdk
+2/23/2012 5:36:54	ea3ea253-ab95-443a-aa7d-2c67218fec02	45	3.0.2	net.avabook.shelves	/data/data/net.avabook.shelves/files	S9	rockchip	rk29sdk	2.3.1	"BOARD=rk29sdk
 BOOTLOADER=unknown
 BRAND=rockchip
 CPU_ABI=armeabi-v7a
@@ -5133,7 +5133,7 @@ TIME=1328688915000
 TYPE=eng
 UNKNOWN=unknown
 USER=root
-"	1056858112	951476224			"java.lang.RuntimeException: Unable to start activity ComponentInfo{com.miadzin.shelves/com.miadzin.shelves.activity.software.SoftwareDetailsActivity}: java.lang.NullPointerException
+"	1056858112	951476224			"java.lang.RuntimeException: Unable to start activity ComponentInfo{net.avabook.shelves/net.avabook.shelves.activity.software.SoftwareDetailsActivity}: java.lang.NullPointerException
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1622)
 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1638)
 	at android.app.ActivityThread.access$1500(ActivityThread.java:117)
@@ -5147,12 +5147,12 @@ USER=root
 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:597)
 	at dalvik.system.NativeStart.main(Native Method)
 Caused by: java.lang.NullPointerException
-	at com.miadzin.shelves.activity.software.SoftwareDetailsActivity.onCreate(SoftwareDetailsActivity.java:55)
+	at net.avabook.shelves.activity.software.SoftwareDetailsActivity.onCreate(SoftwareDetailsActivity.java:55)
 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1586)
 	... 11 more
 java.lang.NullPointerException
-	at com.miadzin.shelves.activity.software.SoftwareDetailsActivity.onCreate(SoftwareDetailsActivity.java:55)
+	at net.avabook.shelves.activity.software.SoftwareDetailsActivity.onCreate(SoftwareDetailsActivity.java:55)
 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1586)
 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1638)
@@ -5208,7 +5208,7 @@ metrics.xdpi=132.70204
 metrics.ydpi=132.70204"		N/A	2012-02-23T22:32:31.000+09:00	2012-02-23T22:36:51.000+09:00	"Applications Memory Usage (kB):
 Uptime: 356452 Realtime: 356452
 
-** MEMINFO in pid 491 [com.miadzin.shelves] **
+** MEMINFO in pid 491 [net.avabook.shelves] **
                     native   dalvik    other    total
             size:    64292     6599      N/A    70891
        allocated:    64196     3338      N/A    67534
@@ -5356,7 +5356,7 @@ VOICE_RECOGNITION_SERVICE=com.google.android.voicesearch/.GoogleRecognitionServi
 WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ON=1
 WIFI_ON=1
 "
-2/23/2012 6:58:35	29774a15-4cd3-4b71-951e-874d72c04b37	45	3.0.2	com.miadzin.shelves	/data/data/com.miadzin.shelves/files	S9	rockchip	rk29sdk	2.3.1	"BOARD=rk29sdk
+2/23/2012 6:58:35	29774a15-4cd3-4b71-951e-874d72c04b37	45	3.0.2	net.avabook.shelves	/data/data/net.avabook.shelves/files	S9	rockchip	rk29sdk	2.3.1	"BOARD=rk29sdk
 BOOTLOADER=unknown
 BRAND=rockchip
 CPU_ABI=armeabi-v7a
@@ -5377,7 +5377,7 @@ TIME=1328688915000
 TYPE=eng
 UNKNOWN=unknown
 USER=root
-"	1056858112	856010752			"java.lang.RuntimeException: Unable to start activity ComponentInfo{com.miadzin.shelves/com.miadzin.shelves.activity.software.SoftwareDetailsActivity}: java.lang.NullPointerException
+"	1056858112	856010752			"java.lang.RuntimeException: Unable to start activity ComponentInfo{net.avabook.shelves/net.avabook.shelves.activity.software.SoftwareDetailsActivity}: java.lang.NullPointerException
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1622)
 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1638)
 	at android.app.ActivityThread.access$1500(ActivityThread.java:117)
@@ -5391,12 +5391,12 @@ USER=root
 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:597)
 	at dalvik.system.NativeStart.main(Native Method)
 Caused by: java.lang.NullPointerException
-	at com.miadzin.shelves.activity.software.SoftwareDetailsActivity.onCreate(SoftwareDetailsActivity.java:55)
+	at net.avabook.shelves.activity.software.SoftwareDetailsActivity.onCreate(SoftwareDetailsActivity.java:55)
 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1586)
 	... 11 more
 java.lang.NullPointerException
-	at com.miadzin.shelves.activity.software.SoftwareDetailsActivity.onCreate(SoftwareDetailsActivity.java:55)
+	at net.avabook.shelves.activity.software.SoftwareDetailsActivity.onCreate(SoftwareDetailsActivity.java:55)
 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1586)
 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1638)
@@ -5452,7 +5452,7 @@ metrics.xdpi=132.70204
 metrics.ydpi=132.70204"		N/A	2012-02-23T23:58:30.000+09:00	2012-02-23T23:58:33.000+09:00	"Applications Memory Usage (kB):
 Uptime: 3856082 Realtime: 5258028
 
-** MEMINFO in pid 1262 [com.miadzin.shelves] **
+** MEMINFO in pid 1262 [net.avabook.shelves] **
                     native   dalvik    other    total
             size:    28920     5831      N/A    34751
        allocated:    28907     3020      N/A    31927
@@ -5591,7 +5591,7 @@ VOICE_RECOGNITION_SERVICE=com.google.android.voicesearch/.GoogleRecognitionServi
 WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ON=1
 WIFI_ON=1
 "
-2/23/2012 7:38:00	72f97229-01bf-4df9-8411-a2b53b2b8b29	45	3.0.2	com.miadzin.shelves	/data/data/com.miadzin.shelves/files	S8	rockchip	rk29sdk	2.3.1	"BOARD=rk29sdk
+2/23/2012 7:38:00	72f97229-01bf-4df9-8411-a2b53b2b8b29	45	3.0.2	net.avabook.shelves	/data/data/net.avabook.shelves/files	S8	rockchip	rk29sdk	2.3.1	"BOARD=rk29sdk
 BOOTLOADER=unknown
 BRAND=rockchip
 CPU_ABI=armeabi-v7a
@@ -5612,7 +5612,7 @@ TIME=1324693969000
 TYPE=eng
 UNKNOWN=unknown
 USER=zhansb
-"	528424960	369725440			"java.lang.RuntimeException: Unable to start activity ComponentInfo{com.miadzin.shelves/com.miadzin.shelves.activity.tools.ToolDetailsActivity}: java.lang.NullPointerException
+"	528424960	369725440			"java.lang.RuntimeException: Unable to start activity ComponentInfo{net.avabook.shelves/net.avabook.shelves.activity.tools.ToolDetailsActivity}: java.lang.NullPointerException
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1622)
 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1638)
 	at android.app.ActivityThread.access$1500(ActivityThread.java:117)
@@ -5626,12 +5626,12 @@ USER=zhansb
 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:597)
 	at dalvik.system.NativeStart.main(Native Method)
 Caused by: java.lang.NullPointerException
-	at com.miadzin.shelves.activity.tools.ToolDetailsActivity.onCreate(ToolDetailsActivity.java:55)
+	at net.avabook.shelves.activity.tools.ToolDetailsActivity.onCreate(ToolDetailsActivity.java:55)
 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1586)
 	... 11 more
 java.lang.NullPointerException
-	at com.miadzin.shelves.activity.tools.ToolDetailsActivity.onCreate(ToolDetailsActivity.java:55)
+	at net.avabook.shelves.activity.tools.ToolDetailsActivity.onCreate(ToolDetailsActivity.java:55)
 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1586)
 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1638)
@@ -5687,7 +5687,7 @@ metrics.xdpi=321.10617
 metrics.ydpi=319.79016"		N/A	2012-02-24T00:38:12.000+09:00	2012-02-24T00:38:16.000+09:00	"Applications Memory Usage (kB):
 Uptime: 7539723 Realtime: 7539723
 
-** MEMINFO in pid 1442 [com.miadzin.shelves] **
+** MEMINFO in pid 1442 [net.avabook.shelves] **
                     native   dalvik    other    total
             size:    31200     5831      N/A    37031
        allocated:    31193     3024      N/A    34217
@@ -5835,7 +5835,7 @@ WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ON=0
 WIFI_ON=1
 WIFI_SAVED_STATE=1
 "
-2/24/2012 0:17:56	18171e1d-8daf-45ee-8c2d-2c62861d3000	45	3.0.2	com.miadzin.shelves	/data/data/com.miadzin.shelves/files	S9	rockchip	rk29sdk	2.3.1	"BOARD=rk29sdk
+2/24/2012 0:17:56	18171e1d-8daf-45ee-8c2d-2c62861d3000	45	3.0.2	net.avabook.shelves	/data/data/net.avabook.shelves/files	S9	rockchip	rk29sdk	2.3.1	"BOARD=rk29sdk
 BOOTLOADER=unknown
 BRAND=rockchip
 CPU_ABI=armeabi-v7a
@@ -5856,7 +5856,7 @@ TIME=1328688915000
 TYPE=eng
 UNKNOWN=unknown
 USER=root
-"	1056858112	954417152			"java.lang.RuntimeException: Unable to start activity ComponentInfo{com.miadzin.shelves/com.miadzin.shelves.activity.apparel.ApparelDetailsActivity}: java.lang.NullPointerException
+"	1056858112	954417152			"java.lang.RuntimeException: Unable to start activity ComponentInfo{net.avabook.shelves/net.avabook.shelves.activity.apparel.ApparelDetailsActivity}: java.lang.NullPointerException
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1622)
 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1638)
 	at android.app.ActivityThread.access$1500(ActivityThread.java:117)
@@ -5870,12 +5870,12 @@ USER=root
 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:597)
 	at dalvik.system.NativeStart.main(Native Method)
 Caused by: java.lang.NullPointerException
-	at com.miadzin.shelves.activity.apparel.ApparelDetailsActivity.onCreate(ApparelDetailsActivity.java:53)
+	at net.avabook.shelves.activity.apparel.ApparelDetailsActivity.onCreate(ApparelDetailsActivity.java:53)
 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1586)
 	... 11 more
 java.lang.NullPointerException
-	at com.miadzin.shelves.activity.apparel.ApparelDetailsActivity.onCreate(ApparelDetailsActivity.java:53)
+	at net.avabook.shelves.activity.apparel.ApparelDetailsActivity.onCreate(ApparelDetailsActivity.java:53)
 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1586)
 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1638)
@@ -5931,7 +5931,7 @@ metrics.xdpi=132.70204
 metrics.ydpi=132.70204"		N/A	2012-02-24T17:17:01.000+09:00	2012-02-24T17:17:55.000+09:00	"Applications Memory Usage (kB):
 Uptime: 2554914 Realtime: 3038170
 
-** MEMINFO in pid 1166 [com.miadzin.shelves] **
+** MEMINFO in pid 1166 [net.avabook.shelves] **
                     native   dalvik    other    total
             size:    66248     7047      N/A    73295
        allocated:    32941     3836      N/A    36777
@@ -6080,7 +6080,7 @@ VOICE_RECOGNITION_SERVICE=com.google.android.voicesearch/.GoogleRecognitionServi
 WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ON=1
 WIFI_ON=1
 "
-2/24/2012 0:21:16	3a4fe80d-5fe2-41a6-8b26-d2dcd48e42eb	45	3.0.2	com.miadzin.shelves	/data/data/com.miadzin.shelves/files	S9	rockchip	rk29sdk	2.3.1	"BOARD=rk29sdk
+2/24/2012 0:21:16	3a4fe80d-5fe2-41a6-8b26-d2dcd48e42eb	45	3.0.2	net.avabook.shelves	/data/data/net.avabook.shelves/files	S9	rockchip	rk29sdk	2.3.1	"BOARD=rk29sdk
 BOOTLOADER=unknown
 BRAND=rockchip
 CPU_ABI=armeabi-v7a
@@ -6101,7 +6101,7 @@ TIME=1328688915000
 TYPE=eng
 UNKNOWN=unknown
 USER=root
-"	1056858112	774082560			"java.lang.RuntimeException: Unable to start activity ComponentInfo{com.miadzin.shelves/com.miadzin.shelves.activity.tools.ToolDetailsActivity}: java.lang.NullPointerException
+"	1056858112	774082560			"java.lang.RuntimeException: Unable to start activity ComponentInfo{net.avabook.shelves/net.avabook.shelves.activity.tools.ToolDetailsActivity}: java.lang.NullPointerException
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1622)
 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1638)
 	at android.app.ActivityThread.access$1500(ActivityThread.java:117)
@@ -6115,12 +6115,12 @@ USER=root
 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:597)
 	at dalvik.system.NativeStart.main(Native Method)
 Caused by: java.lang.NullPointerException
-	at com.miadzin.shelves.activity.tools.ToolDetailsActivity.onCreate(ToolDetailsActivity.java:55)
+	at net.avabook.shelves.activity.tools.ToolDetailsActivity.onCreate(ToolDetailsActivity.java:55)
 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1586)
 	... 11 more
 java.lang.NullPointerException
-	at com.miadzin.shelves.activity.tools.ToolDetailsActivity.onCreate(ToolDetailsActivity.java:55)
+	at net.avabook.shelves.activity.tools.ToolDetailsActivity.onCreate(ToolDetailsActivity.java:55)
 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1586)
 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1638)
@@ -6176,7 +6176,7 @@ metrics.xdpi=132.70204
 metrics.ydpi=132.70204"		N/A	2012-02-24T17:21:06.000+09:00	2012-02-24T17:21:09.000+09:00	"Applications Memory Usage (kB):
 Uptime: 49586400 Realtime: 94894046
 
-** MEMINFO in pid 10806 [com.miadzin.shelves] **
+** MEMINFO in pid 10806 [net.avabook.shelves] **
                     native   dalvik    other    total
             size:    28996     5831      N/A    34827
        allocated:    28993     3051      N/A    32044
@@ -6319,7 +6319,7 @@ VOICE_RECOGNITION_SERVICE=com.google.android.voicesearch/.GoogleRecognitionServi
 WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ON=1
 WIFI_ON=1
 "
-2/24/2012 1:20:46	a50bd545-7da8-4f44-82ac-b06d8175f9e7	45	3.0.2	com.miadzin.shelves	/data/data/com.miadzin.shelves/files	S8	rockchip	rk29sdk	2.3.1	"BOARD=rk29sdk
+2/24/2012 1:20:46	a50bd545-7da8-4f44-82ac-b06d8175f9e7	45	3.0.2	net.avabook.shelves	/data/data/net.avabook.shelves/files	S8	rockchip	rk29sdk	2.3.1	"BOARD=rk29sdk
 BOOTLOADER=unknown
 BRAND=rockchip
 CPU_ABI=armeabi-v7a
@@ -6340,7 +6340,7 @@ TIME=1324693969000
 TYPE=eng
 UNKNOWN=unknown
 USER=zhansb
-"	528424960	234176512			"java.lang.RuntimeException: Unable to start activity ComponentInfo{com.miadzin.shelves/com.miadzin.shelves.activity.videogames.VideoGameDetailsActivity}: java.lang.NullPointerException
+"	528424960	234176512			"java.lang.RuntimeException: Unable to start activity ComponentInfo{net.avabook.shelves/net.avabook.shelves.activity.videogames.VideoGameDetailsActivity}: java.lang.NullPointerException
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1622)
 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1638)
 	at android.app.ActivityThread.access$1500(ActivityThread.java:117)
@@ -6354,12 +6354,12 @@ USER=zhansb
 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:597)
 	at dalvik.system.NativeStart.main(Native Method)
 Caused by: java.lang.NullPointerException
-	at com.miadzin.shelves.activity.videogames.VideoGameDetailsActivity.onCreate(VideoGameDetailsActivity.java:55)
+	at net.avabook.shelves.activity.videogames.VideoGameDetailsActivity.onCreate(VideoGameDetailsActivity.java:55)
 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1586)
 	... 11 more
 java.lang.NullPointerException
-	at com.miadzin.shelves.activity.videogames.VideoGameDetailsActivity.onCreate(VideoGameDetailsActivity.java:55)
+	at net.avabook.shelves.activity.videogames.VideoGameDetailsActivity.onCreate(VideoGameDetailsActivity.java:55)
 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1586)
 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1638)
@@ -6415,7 +6415,7 @@ metrics.xdpi=321.10617
 metrics.ydpi=319.79016"		N/A	2012-02-24T18:20:33.000+08:00	2012-02-24T18:20:36.000+08:00	"Applications Memory Usage (kB):
 Uptime: 4832335 Realtime: 8099889
 
-** MEMINFO in pid 5654 [com.miadzin.shelves] **
+** MEMINFO in pid 5654 [net.avabook.shelves] **
                     native   dalvik    other    total
             size:    31196     5831      N/A    37027
        allocated:    31190     3057      N/A    34247
@@ -6571,7 +6571,7 @@ VOICE_RECOGNITION_SERVICE=com.google.android.voicesearch/.GoogleRecognitionServi
 WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ON=1
 WIFI_ON=1
 "
-2/24/2012 3:50:31	0905ff24-98b6-4d81-b58c-cf87734fa0a1	45	3.0.2	com.miadzin.shelves	/data/data/com.miadzin.shelves/files	S8	rockchip	rk29sdk	2.3.1	"BOARD=rk29sdk
+2/24/2012 3:50:31	0905ff24-98b6-4d81-b58c-cf87734fa0a1	45	3.0.2	net.avabook.shelves	/data/data/net.avabook.shelves/files	S8	rockchip	rk29sdk	2.3.1	"BOARD=rk29sdk
 BOOTLOADER=unknown
 BRAND=rockchip
 CPU_ABI=armeabi-v7a
@@ -6592,7 +6592,7 @@ TIME=1324693969000
 TYPE=eng
 UNKNOWN=unknown
 USER=zhansb
-"	528424960	357478400			"java.lang.RuntimeException: Unable to start activity ComponentInfo{com.miadzin.shelves/com.miadzin.shelves.activity.software.SoftwareDetailsActivity}: java.lang.NullPointerException
+"	528424960	357478400			"java.lang.RuntimeException: Unable to start activity ComponentInfo{net.avabook.shelves/net.avabook.shelves.activity.software.SoftwareDetailsActivity}: java.lang.NullPointerException
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1622)
 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1638)
 	at android.app.ActivityThread.access$1500(ActivityThread.java:117)
@@ -6606,12 +6606,12 @@ USER=zhansb
 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:597)
 	at dalvik.system.NativeStart.main(Native Method)
 Caused by: java.lang.NullPointerException
-	at com.miadzin.shelves.activity.software.SoftwareDetailsActivity.onCreate(SoftwareDetailsActivity.java:55)
+	at net.avabook.shelves.activity.software.SoftwareDetailsActivity.onCreate(SoftwareDetailsActivity.java:55)
 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1586)
 	... 11 more
 java.lang.NullPointerException
-	at com.miadzin.shelves.activity.software.SoftwareDetailsActivity.onCreate(SoftwareDetailsActivity.java:55)
+	at net.avabook.shelves.activity.software.SoftwareDetailsActivity.onCreate(SoftwareDetailsActivity.java:55)
 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1586)
 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1638)
@@ -6667,7 +6667,7 @@ metrics.xdpi=321.10617
 metrics.ydpi=319.79016"		N/A	2012-02-24T20:50:36.000+09:00	2012-02-24T20:50:38.000+09:00	"Applications Memory Usage (kB):
 Uptime: 1583628 Realtime: 6372642
 
-** MEMINFO in pid 1178 [com.miadzin.shelves] **
+** MEMINFO in pid 1178 [net.avabook.shelves] **
                     native   dalvik    other    total
             size:    31116     5831      N/A    36947
        allocated:    31115     3008      N/A    34123
@@ -6813,7 +6813,7 @@ WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ON=1
 WIFI_ON=1
 WIFI_SAVED_STATE=1
 "
-8/18/2011 17:41:24	10f67950-2372-4910-ae92-ad4456f1b3a4	45	3.0.2	com.miadzin.shelves	/data/data/com.miadzin.shelves/files	T-Mobile myTouch 3G Slide	tmobile	htc_espresso	2.1-update1	"BOARD=espresso
+8/18/2011 17:41:24	10f67950-2372-4910-ae92-ad4456f1b3a4	45	3.0.2	net.avabook.shelves	/data/data/net.avabook.shelves/files	T-Mobile myTouch 3G Slide	tmobile	htc_espresso	2.1-update1	"BOARD=espresso
 BRAND=tmobile
 CPU_ABI=armeabi
 DEVICE=espresso
@@ -6831,9 +6831,9 @@ USER=root
 "	152174592	15695872			"java.lang.OutOfMemoryError: bitmap size exceeds VM budget
 	at android.graphics.BitmapFactory.nativeDecodeStream(Native Method)
 	at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:476)
-	at com.miadzin.shelves.util.c.c(ImageUtilities.java:379)
-	at com.miadzin.shelves.util.c.a(ImageUtilities.java:168)
-	at com.miadzin.shelves.activity.af.bindView(BaseItemAdapter.java:222)
+	at net.avabook.shelves.util.c.c(ImageUtilities.java:379)
+	at net.avabook.shelves.util.c.a(ImageUtilities.java:168)
+	at net.avabook.shelves.activity.af.bindView(BaseItemAdapter.java:222)
 	at android.widget.CursorAdapter.getView(CursorAdapter.java:186)
 	at android.widget.AbsListView.obtainView(AbsListView.java:1256)
 	at android.widget.GridView.makeAndAddView(GridView.java:1218)
@@ -6895,7 +6895,7 @@ DUMP OF SERVICE meminfo:
 Applications Memory Usage (kB):
 Uptime: 99404178 Realtime: 254140909
 
-** MEMINFO in pid 5691 [com.miadzin.shelves] **
+** MEMINFO in pid 5691 [net.avabook.shelves] **
                     native   dalvik    other    total    limit   bitmap nativeBmp
             size:    19828     7495      N/A    27323    16384      N/A      N/A
        allocated:    18005     4932      N/A    22937      N/A     8873        0
@@ -7031,7 +7031,7 @@ WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ON=0
 WIFI_NUM_ALLOWED_CHANNELS=11
 WIFI_ON=0
 "
-8/18/2011 18:13:57	2e1ddeb9-2a31-406c-b0c1-3a0ef9d1c0a8	45	3.0.2	com.miadzin.shelves	/data/data/com.miadzin.shelves/files	DROIDX	verizon	shadow_vzw	2.3.3	"BOARD=shadow
+8/18/2011 18:13:57	2e1ddeb9-2a31-406c-b0c1-3a0ef9d1c0a8	45	3.0.2	net.avabook.shelves	/data/data/net.avabook.shelves/files	DROIDX	verizon	shadow_vzw	2.3.3	"BOARD=shadow
 BOOTLOADER=3004
 BRAND=verizon
 CPU_ABI=armeabi-v7a
@@ -7052,7 +7052,7 @@ TIME=1304138977000
 TYPE=user
 UNKNOWN=unknown
 USER=qgd748
-"	7084326912	6052483072			"java.lang.RuntimeException: Unable to start activity ComponentInfo{com.miadzin.shelves/com.miadzin.shelves.activity.books.BookDetailsActivity}: java.lang.NullPointerException
+"	7084326912	6052483072			"java.lang.RuntimeException: Unable to start activity ComponentInfo{net.avabook.shelves/net.avabook.shelves.activity.books.BookDetailsActivity}: java.lang.NullPointerException
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1696)
 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1716)
 	at android.app.ActivityThread.access$1500(ActivityThread.java:124)
@@ -7066,12 +7066,12 @@ USER=qgd748
 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:597)
 	at dalvik.system.NativeStart.main(Native Method)
 Caused by: java.lang.NullPointerException
-	at com.miadzin.shelves.activity.books.BookDetailsActivity.onCreate(BookDetailsActivity.java:56)
+	at net.avabook.shelves.activity.books.BookDetailsActivity.onCreate(BookDetailsActivity.java:56)
 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1660)
 	... 11 more
 java.lang.NullPointerException
-	at com.miadzin.shelves.activity.books.BookDetailsActivity.onCreate(BookDetailsActivity.java:56)
+	at net.avabook.shelves.activity.books.BookDetailsActivity.onCreate(BookDetailsActivity.java:56)
 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1660)
 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1716)
@@ -7127,7 +7127,7 @@ metrics.xdpi=230.03773
 metrics.ydpi=228.33263"		N/A	2011-08-18T21:14:07.000-04:00	2011-08-18T21:14:10.000-04:00	"Applications Memory Usage (kB):
 Uptime: 483530002 Realtime: 870605776
 
-** MEMINFO in pid 26859 [com.miadzin.shelves] **
+** MEMINFO in pid 26859 [net.avabook.shelves] **
                     native   dalvik    other    total
             size:    10048     6535      N/A    16583
        allocated:     9825     3900      N/A    13725
@@ -7285,7 +7285,7 @@ WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ON=0
 WIFI_NUM_ALLOWED_CHANNELS=11
 WIFI_ON=1
 "
-2/24/2012 11:44:45	97022dc9-dac2-434b-a149-66b6565480e0	45	3.0.2	com.miadzin.shelves	/data/data/com.miadzin.shelves/files	S9	rockchip	rk29sdk	2.3.1	"BOARD=rk29sdk
+2/24/2012 11:44:45	97022dc9-dac2-434b-a149-66b6565480e0	45	3.0.2	net.avabook.shelves	/data/data/net.avabook.shelves/files	S9	rockchip	rk29sdk	2.3.1	"BOARD=rk29sdk
 BOOTLOADER=unknown
 BRAND=rockchip
 CPU_ABI=armeabi-v7a
@@ -7306,7 +7306,7 @@ TIME=1328688915000
 TYPE=eng
 UNKNOWN=unknown
 USER=root
-"	1056858112	766885888			"java.lang.RuntimeException: Unable to start activity ComponentInfo{com.miadzin.shelves/com.miadzin.shelves.activity.music.MusicDetailsActivity}: java.lang.NullPointerException
+"	1056858112	766885888			"java.lang.RuntimeException: Unable to start activity ComponentInfo{net.avabook.shelves/net.avabook.shelves.activity.music.MusicDetailsActivity}: java.lang.NullPointerException
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1622)
 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1638)
 	at android.app.ActivityThread.access$1500(ActivityThread.java:117)
@@ -7320,12 +7320,12 @@ USER=root
 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:597)
 	at dalvik.system.NativeStart.main(Native Method)
 Caused by: java.lang.NullPointerException
-	at com.miadzin.shelves.activity.music.MusicDetailsActivity.onCreate(MusicDetailsActivity.java:55)
+	at net.avabook.shelves.activity.music.MusicDetailsActivity.onCreate(MusicDetailsActivity.java:55)
 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1586)
 	... 11 more
 java.lang.NullPointerException
-	at com.miadzin.shelves.activity.music.MusicDetailsActivity.onCreate(MusicDetailsActivity.java:55)
+	at net.avabook.shelves.activity.music.MusicDetailsActivity.onCreate(MusicDetailsActivity.java:55)
 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1586)
 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1638)
@@ -7381,7 +7381,7 @@ metrics.xdpi=132.70204
 metrics.ydpi=132.70204"		N/A	2012-02-25T04:44:34.000+09:00	2012-02-25T04:44:37.000+09:00	"Applications Memory Usage (kB):
 Uptime: 57774419 Realtime: 58167312
 
-** MEMINFO in pid 12587 [com.miadzin.shelves] **
+** MEMINFO in pid 12587 [net.avabook.shelves] **
                     native   dalvik    other    total
             size:    28920     5767      N/A    34687
        allocated:    28916     3010      N/A    31926
@@ -7525,7 +7525,7 @@ VOICE_RECOGNITION_SERVICE=com.google.android.voicesearch/.GoogleRecognitionServi
 WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ON=1
 WIFI_ON=1
 "
-8/18/2011 18:14:17	c51e1ad0-afd1-4bdb-a64a-365e32195d54	45	3.0.2	com.miadzin.shelves	/data/data/com.miadzin.shelves/files	DROIDX	verizon	shadow_vzw	2.3.3	"BOARD=shadow
+8/18/2011 18:14:17	c51e1ad0-afd1-4bdb-a64a-365e32195d54	45	3.0.2	net.avabook.shelves	/data/data/net.avabook.shelves/files	DROIDX	verizon	shadow_vzw	2.3.3	"BOARD=shadow
 BOOTLOADER=3004
 BRAND=verizon
 CPU_ABI=armeabi-v7a
@@ -7546,7 +7546,7 @@ TIME=1304138977000
 TYPE=user
 UNKNOWN=unknown
 USER=qgd748
-"	7084326912	6052478976			"java.lang.RuntimeException: Unable to start activity ComponentInfo{com.miadzin.shelves/com.miadzin.shelves.activity.books.BookDetailsActivity}: java.lang.NullPointerException
+"	7084326912	6052478976			"java.lang.RuntimeException: Unable to start activity ComponentInfo{net.avabook.shelves/net.avabook.shelves.activity.books.BookDetailsActivity}: java.lang.NullPointerException
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1696)
 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1716)
 	at android.app.ActivityThread.access$1500(ActivityThread.java:124)
@@ -7560,12 +7560,12 @@ USER=qgd748
 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:597)
 	at dalvik.system.NativeStart.main(Native Method)
 Caused by: java.lang.NullPointerException
-	at com.miadzin.shelves.activity.books.BookDetailsActivity.onCreate(BookDetailsActivity.java:56)
+	at net.avabook.shelves.activity.books.BookDetailsActivity.onCreate(BookDetailsActivity.java:56)
 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1660)
 	... 11 more
 java.lang.NullPointerException
-	at com.miadzin.shelves.activity.books.BookDetailsActivity.onCreate(BookDetailsActivity.java:56)
+	at net.avabook.shelves.activity.books.BookDetailsActivity.onCreate(BookDetailsActivity.java:56)
 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1660)
 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1716)
@@ -7621,7 +7621,7 @@ metrics.xdpi=230.03773
 metrics.ydpi=228.33263"		N/A	2011-08-18T21:14:29.000-04:00	2011-08-18T21:14:31.000-04:00	"Applications Memory Usage (kB):
 Uptime: 483550916 Realtime: 870626689
 
-** MEMINFO in pid 26945 [com.miadzin.shelves] **
+** MEMINFO in pid 26945 [net.avabook.shelves] **
                     native   dalvik    other    total
             size:    10440     6407      N/A    16847
        allocated:    10104     3419      N/A    13523

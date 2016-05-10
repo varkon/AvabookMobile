@@ -9,7 +9,7 @@ android {
         jackOptions {
             enabled true
         }
-        applicationId 'biz.varkon.shelvesom'
+        applicationId 'net.avabook.shelves'
         minSdkVersion 7
         targetSdkVersion 22
         compileOptions {

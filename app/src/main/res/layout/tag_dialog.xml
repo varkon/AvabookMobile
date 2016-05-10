@@ -32,7 +32,7 @@
 				android:layout_marginRight="4dip" android:layout_marginBottom="4dip" /> -->
 		</LinearLayout>
 
-		<com.miadzin.shelves.view.TagLayout
+		<net.avabook.shelves.view.TagLayout
 			android:id="@+id/TagLayout" android:layout_width="fill_parent"
 			android:layout_height="200dip" />
 

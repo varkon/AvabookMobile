@@ -25,8 +25,8 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 import android.util.Log;
 
-import com.miadzin.shelves.util.auth.AuthManager;
-import com.miadzin.shelves.util.auth.AuthManager.AuthCallback;
+import net.avabook.shelves.util.auth.AuthManager;
+import net.avabook.shelves.util.auth.AuthManager.AuthCallback;
 
 /**
  * GDataWrapper provides a wrapper around GData operations that maintains the
