@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package biz.varkon.shelvesom.activity.books;
+package net.avabook.shelves.activity.books;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -41,34 +41,34 @@ import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import biz.varkon.shelvesom.R;
-import biz.varkon.shelvesom.activity.LoanActivity;
-import biz.varkon.shelvesom.activity.RateActivity;
-import biz.varkon.shelvesom.activity.SettingsActivity;
-import biz.varkon.shelvesom.activity.TagActivity;
-import biz.varkon.shelvesom.base.BaseItem;
-import biz.varkon.shelvesom.base.BaseItemActivity;
-import biz.varkon.shelvesom.base.BaseItemAdapter;
-import biz.varkon.shelvesom.base.BaseItemProvider;
-import biz.varkon.shelvesom.base.BaseItemViewHolder;
-import biz.varkon.shelvesom.provider.ItemImport;
-import biz.varkon.shelvesom.provider.books.BooksManager;
-import biz.varkon.shelvesom.provider.books.BooksStore;
-import biz.varkon.shelvesom.provider.books.BooksStore.Book;
-import biz.varkon.shelvesom.provider.books.BooksUpdater;
-import biz.varkon.shelvesom.scan.ScanIntent;
-import biz.varkon.shelvesom.scan.ScanIntentIntegrator;
-import biz.varkon.shelvesom.scan.ScanIntentResult;
-import biz.varkon.shelvesom.util.IOUtilities;
-import biz.varkon.shelvesom.util.IOUtilities.inputTypes;
-import biz.varkon.shelvesom.util.ImageUtilities;
-import biz.varkon.shelvesom.util.ImportResults;
-import biz.varkon.shelvesom.util.ImportUtilities;
-import biz.varkon.shelvesom.util.Preferences;
-import biz.varkon.shelvesom.util.TextUtilities;
-import biz.varkon.shelvesom.util.UIUtilities;
-import biz.varkon.shelvesom.util.loan.Calendars;
-import biz.varkon.shelvesom.view.ShelvesView;
+import net.avabook.shelves.R;
+import net.avabook.shelves.activity.LoanActivity;
+import net.avabook.shelves.activity.RateActivity;
+import net.avabook.shelves.activity.SettingsActivity;
+import net.avabook.shelves.activity.TagActivity;
+import net.avabook.shelves.base.BaseItem;
+import net.avabook.shelves.base.BaseItemActivity;
+import net.avabook.shelves.base.BaseItemAdapter;
+import net.avabook.shelves.base.BaseItemProvider;
+import net.avabook.shelves.base.BaseItemViewHolder;
+import net.avabook.shelves.provider.ItemImport;
+import net.avabook.shelves.provider.books.BooksManager;
+import net.avabook.shelves.provider.books.BooksStore;
+import net.avabook.shelves.provider.books.BooksStore.Book;
+import net.avabook.shelves.provider.books.BooksUpdater;
+import net.avabook.shelves.scan.ScanIntent;
+import net.avabook.shelves.scan.ScanIntentIntegrator;
+import net.avabook.shelves.scan.ScanIntentResult;
+import net.avabook.shelves.util.IOUtilities;
+import net.avabook.shelves.util.IOUtilities.inputTypes;
+import net.avabook.shelves.util.ImageUtilities;
+import net.avabook.shelves.util.ImportResults;
+import net.avabook.shelves.util.ImportUtilities;
+import net.avabook.shelves.util.Preferences;
+import net.avabook.shelves.util.TextUtilities;
+import net.avabook.shelves.util.UIUtilities;
+import net.avabook.shelves.util.loan.Calendars;
+import net.avabook.shelves.view.ShelvesView;
 
 public class BooksActivity extends BaseItemActivity {
 	private static final String LOG_TAG = "BooksActivity";

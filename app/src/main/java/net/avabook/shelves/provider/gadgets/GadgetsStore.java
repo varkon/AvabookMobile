@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package biz.varkon.shelvesom.provider.gadgets;
+package net.avabook.shelves.provider.gadgets;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -41,14 +41,14 @@ import android.os.Parcelable;
 import android.provider.BaseColumns;
 import android.util.Log;
 
-import biz.varkon.shelvesom.base.BaseItem;
-import biz.varkon.shelvesom.base.BaseItem.ImageSize;
-import biz.varkon.shelvesom.server.ServerInfo;
-import biz.varkon.shelvesom.util.IOUtilities;
-import biz.varkon.shelvesom.util.IOUtilities.inputTypes;
-import biz.varkon.shelvesom.util.ImageUtilities;
-import biz.varkon.shelvesom.util.Preferences;
-import biz.varkon.shelvesom.util.TextUtilities;
+import net.avabook.shelves.base.BaseItem;
+import net.avabook.shelves.base.BaseItem.ImageSize;
+import net.avabook.shelves.server.ServerInfo;
+import net.avabook.shelves.util.IOUtilities;
+import net.avabook.shelves.util.IOUtilities.inputTypes;
+import net.avabook.shelves.util.ImageUtilities;
+import net.avabook.shelves.util.Preferences;
+import net.avabook.shelves.util.TextUtilities;
 
 /**
  * Utility class to load gadgets from a gadgets store.
@@ -508,7 +508,7 @@ public class GadgetsStore extends ServerInfo {
 
 	/**
 	 * Creates an instance of
-	 * {@link biz.varkon.shelvesom.provider.gadgets.GadgetsStore.Gadget} with
+	 * {@link net.avabook.shelves.provider.gadgets.GadgetsStore.Gadget} with
 	 * this gadget store's name.
 	 * 
 	 * @return A new instance of Gadget.
@@ -557,7 +557,7 @@ public class GadgetsStore extends ServerInfo {
 
 	/**
 	 * Listener invoked by
-	 * {@link biz.varkon.shelvesom.provider.gadgets.GadgetsStore#searchGadgets(String, biz.varkon.shelvesom.provider.gadgets.GadgetsStore.GadgetSearchListener)}
+	 * {@link net.avabook.shelves.provider.gadgets.GadgetsStore#searchGadgets(String, net.avabook.shelves.provider.gadgets.GadgetsStore.GadgetSearchListener)}
 	 * .
 	 */
 	public static interface GadgetSearchListener {

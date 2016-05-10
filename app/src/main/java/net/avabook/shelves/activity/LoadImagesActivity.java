@@ -16,7 +16,7 @@
 
 // http://stackoverflow.com/questions/2169649/open-an-image-in-androids-built-in-gallery-app-programmatically
 
-package biz.varkon.shelvesom.activity;
+package net.avabook.shelves.activity;
 
 import java.io.File;
 import java.io.InputStream;
@@ -29,12 +29,12 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore.MediaColumns;
 
-import biz.varkon.shelvesom.R;
-import biz.varkon.shelvesom.util.AnalyticsUtils;
-import biz.varkon.shelvesom.util.ImageUtilities;
-import biz.varkon.shelvesom.util.ImportUtilities;
-import biz.varkon.shelvesom.util.Preferences;
-import biz.varkon.shelvesom.util.UIUtilities;
+import net.avabook.shelves.R;
+import net.avabook.shelves.util.AnalyticsUtils;
+import net.avabook.shelves.util.ImageUtilities;
+import net.avabook.shelves.util.ImportUtilities;
+import net.avabook.shelves.util.Preferences;
+import net.avabook.shelves.util.UIUtilities;
 
 public class LoadImagesActivity extends Activity {
 	private String LOG_TAG = "LoadImagesActivity";

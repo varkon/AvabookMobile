@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package biz.varkon.shelvesom.provider.music;
+package net.avabook.shelves.provider.music;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -41,14 +41,14 @@ import android.os.Parcelable;
 import android.provider.BaseColumns;
 import android.util.Log;
 
-import biz.varkon.shelvesom.base.BaseItem;
-import biz.varkon.shelvesom.base.BaseItem.ImageSize;
-import biz.varkon.shelvesom.server.ServerInfo;
-import biz.varkon.shelvesom.util.IOUtilities;
-import biz.varkon.shelvesom.util.IOUtilities.inputTypes;
-import biz.varkon.shelvesom.util.ImageUtilities;
-import biz.varkon.shelvesom.util.Preferences;
-import biz.varkon.shelvesom.util.TextUtilities;
+import net.avabook.shelves.base.BaseItem;
+import net.avabook.shelves.base.BaseItem.ImageSize;
+import net.avabook.shelves.server.ServerInfo;
+import net.avabook.shelves.util.IOUtilities;
+import net.avabook.shelves.util.IOUtilities.inputTypes;
+import net.avabook.shelves.util.ImageUtilities;
+import net.avabook.shelves.util.Preferences;
+import net.avabook.shelves.util.TextUtilities;
 
 /**
  * Utility class to load music from a music store.
@@ -546,7 +546,7 @@ public class MusicStore extends ServerInfo {
 
 	/**
 	 * Creates an instance of
-	 * {@link biz.varkon.shelvesom.provider.music.MusicStore.Music} with this
+	 * {@link net.avabook.shelves.provider.music.MusicStore.Music} with this
 	 * music store's name.
 	 * 
 	 * @return A new instance of Music.
@@ -616,7 +616,7 @@ public class MusicStore extends ServerInfo {
 
 	/**
 	 * Listener invoked by
-	 * {@link biz.varkon.shelvesom.provider.music.MusicStore#searchMusic(String, biz.varkon.shelvesom.provider.music.MusicStore.MusicSearchListener)}
+	 * {@link net.avabook.shelves.provider.music.MusicStore#searchMusic(String, net.avabook.shelves.provider.music.MusicStore.MusicSearchListener)}
 	 * .
 	 */
 	public static interface MusicSearchListener {

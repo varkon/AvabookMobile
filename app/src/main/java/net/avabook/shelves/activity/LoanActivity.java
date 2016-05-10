@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package biz.varkon.shelvesom.activity;
+package net.avabook.shelves.activity;
 
 import java.util.Date;
 
@@ -37,38 +37,38 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.TextView;
 
-import biz.varkon.shelvesom.R;
-import biz.varkon.shelvesom.ShelvesomApplication;
-import biz.varkon.shelvesom.base.BaseItem;
-import biz.varkon.shelvesom.provider.apparel.ApparelManager;
-import biz.varkon.shelvesom.provider.apparel.ApparelStore;
-import biz.varkon.shelvesom.provider.boardgames.BoardGamesManager;
-import biz.varkon.shelvesom.provider.boardgames.BoardGamesStore;
-import biz.varkon.shelvesom.provider.books.BooksManager;
-import biz.varkon.shelvesom.provider.books.BooksStore;
-import biz.varkon.shelvesom.provider.comics.ComicsManager;
-import biz.varkon.shelvesom.provider.comics.ComicsStore;
-import biz.varkon.shelvesom.provider.gadgets.GadgetsManager;
-import biz.varkon.shelvesom.provider.gadgets.GadgetsStore;
-import biz.varkon.shelvesom.provider.movies.MoviesManager;
-import biz.varkon.shelvesom.provider.movies.MoviesStore;
-import biz.varkon.shelvesom.provider.music.MusicManager;
-import biz.varkon.shelvesom.provider.music.MusicStore;
-import biz.varkon.shelvesom.provider.software.SoftwareManager;
-import biz.varkon.shelvesom.provider.software.SoftwareStore;
-import biz.varkon.shelvesom.provider.tools.ToolsManager;
-import biz.varkon.shelvesom.provider.tools.ToolsStore;
-import biz.varkon.shelvesom.provider.toys.ToysManager;
-import biz.varkon.shelvesom.provider.toys.ToysStore;
-import biz.varkon.shelvesom.provider.videogames.VideoGamesManager;
-import biz.varkon.shelvesom.provider.videogames.VideoGamesStore;
-import biz.varkon.shelvesom.util.AnalyticsUtils;
-import biz.varkon.shelvesom.util.Preferences;
-import biz.varkon.shelvesom.util.UIUtilities;
-import biz.varkon.shelvesom.util.loan.Calendars;
-import biz.varkon.shelvesom.util.loan.ContactAccessor;
-import biz.varkon.shelvesom.util.loan.ContactInfo;
-import biz.varkon.shelvesom.util.loan.DateControlSet;
+import net.avabook.shelves.R;
+import net.avabook.shelves.ShelvesApplication;
+import net.avabook.shelves.base.BaseItem;
+import net.avabook.shelves.provider.apparel.ApparelManager;
+import net.avabook.shelves.provider.apparel.ApparelStore;
+import net.avabook.shelves.provider.boardgames.BoardGamesManager;
+import net.avabook.shelves.provider.boardgames.BoardGamesStore;
+import net.avabook.shelves.provider.books.BooksManager;
+import net.avabook.shelves.provider.books.BooksStore;
+import net.avabook.shelves.provider.comics.ComicsManager;
+import net.avabook.shelves.provider.comics.ComicsStore;
+import net.avabook.shelves.provider.gadgets.GadgetsManager;
+import net.avabook.shelves.provider.gadgets.GadgetsStore;
+import net.avabook.shelves.provider.movies.MoviesManager;
+import net.avabook.shelves.provider.movies.MoviesStore;
+import net.avabook.shelves.provider.music.MusicManager;
+import net.avabook.shelves.provider.music.MusicStore;
+import net.avabook.shelves.provider.software.SoftwareManager;
+import net.avabook.shelves.provider.software.SoftwareStore;
+import net.avabook.shelves.provider.tools.ToolsManager;
+import net.avabook.shelves.provider.tools.ToolsStore;
+import net.avabook.shelves.provider.toys.ToysManager;
+import net.avabook.shelves.provider.toys.ToysStore;
+import net.avabook.shelves.provider.videogames.VideoGamesManager;
+import net.avabook.shelves.provider.videogames.VideoGamesStore;
+import net.avabook.shelves.util.AnalyticsUtils;
+import net.avabook.shelves.util.Preferences;
+import net.avabook.shelves.util.UIUtilities;
+import net.avabook.shelves.util.loan.Calendars;
+import net.avabook.shelves.util.loan.ContactAccessor;
+import net.avabook.shelves.util.loan.ContactInfo;
+import net.avabook.shelves.util.loan.DateControlSet;
 
 public class LoanActivity extends Activity {
 
@@ -542,7 +542,7 @@ public class LoanActivity extends Activity {
 							getContentResolver(), mID, null).getTitle();
 				}
 
-				if (ShelvesomApplication.mCalendarAPIAvailable) {
+				if (ShelvesApplication.mCalendarAPIAvailable) {
 					Intent calIntent = new Intent(Intent.ACTION_INSERT);
 					calIntent.setType("vnd.android.cursor.item/event");
 					calIntent.putExtra(
@@ -614,7 +614,7 @@ public class LoanActivity extends Activity {
 			}
 
 			getContentResolver().update(
-					ShelvesomApplication.TYPES_TO_URI.get(mType), loanValues,
+					ShelvesApplication.TYPES_TO_URI.get(mType), loanValues,
 					BaseItem.INTERNAL_ID + "=?", new String[] { mID });
 
 			UIUtilities.showToast(context, R.string.loan_successful);

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package biz.varkon.shelvesom.provider.videogames;
+package net.avabook.shelves.provider.videogames;
 
 import java.util.HashMap;
 import java.util.regex.Matcher;
@@ -37,11 +37,11 @@ import android.provider.BaseColumns;
 import android.provider.LiveFolders;
 import android.util.Log;
 
-import biz.varkon.shelvesom.R;
-import biz.varkon.shelvesom.ShelvesomApplication;
-import biz.varkon.shelvesom.activity.SettingsActivity;
-import biz.varkon.shelvesom.base.BaseItem;
-import biz.varkon.shelvesom.util.TextUtilities;
+import net.avabook.shelves.R;
+import net.avabook.shelves.ShelvesApplication;
+import net.avabook.shelves.activity.SettingsActivity;
+import net.avabook.shelves.base.BaseItem;
+import net.avabook.shelves.util.TextUtilities;
 
 public class VideoGamesProvider extends ContentProvider {
 	private static final String LOG_TAG = "VideoGamesProvider";
@@ -189,9 +189,9 @@ public class VideoGamesProvider extends ContentProvider {
 	public String getType(Uri uri) {
 		switch (URI_MATCHER.match(uri)) {
 		case VIDEOGAMES:
-			return "vnd.android.cursor.dir/vnd.biz.varkon.shelvesom.videogames";
+			return "vnd.android.cursor.dir/vnd.net.avabook.shelves.videogames";
 		case VIDEOGAME_ID:
-			return "vnd.android.cursor.item/vnd.biz.varkon.shelvesom.videogames";
+			return "vnd.android.cursor.item/vnd.net.avabook.shelves.videogames";
 		default:
 			throw new IllegalArgumentException("Unknown URI " + uri);
 		}
@@ -219,7 +219,7 @@ public class VideoGamesProvider extends ContentProvider {
 			Uri insertUri = ContentUris.withAppendedId(
 					VideoGamesStore.VideoGame.CONTENT_URI, rowId);
 			getContext().getContentResolver().notifyChange(uri, null);
-			ShelvesomApplication.dataChanged();
+			ShelvesApplication.dataChanged();
 			return insertUri;
 		}
 
@@ -301,7 +301,7 @@ public class VideoGamesProvider extends ContentProvider {
 		}
 
 		getContext().getContentResolver().notifyChange(uri, null);
-		ShelvesomApplication.dataChanged();
+		ShelvesApplication.dataChanged();
 
 		return count;
 	}
@@ -334,7 +334,7 @@ public class VideoGamesProvider extends ContentProvider {
 			throw new IllegalArgumentException("Unknown URI " + uri);
 		}
 		getContext().getContentResolver().notifyChange(uri, null);
-		ShelvesomApplication.dataChanged();
+		ShelvesApplication.dataChanged();
 		return count;
 	}
 

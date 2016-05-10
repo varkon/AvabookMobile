@@ -18,7 +18,7 @@
  * needs, and I changed the ids/strings of the help resources
  */
 
-package biz.varkon.shelvesom.activity;
+package net.avabook.shelves.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -30,8 +30,8 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
 
-import biz.varkon.shelvesom.R;
-import biz.varkon.shelvesom.util.AnalyticsUtils;
+import net.avabook.shelves.R;
+import net.avabook.shelves.util.AnalyticsUtils;
 
 /**
  * An HTML-based help screen with Back and Done buttons at the bottom.

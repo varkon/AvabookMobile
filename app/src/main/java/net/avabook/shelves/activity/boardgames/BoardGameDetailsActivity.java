@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package biz.varkon.shelvesom.activity.boardgames;
+package net.avabook.shelves.activity.boardgames;
 
 import java.util.List;
 
@@ -27,15 +27,15 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import biz.varkon.shelvesom.R;
-import biz.varkon.shelvesom.activity.SettingsActivity;
-import biz.varkon.shelvesom.base.BaseDetailsActivity;
-import biz.varkon.shelvesom.drawable.FastBitmapDrawable;
-import biz.varkon.shelvesom.provider.boardgames.BoardGamesManager;
-import biz.varkon.shelvesom.provider.boardgames.BoardGamesStore;
-import biz.varkon.shelvesom.util.ImageUtilities;
-import biz.varkon.shelvesom.util.TextUtilities;
-import biz.varkon.shelvesom.util.UIUtilities;
+import net.avabook.shelves.R;
+import net.avabook.shelves.activity.SettingsActivity;
+import net.avabook.shelves.base.BaseDetailsActivity;
+import net.avabook.shelves.drawable.FastBitmapDrawable;
+import net.avabook.shelves.provider.boardgames.BoardGamesManager;
+import net.avabook.shelves.provider.boardgames.BoardGamesStore;
+import net.avabook.shelves.util.ImageUtilities;
+import net.avabook.shelves.util.TextUtilities;
+import net.avabook.shelves.util.UIUtilities;
 
 public class BoardGameDetailsActivity extends BaseDetailsActivity {
 	private static final String EXTRA_BOARDGAME = "shelves.extra.boardgame_id";

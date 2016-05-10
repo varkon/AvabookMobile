@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package biz.varkon.shelvesom.util.backup;
+package net.avabook.shelves.util.backup;
 
 import java.io.IOException;
 
@@ -27,20 +27,20 @@ import android.app.backup.SharedPreferencesBackupHelper;
 import android.os.ParcelFileDescriptor;
 import android.util.Log;
 
-import biz.varkon.shelvesom.base.BaseItemProvider;
-import biz.varkon.shelvesom.provider.InternalAdapter;
-import biz.varkon.shelvesom.provider.apparel.ApparelProvider;
-import biz.varkon.shelvesom.provider.boardgames.BoardGamesProvider;
-import biz.varkon.shelvesom.provider.books.BooksProvider;
-import biz.varkon.shelvesom.provider.comics.ComicsProvider;
-import biz.varkon.shelvesom.provider.gadgets.GadgetsProvider;
-import biz.varkon.shelvesom.provider.movies.MoviesProvider;
-import biz.varkon.shelvesom.provider.music.MusicProvider;
-import biz.varkon.shelvesom.provider.software.SoftwareProvider;
-import biz.varkon.shelvesom.provider.tools.ToolsProvider;
-import biz.varkon.shelvesom.provider.toys.ToysProvider;
-import biz.varkon.shelvesom.provider.videogames.VideoGamesProvider;
-import biz.varkon.shelvesom.util.Preferences;
+import net.avabook.shelves.base.BaseItemProvider;
+import net.avabook.shelves.provider.InternalAdapter;
+import net.avabook.shelves.provider.apparel.ApparelProvider;
+import net.avabook.shelves.provider.boardgames.BoardGamesProvider;
+import net.avabook.shelves.provider.books.BooksProvider;
+import net.avabook.shelves.provider.comics.ComicsProvider;
+import net.avabook.shelves.provider.gadgets.GadgetsProvider;
+import net.avabook.shelves.provider.movies.MoviesProvider;
+import net.avabook.shelves.provider.music.MusicProvider;
+import net.avabook.shelves.provider.software.SoftwareProvider;
+import net.avabook.shelves.provider.tools.ToolsProvider;
+import net.avabook.shelves.provider.toys.ToysProvider;
+import net.avabook.shelves.provider.videogames.VideoGamesProvider;
+import net.avabook.shelves.util.Preferences;
 
 @TargetApi(8)
 public class ShelvesBackupAgent extends BackupAgentHelper {

@@ -18,7 +18,7 @@
  *   Free Software Foundation, Inc.,                                       *
  *   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.         *
  ***************************************************************************/
-package biz.varkon.shelvesom.util;
+package net.avabook.shelves.util;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -27,7 +27,7 @@ import android.view.animation.Animation;
 import android.view.animation.TranslateAnimation;
 import android.widget.Button;
 
-import biz.varkon.shelvesom.R;
+import net.avabook.shelves.R;
 
 // TODO usage of NinePath
 /**

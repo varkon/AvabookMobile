@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package biz.varkon.shelvesom.util;
+package net.avabook.shelves.util;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -33,8 +33,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import biz.varkon.shelvesom.licensing.LicenseCheck;
-import biz.varkon.shelvesom.R;
+import net.avabook.shelves.licensing.LicenseCheck;
+import net.avabook.shelves.R;
 
 public class UIUtilities {
 

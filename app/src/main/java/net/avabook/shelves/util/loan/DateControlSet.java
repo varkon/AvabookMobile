@@ -18,7 +18,7 @@
  * 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-package biz.varkon.shelvesom.util.loan;
+package net.avabook.shelves.util.loan;
 
 import java.text.Format;
 import java.util.Date;
@@ -33,7 +33,7 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.TimePicker;
 
-import biz.varkon.shelvesom.util.Preferences;
+import net.avabook.shelves.util.Preferences;
 
 public class DateControlSet implements OnTimeSetListener, OnDateSetListener,
 		View.OnClickListener {

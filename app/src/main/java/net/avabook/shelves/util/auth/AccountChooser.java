@@ -14,7 +14,7 @@
  * the License.
  */
 
-package biz.varkon.shelvesom.util.auth;
+package net.avabook.shelves.util.auth;
 
 import android.accounts.Account;
 import android.accounts.AccountManager;
@@ -23,7 +23,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.util.Log;
 
-import biz.varkon.shelvesom.R;
+import net.avabook.shelves.R;
 
 /**
  * Choose which account to upload track information to.

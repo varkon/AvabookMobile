@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package biz.varkon.shelvesom.util;
+package net.avabook.shelves.util;
 
 import java.io.BufferedOutputStream;
 import java.io.ByteArrayOutputStream;
@@ -47,7 +47,7 @@ import android.graphics.Rect;
 import android.graphics.RectF;
 import android.graphics.Shader;
 
-import biz.varkon.shelvesom.drawable.FastBitmapDrawable;
+import net.avabook.shelves.drawable.FastBitmapDrawable;
 
 public class ImageUtilities {
 	private static final String LOG_TAG = "ImageUtilities";

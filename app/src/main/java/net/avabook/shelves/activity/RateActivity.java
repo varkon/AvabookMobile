@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package biz.varkon.shelvesom.activity;
+package net.avabook.shelves.activity;
 
 import android.app.Activity;
 import android.content.ContentValues;
@@ -29,11 +29,11 @@ import android.widget.Button;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
-import biz.varkon.shelvesom.R;
-import biz.varkon.shelvesom.ShelvesomApplication;
-import biz.varkon.shelvesom.base.BaseItem;
-import biz.varkon.shelvesom.util.AnalyticsUtils;
-import biz.varkon.shelvesom.util.UIUtilities;
+import net.avabook.shelves.R;
+import net.avabook.shelves.ShelvesApplication;
+import net.avabook.shelves.base.BaseItem;
+import net.avabook.shelves.util.AnalyticsUtils;
+import net.avabook.shelves.util.UIUtilities;
 
 public class RateActivity extends Activity {
 	private final String LOG_TAG = "RateActivity";
@@ -62,7 +62,7 @@ public class RateActivity extends Activity {
 		final TextView ratingText = (TextView) findViewById(R.id.ratingText);
 
 		Cursor c = getContentResolver().query(
-				ShelvesomApplication.TYPES_TO_URI.get(mType),
+				ShelvesApplication.TYPES_TO_URI.get(mType),
 				new String[] { BaseItem.INTERNAL_ID, BaseItem.RATING },
 				BaseItem.INTERNAL_ID + " = '" + mID + "'", null, null);
 		if (c.moveToFirst()) {
@@ -111,7 +111,7 @@ public class RateActivity extends Activity {
 				rateValue.put(BaseItem.RATING, mRating);
 
 				getContentResolver().update(
-						ShelvesomApplication.TYPES_TO_URI.get(mType), rateValue,
+						ShelvesApplication.TYPES_TO_URI.get(mType), rateValue,
 						BaseItem.INTERNAL_ID + "=?", new String[] { mID });
 
 				UIUtilities.showToast(getBaseContext(), R.string.rate_set);

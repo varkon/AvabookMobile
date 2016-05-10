@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package biz.varkon.shelvesom.view;
+package net.avabook.shelves.view;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -27,7 +27,7 @@ import android.text.Layout;
 import android.util.AttributeSet;
 import android.widget.TextView;
 
-import biz.varkon.shelvesom.R;
+import net.avabook.shelves.R;
 
 /**
  * TextView that draws a bubble behind the text. We cannot use a

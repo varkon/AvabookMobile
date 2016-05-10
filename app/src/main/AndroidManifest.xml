@@ -59,7 +59,7 @@
         android:xlargeScreens="true" />
 
     <application
-        android:name="ShelvesomApplication"
+        android:name="ShelvesApplication"
         android:backupAgent=".util.backup.ShelvesomBackupAgent"
         android:allowBackup = "true"
         android:icon="@drawable/ic_launcher"

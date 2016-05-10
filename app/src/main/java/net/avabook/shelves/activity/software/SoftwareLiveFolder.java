@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package biz.varkon.shelvesom.activity.software;
+package net.avabook.shelves.activity.software;
 
 import android.app.Activity;
 import android.content.Context;
@@ -23,8 +23,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.provider.LiveFolders;
 
-import biz.varkon.shelvesom.R;
-import biz.varkon.shelvesom.provider.software.SoftwareStore;
+import net.avabook.shelves.R;
+import net.avabook.shelves.provider.software.SoftwareStore;
 
 public class SoftwareLiveFolder extends Activity {
 	public static final Uri CONTENT_URI = Uri

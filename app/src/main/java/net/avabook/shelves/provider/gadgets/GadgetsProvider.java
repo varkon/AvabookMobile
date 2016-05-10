@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package biz.varkon.shelvesom.provider.gadgets;
+package net.avabook.shelves.provider.gadgets;
 
 import java.util.HashMap;
 import java.util.regex.Pattern;
@@ -36,11 +36,11 @@ import android.provider.BaseColumns;
 import android.provider.LiveFolders;
 import android.util.Log;
 
-import biz.varkon.shelvesom.R;
-import biz.varkon.shelvesom.ShelvesomApplication;
-import biz.varkon.shelvesom.activity.SettingsActivity;
-import biz.varkon.shelvesom.base.BaseItem;
-import biz.varkon.shelvesom.util.TextUtilities;
+import net.avabook.shelves.R;
+import net.avabook.shelves.ShelvesApplication;
+import net.avabook.shelves.activity.SettingsActivity;
+import net.avabook.shelves.base.BaseItem;
+import net.avabook.shelves.util.TextUtilities;
 
 public class GadgetsProvider extends ContentProvider {
 	private static final String LOG_TAG = "GadgetsProvider";
@@ -189,9 +189,9 @@ public class GadgetsProvider extends ContentProvider {
 	public String getType(Uri uri) {
 		switch (URI_MATCHER.match(uri)) {
 		case GADGETS:
-			return "vnd.android.cursor.dir/vnd.biz.varkon.shelvesom.gadgets";
+			return "vnd.android.cursor.dir/vnd.net.avabook.shelves.gadgets";
 		case GADGET_ID:
-			return "vnd.android.cursor.item/vnd.biz.varkon.shelvesom.gadgets";
+			return "vnd.android.cursor.item/vnd.net.avabook.shelves.gadgets";
 		default:
 			throw new IllegalArgumentException("Unknown URI " + uri);
 		}
@@ -219,7 +219,7 @@ public class GadgetsProvider extends ContentProvider {
 			Uri insertUri = ContentUris.withAppendedId(
 					GadgetsStore.Gadget.CONTENT_URI, rowId);
 			getContext().getContentResolver().notifyChange(uri, null);
-			ShelvesomApplication.dataChanged();
+			ShelvesApplication.dataChanged();
 			return insertUri;
 		}
 
@@ -283,7 +283,7 @@ public class GadgetsProvider extends ContentProvider {
 		}
 
 		getContext().getContentResolver().notifyChange(uri, null);
-		ShelvesomApplication.dataChanged();
+		ShelvesApplication.dataChanged();
 
 		return count;
 	}
@@ -316,7 +316,7 @@ public class GadgetsProvider extends ContentProvider {
 			throw new IllegalArgumentException("Unknown URI " + uri);
 		}
 		getContext().getContentResolver().notifyChange(uri, null);
-		ShelvesomApplication.dataChanged();
+		ShelvesApplication.dataChanged();
 		return count;
 	}
 

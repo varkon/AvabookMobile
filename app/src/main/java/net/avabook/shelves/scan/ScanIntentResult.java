@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package biz.varkon.shelvesom.scan;
+package net.avabook.shelves.scan;
 
 /**
  * <p>

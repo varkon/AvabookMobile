@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package biz.varkon.shelvesom.base;
+package net.avabook.shelves.base;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -25,11 +25,11 @@ import android.content.ContentValues;
 import android.graphics.Bitmap;
 import android.util.Log;
 
-import biz.varkon.shelvesom.ShelvesomApplication;
-import biz.varkon.shelvesom.activity.TagActivity;
-import biz.varkon.shelvesom.server.ServerInfo;
-import biz.varkon.shelvesom.util.IOUtilities;
-import biz.varkon.shelvesom.util.TextUtilities;
+import net.avabook.shelves.ShelvesApplication;
+import net.avabook.shelves.activity.TagActivity;
+import net.avabook.shelves.server.ServerInfo;
+import net.avabook.shelves.util.IOUtilities;
+import net.avabook.shelves.util.TextUtilities;
 
 public abstract class BaseItem {
 	public final String LOG_TAG = "BaseItem";
@@ -352,7 +352,7 @@ public abstract class BaseItem {
 		}
 
 		try {
-			contentResolver.update(ShelvesomApplication.TYPES_TO_URI.get(type),
+			contentResolver.update(ShelvesApplication.TYPES_TO_URI.get(type),
 					contentValues, BaseItem.INTERNAL_ID + "=?",
 					new String[] { ServerInfo.NAME + mInternalId });
 		} catch (Exception e) {

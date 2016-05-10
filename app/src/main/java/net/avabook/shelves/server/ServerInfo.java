@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package biz.varkon.shelvesom.server;
+package net.avabook.shelves.server;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -37,14 +37,14 @@ import android.net.Uri;
 import android.util.Xml;
 import android.view.InflateException;
 
-import biz.varkon.shelvesom.BuildConfig;
-import biz.varkon.shelvesom.activity.SettingsActivity;
-import biz.varkon.shelvesom.provider.books.BooksStore;
-import biz.varkon.shelvesom.util.CookieStore;
-import biz.varkon.shelvesom.util.Entities;
-import biz.varkon.shelvesom.util.HttpManager;
-import biz.varkon.shelvesom.util.IOUtilities;
-import biz.varkon.shelvesom.util.ImageUtilities;
+import net.avabook.shelves.BuildConfig;
+import net.avabook.shelves.activity.SettingsActivity;
+import net.avabook.shelves.provider.books.BooksStore;
+import net.avabook.shelves.util.CookieStore;
+import net.avabook.shelves.util.Entities;
+import net.avabook.shelves.util.HttpManager;
+import net.avabook.shelves.util.IOUtilities;
+import net.avabook.shelves.util.ImageUtilities;
 
 public class ServerInfo {
 	public static final String NAME = "5h3lv35";

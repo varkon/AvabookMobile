@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package biz.varkon.shelvesom.base;
+package net.avabook.shelves.base;
 
 import android.app.Activity;
 import android.content.ContentValues;
@@ -35,11 +35,11 @@ import android.widget.ViewFlipper;
 
 import com.google.ads.AdRequest;
 import com.google.ads.AdView;
-import biz.varkon.shelvesom.R;
-import biz.varkon.shelvesom.util.ActivityHelper;
-import biz.varkon.shelvesom.util.AnalyticsUtils;
-import biz.varkon.shelvesom.util.TextUtilities;
-import biz.varkon.shelvesom.util.UIUtilities;
+import net.avabook.shelves.R;
+import net.avabook.shelves.util.ActivityHelper;
+import net.avabook.shelves.util.AnalyticsUtils;
+import net.avabook.shelves.util.TextUtilities;
+import net.avabook.shelves.util.UIUtilities;
 
 public abstract class BaseDetailsActivity extends Activity {
 	private ActivityHelper mActivityHelper;

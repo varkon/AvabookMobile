@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package biz.varkon.shelvesom.base;
+package net.avabook.shelves.base;
 
 import java.util.regex.Pattern;
 
@@ -41,45 +41,45 @@ import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.Spinner;
 
-import biz.varkon.shelvesom.R;
-import biz.varkon.shelvesom.ShelvesomApplication;
-import biz.varkon.shelvesom.activity.LoadImagesActivity;
-import biz.varkon.shelvesom.drawable.FastBitmapDrawable;
-import biz.varkon.shelvesom.provider.apparel.ApparelManager;
-import biz.varkon.shelvesom.provider.apparel.ApparelStore.Apparel;
-import biz.varkon.shelvesom.provider.boardgames.BoardGamesManager;
-import biz.varkon.shelvesom.provider.boardgames.BoardGamesStore.BoardGame;
-import biz.varkon.shelvesom.provider.books.BooksManager;
-import biz.varkon.shelvesom.provider.books.BooksStore.Book;
-import biz.varkon.shelvesom.provider.comics.ComicsManager;
-import biz.varkon.shelvesom.provider.comics.ComicsStore.Comic;
-import biz.varkon.shelvesom.provider.gadgets.GadgetsManager;
-import biz.varkon.shelvesom.provider.gadgets.GadgetsProvider;
-import biz.varkon.shelvesom.provider.gadgets.GadgetsStore.Gadget;
-import biz.varkon.shelvesom.provider.movies.MoviesManager;
-import biz.varkon.shelvesom.provider.movies.MoviesProvider;
-import biz.varkon.shelvesom.provider.movies.MoviesStore.Movie;
-import biz.varkon.shelvesom.provider.music.MusicManager;
-import biz.varkon.shelvesom.provider.music.MusicProvider;
-import biz.varkon.shelvesom.provider.music.MusicStore.Music;
-import biz.varkon.shelvesom.provider.software.SoftwareManager;
-import biz.varkon.shelvesom.provider.software.SoftwareProvider;
-import biz.varkon.shelvesom.provider.software.SoftwareStore.Software;
-import biz.varkon.shelvesom.provider.tools.ToolsManager;
-import biz.varkon.shelvesom.provider.tools.ToolsProvider;
-import biz.varkon.shelvesom.provider.tools.ToolsStore.Tool;
-import biz.varkon.shelvesom.provider.toys.ToysManager;
-import biz.varkon.shelvesom.provider.toys.ToysProvider;
-import biz.varkon.shelvesom.provider.toys.ToysStore.Toy;
-import biz.varkon.shelvesom.provider.videogames.VideoGamesManager;
-import biz.varkon.shelvesom.provider.videogames.VideoGamesProvider;
-import biz.varkon.shelvesom.provider.videogames.VideoGamesStore.VideoGame;
-import biz.varkon.shelvesom.util.AnalyticsUtils;
-import biz.varkon.shelvesom.util.ImageUtilities;
-import biz.varkon.shelvesom.util.ImportUtilities;
-import biz.varkon.shelvesom.util.Preferences;
-import biz.varkon.shelvesom.util.TextUtilities;
-import biz.varkon.shelvesom.util.UIUtilities;
+import net.avabook.shelves.R;
+import net.avabook.shelves.ShelvesApplication;
+import net.avabook.shelves.activity.LoadImagesActivity;
+import net.avabook.shelves.drawable.FastBitmapDrawable;
+import net.avabook.shelves.provider.apparel.ApparelManager;
+import net.avabook.shelves.provider.apparel.ApparelStore.Apparel;
+import net.avabook.shelves.provider.boardgames.BoardGamesManager;
+import net.avabook.shelves.provider.boardgames.BoardGamesStore.BoardGame;
+import net.avabook.shelves.provider.books.BooksManager;
+import net.avabook.shelves.provider.books.BooksStore.Book;
+import net.avabook.shelves.provider.comics.ComicsManager;
+import net.avabook.shelves.provider.comics.ComicsStore.Comic;
+import net.avabook.shelves.provider.gadgets.GadgetsManager;
+import net.avabook.shelves.provider.gadgets.GadgetsProvider;
+import net.avabook.shelves.provider.gadgets.GadgetsStore.Gadget;
+import net.avabook.shelves.provider.movies.MoviesManager;
+import net.avabook.shelves.provider.movies.MoviesProvider;
+import net.avabook.shelves.provider.movies.MoviesStore.Movie;
+import net.avabook.shelves.provider.music.MusicManager;
+import net.avabook.shelves.provider.music.MusicProvider;
+import net.avabook.shelves.provider.music.MusicStore.Music;
+import net.avabook.shelves.provider.software.SoftwareManager;
+import net.avabook.shelves.provider.software.SoftwareProvider;
+import net.avabook.shelves.provider.software.SoftwareStore.Software;
+import net.avabook.shelves.provider.tools.ToolsManager;
+import net.avabook.shelves.provider.tools.ToolsProvider;
+import net.avabook.shelves.provider.tools.ToolsStore.Tool;
+import net.avabook.shelves.provider.toys.ToysManager;
+import net.avabook.shelves.provider.toys.ToysProvider;
+import net.avabook.shelves.provider.toys.ToysStore.Toy;
+import net.avabook.shelves.provider.videogames.VideoGamesManager;
+import net.avabook.shelves.provider.videogames.VideoGamesProvider;
+import net.avabook.shelves.provider.videogames.VideoGamesStore.VideoGame;
+import net.avabook.shelves.util.AnalyticsUtils;
+import net.avabook.shelves.util.ImageUtilities;
+import net.avabook.shelves.util.ImportUtilities;
+import net.avabook.shelves.util.Preferences;
+import net.avabook.shelves.util.TextUtilities;
+import net.avabook.shelves.util.UIUtilities;
 
 public class BaseManualAddActivity extends Activity {
 	private final String LOG_TAG = "BaseManualAddActivity";
@@ -162,7 +162,7 @@ public class BaseManualAddActivity extends Activity {
 
 		if (type.contains("apparel")) {
 			setContentView(R.layout.new_blank_apparel);
-			uri = ShelvesomApplication.TYPES_TO_URI
+			uri = ShelvesApplication.TYPES_TO_URI
 					.get(getString(R.string.apparel_label));
 
 			edit_ean = (EditText) findViewById(R.id.edit_ean);
@@ -183,7 +183,7 @@ public class BaseManualAddActivity extends Activity {
 			}
 		} else if (type.contains("boardgames")) {
 			setContentView(R.layout.new_blank_boardgame);
-			uri = ShelvesomApplication.TYPES_TO_URI
+			uri = ShelvesApplication.TYPES_TO_URI
 					.get(getString(R.string.boardgame_label_plural_small));
 
 			edit_ean = (EditText) findViewById(R.id.edit_ean);
@@ -206,7 +206,7 @@ public class BaseManualAddActivity extends Activity {
 			}
 		} else if (type.contains("books")) {
 			setContentView(R.layout.new_blank_book);
-			uri = ShelvesomApplication.TYPES_TO_URI
+			uri = ShelvesApplication.TYPES_TO_URI
 					.get(getString(R.string.book_label_plural_small));
 
 			monthSpinner = (Spinner) findViewById(R.id.month_prompt);
@@ -252,7 +252,7 @@ public class BaseManualAddActivity extends Activity {
 			}
 		} else if (type.contains("comics")) {
 			setContentView(R.layout.new_blank_comic);
-			uri = ShelvesomApplication.TYPES_TO_URI
+			uri = ShelvesApplication.TYPES_TO_URI
 					.get(getString(R.string.comic_label_plural_small));
 
 			monthSpinner = (Spinner) findViewById(R.id.month_prompt);
@@ -288,7 +288,7 @@ public class BaseManualAddActivity extends Activity {
 
 		else if (type.contains("gadgets")) {
 			setContentView(R.layout.new_blank_gadget);
-			uri = ShelvesomApplication.TYPES_TO_URI
+			uri = ShelvesApplication.TYPES_TO_URI
 					.get(getString(R.string.gadget_label_plural_small));
 
 			edit_ean = (EditText) findViewById(R.id.edit_ean);
@@ -304,7 +304,7 @@ public class BaseManualAddActivity extends Activity {
 			}
 		} else if (type.contains("movies")) {
 			setContentView(R.layout.new_blank_movie);
-			uri = ShelvesomApplication.TYPES_TO_URI
+			uri = ShelvesApplication.TYPES_TO_URI
 					.get(getString(R.string.movie_label_plural_small));
 
 			monthSpinner = (Spinner) findViewById(R.id.month_prompt);
@@ -370,7 +370,7 @@ public class BaseManualAddActivity extends Activity {
 
 		} else if (type.contains("music")) {
 			setContentView(R.layout.new_blank_music);
-			uri = ShelvesomApplication.TYPES_TO_URI
+			uri = ShelvesApplication.TYPES_TO_URI
 					.get(getString(R.string.music_label_plural_small));
 
 			monthSpinner = (Spinner) findViewById(R.id.month_prompt);
@@ -404,7 +404,7 @@ public class BaseManualAddActivity extends Activity {
 
 		} else if (type.contains("software")) {
 			setContentView(R.layout.new_blank_software);
-			uri = ShelvesomApplication.TYPES_TO_URI
+			uri = ShelvesApplication.TYPES_TO_URI
 					.get(getString(R.string.software_label_plural_small));
 
 			monthSpinner = (Spinner) findViewById(R.id.month_prompt);
@@ -440,7 +440,7 @@ public class BaseManualAddActivity extends Activity {
 
 		} else if (type.contains("tools")) {
 			setContentView(R.layout.new_blank_tool);
-			uri = ShelvesomApplication.TYPES_TO_URI
+			uri = ShelvesApplication.TYPES_TO_URI
 					.get(getString(R.string.tool_label_plural_small));
 
 			edit_ean = (EditText) findViewById(R.id.edit_ean);
@@ -456,7 +456,7 @@ public class BaseManualAddActivity extends Activity {
 
 		} else if (type.contains("toys")) {
 			setContentView(R.layout.new_blank_toy);
-			uri = ShelvesomApplication.TYPES_TO_URI
+			uri = ShelvesApplication.TYPES_TO_URI
 					.get(getString(R.string.toy_label_plural_small));
 
 			monthSpinner = (Spinner) findViewById(R.id.month_prompt);
@@ -487,7 +487,7 @@ public class BaseManualAddActivity extends Activity {
 
 		} else if (type.contains("videogames")) {
 			setContentView(R.layout.new_blank_videogame);
-			uri = ShelvesomApplication.TYPES_TO_URI
+			uri = ShelvesApplication.TYPES_TO_URI
 					.get(getString(R.string.videogame_label_plural_small));
 
 			monthSpinner = (Spinner) findViewById(R.id.month_prompt);

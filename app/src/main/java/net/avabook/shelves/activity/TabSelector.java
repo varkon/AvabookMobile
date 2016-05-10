@@ -1,4 +1,4 @@
-package biz.varkon.shelvesom.activity;
+package net.avabook.shelves.activity;
 
 import android.annotation.TargetApi;
 import android.app.TabActivity;
@@ -16,12 +16,12 @@ import android.view.View;
 import android.widget.TabHost;
 import android.widget.TabHost.OnTabChangeListener;
 
-import biz.varkon.shelvesom.BuildConfig;
-import biz.varkon.shelvesom.R;
-import biz.varkon.shelvesom.provider.InternalAdapter;
-import biz.varkon.shelvesom.util.ActivityHelper;
-import biz.varkon.shelvesom.util.UIUtilities;
-import biz.varkon.shelvesom.licensing.LicenseCheck;
+import net.avabook.shelves.BuildConfig;
+import net.avabook.shelves.R;
+import net.avabook.shelves.provider.InternalAdapter;
+import net.avabook.shelves.util.ActivityHelper;
+import net.avabook.shelves.util.UIUtilities;
+import net.avabook.shelves.licensing.LicenseCheck;
 
 public class TabSelector extends TabActivity {
 	static ActivityHelper mActivityHelper;

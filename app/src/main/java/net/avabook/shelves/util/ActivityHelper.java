@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package biz.varkon.shelvesom.util;
+package net.avabook.shelves.util;
 
 import android.app.Activity;
 import android.graphics.Color;
@@ -27,7 +27,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import biz.varkon.shelvesom.R;
+import net.avabook.shelves.R;
 
 /**
  * A class that handles some common activity-related functionality in the app,

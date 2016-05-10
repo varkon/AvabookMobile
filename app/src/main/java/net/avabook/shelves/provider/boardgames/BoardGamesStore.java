@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package biz.varkon.shelvesom.provider.boardgames;
+package net.avabook.shelves.provider.boardgames;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -41,15 +41,15 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.provider.BaseColumns;
 
-import biz.varkon.shelvesom.base.BaseItem;
-import biz.varkon.shelvesom.base.BaseItem.ImageSize;
-import biz.varkon.shelvesom.server.BGGInfo;
-import biz.varkon.shelvesom.util.Entities;
-import biz.varkon.shelvesom.util.IOUtilities;
-import biz.varkon.shelvesom.util.IOUtilities.inputTypes;
-import biz.varkon.shelvesom.util.ImageUtilities;
-import biz.varkon.shelvesom.util.Preferences;
-import biz.varkon.shelvesom.util.TextUtilities;
+import net.avabook.shelves.base.BaseItem;
+import net.avabook.shelves.base.BaseItem.ImageSize;
+import net.avabook.shelves.server.BGGInfo;
+import net.avabook.shelves.util.Entities;
+import net.avabook.shelves.util.IOUtilities;
+import net.avabook.shelves.util.IOUtilities.inputTypes;
+import net.avabook.shelves.util.ImageUtilities;
+import net.avabook.shelves.util.Preferences;
+import net.avabook.shelves.util.TextUtilities;
 
 /**
  * Utility class to load boardgames from a boardgames store.
@@ -556,7 +556,7 @@ public class BoardGamesStore extends BGGInfo {
 
 	/**
 	 * Creates an instance of
-	 * {@link biz.varkon.shelvesom.provider.boardgames.BoardGamesStore.BoardGame}
+	 * {@link net.avabook.shelves.provider.boardgames.BoardGamesStore.BoardGame}
 	 * with this boardgame store's name.
 	 * 
 	 * @return A new instance of BoardGame.
@@ -616,7 +616,7 @@ public class BoardGamesStore extends BGGInfo {
 
 	/**
 	 * Listener invoked by
-	 * {@link biz.varkon.shelvesom.provider.boardgames.BoardGamesStore#searchBoardGames(String, biz.varkon.shelvesom.provider.boardgames.BoardGamesStore.BoardGameSearchListener)}
+	 * {@link net.avabook.shelves.provider.boardgames.BoardGamesStore#searchBoardGames(String, net.avabook.shelves.provider.boardgames.BoardGamesStore.BoardGameSearchListener)}
 	 * .
 	 */
 	public static interface BoardGameSearchListener {

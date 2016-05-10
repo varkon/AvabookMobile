@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package biz.varkon.shelvesom.provider.music;
+package net.avabook.shelves.provider.music;
 
 import java.io.IOException;
 import java.text.ParseException;
@@ -36,11 +36,11 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.os.Process;
 
-import biz.varkon.shelvesom.base.BaseItem;
-import biz.varkon.shelvesom.util.HttpManager;
-import biz.varkon.shelvesom.util.ImageUtilities;
-import biz.varkon.shelvesom.util.ImportUtilities;
-import biz.varkon.shelvesom.util.Preferences;
+import net.avabook.shelves.base.BaseItem;
+import net.avabook.shelves.util.HttpManager;
+import net.avabook.shelves.util.ImageUtilities;
+import net.avabook.shelves.util.ImportUtilities;
+import net.avabook.shelves.util.Preferences;
 
 public class MusicUpdater implements Runnable {
 	private static final String LOG_TAG = "MusicUpdater";

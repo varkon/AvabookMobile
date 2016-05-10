@@ -19,7 +19,7 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.         *
  ***************************************************************************/
 
-package biz.varkon.shelvesom.view;
+package net.avabook.shelves.view;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,9 +38,9 @@ import android.view.animation.Animation.AnimationListener;
 import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 
-import biz.varkon.shelvesom.R;
-import biz.varkon.shelvesom.util.TagButton;
-import biz.varkon.shelvesom.util.TextUtilities;
+import net.avabook.shelves.R;
+import net.avabook.shelves.util.TagButton;
+import net.avabook.shelves.util.TextUtilities;
 
 /**
  * Layout/container for TagButtons

@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package biz.varkon.shelvesom.util;
+package net.avabook.shelves.util;
 
 import java.io.IOException;
 

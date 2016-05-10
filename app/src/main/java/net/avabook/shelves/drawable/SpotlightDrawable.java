@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package biz.varkon.shelvesom.drawable;
+package net.avabook.shelves.drawable;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -31,7 +31,7 @@ import android.graphics.drawable.Drawable;
 import android.view.View;
 import android.view.ViewGroup;
 
-import biz.varkon.shelvesom.R;
+import net.avabook.shelves.R;
 
 public class SpotlightDrawable extends Drawable {
 	private final Bitmap mBitmap;

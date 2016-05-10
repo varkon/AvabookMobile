@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package biz.varkon.shelvesom.activity.comics;
+package net.avabook.shelves.activity.comics;
 
 import android.app.Activity;
 import android.content.Context;
@@ -25,8 +25,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.provider.LiveFolders;
 
-import biz.varkon.shelvesom.R;
-import biz.varkon.shelvesom.provider.comics.ComicsStore;
+import net.avabook.shelves.R;
+import net.avabook.shelves.provider.comics.ComicsStore;
 
 public class ComicsLiveFolder extends Activity {
 	public static final Uri CONTENT_URI = Uri

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package biz.varkon.shelvesom.provider.apparel;
+package net.avabook.shelves.provider.apparel;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -40,14 +40,14 @@ import android.os.Parcelable;
 import android.provider.BaseColumns;
 import android.util.Log;
 
-import biz.varkon.shelvesom.base.BaseItem;
-import biz.varkon.shelvesom.base.BaseItem.ImageSize;
-import biz.varkon.shelvesom.server.ServerInfo;
-import biz.varkon.shelvesom.util.IOUtilities;
-import biz.varkon.shelvesom.util.IOUtilities.inputTypes;
-import biz.varkon.shelvesom.util.ImageUtilities;
-import biz.varkon.shelvesom.util.Preferences;
-import biz.varkon.shelvesom.util.TextUtilities;
+import net.avabook.shelves.base.BaseItem;
+import net.avabook.shelves.base.BaseItem.ImageSize;
+import net.avabook.shelves.server.ServerInfo;
+import net.avabook.shelves.util.IOUtilities;
+import net.avabook.shelves.util.IOUtilities.inputTypes;
+import net.avabook.shelves.util.ImageUtilities;
+import net.avabook.shelves.util.Preferences;
+import net.avabook.shelves.util.TextUtilities;
 
 /**
  * Utility class to load apparel from a apparel store.
@@ -522,7 +522,7 @@ public class ApparelStore extends ServerInfo {
 
 	/**
 	 * Creates an instance of
-	 * {@link biz.varkon.shelvesom.provider.apparel.ApparelStore.Apparel} with
+	 * {@link net.avabook.shelves.provider.apparel.ApparelStore.Apparel} with
 	 * this apparel store's name.
 	 * 
 	 * @return A new instance of Apparel.
@@ -571,7 +571,7 @@ public class ApparelStore extends ServerInfo {
 
 	/**
 	 * Listener invoked by
-	 * {@link biz.varkon.shelvesom.provider.apparel.ApparelStore#searchApparel(String, biz.varkon.shelvesom.provider.apparel.ApparelStore.ApparelSearchListener)}
+	 * {@link net.avabook.shelves.provider.apparel.ApparelStore#searchApparel(String, net.avabook.shelves.provider.apparel.ApparelStore.ApparelSearchListener)}
 	 * .
 	 */
 	public static interface ApparelSearchListener {

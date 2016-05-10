@@ -15,7 +15,7 @@
  */
 package com.google.android.apps.mytracks.io.docs;
 
-import biz.varkon.shelvesom.util.TextUtilities;
+import net.avabook.shelves.util.TextUtilities;
 
 /**
  * <p>

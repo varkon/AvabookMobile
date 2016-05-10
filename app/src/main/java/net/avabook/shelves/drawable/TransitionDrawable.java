@@ -31,7 +31,7 @@
  * limitations under the License.
  */
 
-package biz.varkon.shelvesom.drawable;
+package net.avabook.shelves.drawable;
 
 import android.graphics.Canvas;
 import android.graphics.drawable.Drawable;

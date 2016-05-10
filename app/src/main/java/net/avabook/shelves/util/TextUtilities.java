@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package biz.varkon.shelvesom.util;
+package net.avabook.shelves.util;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -38,8 +38,8 @@ import java.util.regex.Pattern;
 
 import android.text.TextUtils;
 
-import biz.varkon.shelvesom.base.BaseManualAddActivity;
-import biz.varkon.shelvesom.server.ServerInfo;
+import net.avabook.shelves.base.BaseManualAddActivity;
+import net.avabook.shelves.server.ServerInfo;
 
 public final class TextUtilities {
 	private static final String LOG_TAG = "TextUtilities";

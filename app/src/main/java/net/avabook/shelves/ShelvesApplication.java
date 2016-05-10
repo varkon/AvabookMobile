@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package biz.varkon.shelvesom;
+package net.avabook.shelves;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -28,28 +28,28 @@ import android.net.Uri;
 import android.os.Build;
 import android.util.Log;
 
-import biz.varkon.shelvesom.provider.apparel.ApparelStore;
-import biz.varkon.shelvesom.provider.boardgames.BoardGamesStore;
-import biz.varkon.shelvesom.provider.books.BooksStore;
-import biz.varkon.shelvesom.provider.comics.ComicsStore;
-import biz.varkon.shelvesom.provider.gadgets.GadgetsStore;
-import biz.varkon.shelvesom.provider.movies.MoviesStore;
-import biz.varkon.shelvesom.provider.music.MusicStore;
-import biz.varkon.shelvesom.provider.software.SoftwareStore;
-import biz.varkon.shelvesom.provider.tools.ToolsStore;
-import biz.varkon.shelvesom.provider.toys.ToysStore;
-import biz.varkon.shelvesom.provider.videogames.VideoGamesStore;
-import biz.varkon.shelvesom.util.CookieStore;
-import biz.varkon.shelvesom.util.auth.AccountChooser;
-import biz.varkon.shelvesom.util.auth.AuthManager;
-import biz.varkon.shelvesom.util.backup.BackupManagerWrapper;
+import net.avabook.shelves.provider.apparel.ApparelStore;
+import net.avabook.shelves.provider.boardgames.BoardGamesStore;
+import net.avabook.shelves.provider.books.BooksStore;
+import net.avabook.shelves.provider.comics.ComicsStore;
+import net.avabook.shelves.provider.gadgets.GadgetsStore;
+import net.avabook.shelves.provider.movies.MoviesStore;
+import net.avabook.shelves.provider.music.MusicStore;
+import net.avabook.shelves.provider.software.SoftwareStore;
+import net.avabook.shelves.provider.tools.ToolsStore;
+import net.avabook.shelves.provider.toys.ToysStore;
+import net.avabook.shelves.provider.videogames.VideoGamesStore;
+import net.avabook.shelves.util.CookieStore;
+import net.avabook.shelves.util.auth.AccountChooser;
+import net.avabook.shelves.util.auth.AuthManager;
+import net.avabook.shelves.util.backup.BackupManagerWrapper;
 
 //@ReportsCrashes(formKey = "", mode = ReportingInteractionMode.TOAST, resToastText = R.string.crash_toast_text)
 // GJT: Replaced extends Application with ACRA
-public class ShelvesomApplication extends Application {
-	private final String LOG_TAG = "ShelvesomApplication";
+public class ShelvesApplication extends Application {
+	private final String LOG_TAG = "ShelvesApplication";
 
-	private static ShelvesomApplication instance;
+	private static ShelvesApplication instance;
 
 	public static final Map<String, Uri> TYPES_TO_URI = new HashMap<String, Uri>();
 
@@ -63,7 +63,7 @@ public class ShelvesomApplication extends Application {
 
 	private static BackupManagerWrapper mBackupManagerWrapper = null;
 
-	public ShelvesomApplication() {
+	public ShelvesApplication() {
 		instance = this;
 	}
 
@@ -167,7 +167,7 @@ public class ShelvesomApplication extends Application {
 		return instance;
 	}
 
-	public static ShelvesomApplication getInstance() {
+	public static ShelvesApplication getInstance() {
 		return instance;
 	}
 

@@ -1,4 +1,4 @@
-package biz.varkon.shelvesom.licensing;
+package net.avabook.shelves.licensing;
 
 import com.miadzin.shelves.BuildConfig;
 import android.content.Context;

@@ -1,4 +1,4 @@
-package biz.varkon.shelvesom.util;
+package net.avabook.shelves.util;
 
 // test
 /**

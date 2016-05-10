@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package biz.varkon.shelvesom.scan;
+package net.avabook.shelves.scan;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -31,7 +31,7 @@ import android.content.pm.ResolveInfo;
 import android.net.Uri;
 import android.util.Log;
 
-import biz.varkon.shelvesom.R;
+import net.avabook.shelves.R;
 
 /**
  * <p>

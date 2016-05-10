@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package biz.varkon.shelvesom.base;
+package net.avabook.shelves.base;
 
 import android.app.Activity;
 import android.database.Cursor;
 import android.net.Uri;
 
-import biz.varkon.shelvesom.R;
-import biz.varkon.shelvesom.ShelvesomApplication;
-import biz.varkon.shelvesom.util.TextUtilities;
+import net.avabook.shelves.R;
+import net.avabook.shelves.ShelvesApplication;
+import net.avabook.shelves.util.TextUtilities;
 
 public abstract class BaseItemProvider {
 	public final String LOG_TAG = "BaseItemProvider";
@@ -281,39 +281,39 @@ public abstract class BaseItemProvider {
 		Uri uri = null;
 
 		if (activityToMatch.contains("Apparel"))
-			uri = ShelvesomApplication.TYPES_TO_URI.get(ShelvesomApplication
+			uri = ShelvesApplication.TYPES_TO_URI.get(ShelvesApplication
 					.getContext().getString(R.string.apparel_label));
 		else if (activityToMatch.contains("BoardGames"))
-			uri = ShelvesomApplication.TYPES_TO_URI.get(ShelvesomApplication
+			uri = ShelvesApplication.TYPES_TO_URI.get(ShelvesApplication
 					.getContext().getString(
 							R.string.boardgame_label_plural_small));
 		else if (activityToMatch.contains("Books"))
-			uri = ShelvesomApplication.TYPES_TO_URI.get(ShelvesomApplication
+			uri = ShelvesApplication.TYPES_TO_URI.get(ShelvesApplication
 					.getContext().getString(R.string.book_label_plural_small));
 		else if (activityToMatch.contains("Comics"))
-			uri = ShelvesomApplication.TYPES_TO_URI.get(ShelvesomApplication
+			uri = ShelvesApplication.TYPES_TO_URI.get(ShelvesApplication
 					.getContext().getString(R.string.comic_label_plural_small));
 		else if (activityToMatch.contains("Gadgets"))
-			uri = ShelvesomApplication.TYPES_TO_URI
-					.get(ShelvesomApplication.getContext().getString(
+			uri = ShelvesApplication.TYPES_TO_URI
+					.get(ShelvesApplication.getContext().getString(
 							R.string.gadget_label_plural_small));
 		else if (activityToMatch.contains("Movies"))
-			uri = ShelvesomApplication.TYPES_TO_URI.get(ShelvesomApplication
+			uri = ShelvesApplication.TYPES_TO_URI.get(ShelvesApplication
 					.getContext().getString(R.string.movie_label_plural_small));
 		else if (activityToMatch.contains("Music"))
-			uri = ShelvesomApplication.TYPES_TO_URI.get(ShelvesomApplication
+			uri = ShelvesApplication.TYPES_TO_URI.get(ShelvesApplication
 					.getContext().getString(R.string.music_label_plural_small));
 		else if (activityToMatch.contains("Software"))
-			uri = ShelvesomApplication.TYPES_TO_URI.get(ShelvesomApplication
+			uri = ShelvesApplication.TYPES_TO_URI.get(ShelvesApplication
 					.getContext().getString(R.string.software_label));
 		else if (activityToMatch.contains("Tools"))
-			uri = ShelvesomApplication.TYPES_TO_URI.get(ShelvesomApplication
+			uri = ShelvesApplication.TYPES_TO_URI.get(ShelvesApplication
 					.getContext().getString(R.string.tool_label_plural_small));
 		else if (activityToMatch.contains("Toys"))
-			uri = ShelvesomApplication.TYPES_TO_URI.get(ShelvesomApplication
+			uri = ShelvesApplication.TYPES_TO_URI.get(ShelvesApplication
 					.getContext().getString(R.string.toy_label_plural_small));
 		else if (activityToMatch.contains("VideoGames"))
-			uri = ShelvesomApplication.TYPES_TO_URI.get(ShelvesomApplication
+			uri = ShelvesApplication.TYPES_TO_URI.get(ShelvesApplication
 					.getContext().getString(
 							R.string.videogame_label_plural_small));
 

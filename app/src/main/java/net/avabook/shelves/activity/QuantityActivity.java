@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package biz.varkon.shelvesom.activity;
+package net.avabook.shelves.activity;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -29,10 +29,10 @@ import android.widget.Button;
 import android.widget.NumberPicker;
 import android.widget.TextView;
 
-import biz.varkon.shelvesom.R;
-import biz.varkon.shelvesom.base.BaseItem;
-import biz.varkon.shelvesom.base.BaseItemActivity;
-import biz.varkon.shelvesom.util.AnalyticsUtils;
+import net.avabook.shelves.R;
+import net.avabook.shelves.base.BaseItem;
+import net.avabook.shelves.base.BaseItemActivity;
+import net.avabook.shelves.util.AnalyticsUtils;
 
 @TargetApi(11)
 public class QuantityActivity extends Activity {

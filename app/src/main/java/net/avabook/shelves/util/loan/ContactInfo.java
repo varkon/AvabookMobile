@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package biz.varkon.shelvesom.util.loan;
+package net.avabook.shelves.util.loan;
 
 /**
  * A model object containing contact data.

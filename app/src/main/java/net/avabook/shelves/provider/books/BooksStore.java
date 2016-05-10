@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package biz.varkon.shelvesom.provider.books;
+package net.avabook.shelves.provider.books;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -44,14 +44,14 @@ import android.os.Parcelable;
 import android.provider.BaseColumns;
 import android.util.Log;
 
-import biz.varkon.shelvesom.base.BaseItem;
-import biz.varkon.shelvesom.base.BaseItem.ImageSize;
-import biz.varkon.shelvesom.server.ServerInfo;
-import biz.varkon.shelvesom.util.IOUtilities;
-import biz.varkon.shelvesom.util.IOUtilities.inputTypes;
-import biz.varkon.shelvesom.util.ImageUtilities;
-import biz.varkon.shelvesom.util.Preferences;
-import biz.varkon.shelvesom.util.TextUtilities;
+import net.avabook.shelves.base.BaseItem;
+import net.avabook.shelves.base.BaseItem.ImageSize;
+import net.avabook.shelves.server.ServerInfo;
+import net.avabook.shelves.util.IOUtilities;
+import net.avabook.shelves.util.IOUtilities.inputTypes;
+import net.avabook.shelves.util.ImageUtilities;
+import net.avabook.shelves.util.Preferences;
+import net.avabook.shelves.util.TextUtilities;
 
 /**
  * Utility class to load books from a books store.
@@ -572,7 +572,7 @@ public class BooksStore extends ServerInfo {
 
 	/**
 	 * Creates an instance of
-	 * {@link biz.varkon.shelvesom.provider.books.BooksStore.Book} with this book
+	 * {@link net.avabook.shelves.provider.books.BooksStore.Book} with this book
 	 * store's name.
 	 * 
 	 * @return A new instance of Book.
@@ -621,7 +621,7 @@ public class BooksStore extends ServerInfo {
 
 	/**
 	 * Listener invoked by
-	 * {@link biz.varkon.shelvesom.provider.books.BooksStore#searchBooks(String, biz.varkon.shelvesom.provider.books.BooksStore.BookSearchListener)}
+	 * {@link net.avabook.shelves.provider.books.BooksStore#searchBooks(String, net.avabook.shelves.provider.books.BooksStore.BookSearchListener)}
 	 * .
 	 */
 	public static interface BookSearchListener {

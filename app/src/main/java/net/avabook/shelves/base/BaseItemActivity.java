@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package biz.varkon.shelvesom.base;
+package net.avabook.shelves.base;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -72,43 +72,43 @@ import android.widget.ViewFlipper;
 
 import com.google.ads.AdRequest;
 import com.google.ads.AdView;
-import biz.varkon.shelvesom.R;
-import biz.varkon.shelvesom.ShelvesomApplication;
-import biz.varkon.shelvesom.activity.HelpActivity;
-import biz.varkon.shelvesom.activity.LoadImagesActivity;
-import biz.varkon.shelvesom.activity.MainGridActivity;
-import biz.varkon.shelvesom.activity.QuantityActivity;
-import biz.varkon.shelvesom.activity.RateActivity;
-import biz.varkon.shelvesom.activity.SettingsActivity;
-import biz.varkon.shelvesom.activity.TagActivity;
-import biz.varkon.shelvesom.drawable.CrossFadeDrawable;
-import biz.varkon.shelvesom.drawable.FastBitmapDrawable;
-import biz.varkon.shelvesom.provider.ItemImport;
-import biz.varkon.shelvesom.provider.apparel.ApparelManager;
-import biz.varkon.shelvesom.provider.boardgames.BoardGamesManager;
-import biz.varkon.shelvesom.provider.books.BooksManager;
-import biz.varkon.shelvesom.provider.comics.ComicsManager;
-import biz.varkon.shelvesom.provider.gadgets.GadgetsManager;
-import biz.varkon.shelvesom.provider.movies.MoviesManager;
-import biz.varkon.shelvesom.provider.music.MusicManager;
-import biz.varkon.shelvesom.provider.software.SoftwareManager;
-import biz.varkon.shelvesom.provider.tools.ToolsManager;
-import biz.varkon.shelvesom.provider.toys.ToysManager;
-import biz.varkon.shelvesom.provider.videogames.VideoGamesManager;
-import biz.varkon.shelvesom.scan.ScanIntent;
-import biz.varkon.shelvesom.scan.ScanIntentIntegrator;
-import biz.varkon.shelvesom.scan.ScanIntentResult;
-import biz.varkon.shelvesom.util.ActivityHelper;
-import biz.varkon.shelvesom.util.AnalyticsUtils;
-import biz.varkon.shelvesom.util.ExportUtilities;
-import biz.varkon.shelvesom.util.IOUtilities;
-import biz.varkon.shelvesom.util.IOUtilities.inputTypes;
-import biz.varkon.shelvesom.util.ImageUtilities;
-import biz.varkon.shelvesom.util.ImportUtilities;
-import biz.varkon.shelvesom.util.Preferences;
-import biz.varkon.shelvesom.util.TextUtilities;
-import biz.varkon.shelvesom.util.UIUtilities;
-import biz.varkon.shelvesom.view.ShelvesView;
+import net.avabook.shelves.R;
+import net.avabook.shelves.ShelvesApplication;
+import net.avabook.shelves.activity.HelpActivity;
+import net.avabook.shelves.activity.LoadImagesActivity;
+import net.avabook.shelves.activity.MainGridActivity;
+import net.avabook.shelves.activity.QuantityActivity;
+import net.avabook.shelves.activity.RateActivity;
+import net.avabook.shelves.activity.SettingsActivity;
+import net.avabook.shelves.activity.TagActivity;
+import net.avabook.shelves.drawable.CrossFadeDrawable;
+import net.avabook.shelves.drawable.FastBitmapDrawable;
+import net.avabook.shelves.provider.ItemImport;
+import net.avabook.shelves.provider.apparel.ApparelManager;
+import net.avabook.shelves.provider.boardgames.BoardGamesManager;
+import net.avabook.shelves.provider.books.BooksManager;
+import net.avabook.shelves.provider.comics.ComicsManager;
+import net.avabook.shelves.provider.gadgets.GadgetsManager;
+import net.avabook.shelves.provider.movies.MoviesManager;
+import net.avabook.shelves.provider.music.MusicManager;
+import net.avabook.shelves.provider.software.SoftwareManager;
+import net.avabook.shelves.provider.tools.ToolsManager;
+import net.avabook.shelves.provider.toys.ToysManager;
+import net.avabook.shelves.provider.videogames.VideoGamesManager;
+import net.avabook.shelves.scan.ScanIntent;
+import net.avabook.shelves.scan.ScanIntentIntegrator;
+import net.avabook.shelves.scan.ScanIntentResult;
+import net.avabook.shelves.util.ActivityHelper;
+import net.avabook.shelves.util.AnalyticsUtils;
+import net.avabook.shelves.util.ExportUtilities;
+import net.avabook.shelves.util.IOUtilities;
+import net.avabook.shelves.util.IOUtilities.inputTypes;
+import net.avabook.shelves.util.ImageUtilities;
+import net.avabook.shelves.util.ImportUtilities;
+import net.avabook.shelves.util.Preferences;
+import net.avabook.shelves.util.TextUtilities;
+import net.avabook.shelves.util.UIUtilities;
+import net.avabook.shelves.view.ShelvesView;
 
 public abstract class BaseItemActivity extends Activity {
 	private static final String LOG_TAG = "BaseItemActivity";
@@ -255,7 +255,7 @@ public abstract class BaseItemActivity extends Activity {
 			adView.setVisibility(View.VISIBLE);
 			adView.loadAd(new AdRequest());
 			final int rand = 1 + (int) (Math.random() * ((3000 - 1) + 1));
-			if (rand == 5 && !ShelvesomApplication.mFirstRun)
+			if (rand == 5 && !ShelvesApplication.mFirstRun)
 				showDialog(SUPPORT_THE_DEV);
 		} else {
 			adView.setVisibility(View.GONE);
@@ -1253,7 +1253,7 @@ public abstract class BaseItemActivity extends Activity {
 
 		if (itr.hasNext()) {
 
-			final Uri uri = ShelvesomApplication.TYPES_TO_URI.get(mMultiItemType);
+			final Uri uri = ShelvesApplication.TYPES_TO_URI.get(mMultiItemType);
 
 			do {
 				Set<String> uniqueTags = new HashSet<String>();
@@ -1310,7 +1310,7 @@ public abstract class BaseItemActivity extends Activity {
 
 		if (itr.hasNext()) {
 
-			final Uri uri = ShelvesomApplication.TYPES_TO_URI.get(mMultiItemType);
+			final Uri uri = ShelvesApplication.TYPES_TO_URI.get(mMultiItemType);
 
 			do {
 				String mID = (String) itr.next();
@@ -1613,7 +1613,7 @@ public abstract class BaseItemActivity extends Activity {
 									try {
 										startActivity(new Intent(
 												Intent.ACTION_VIEW,
-												Uri.parse("market://search?q=pname:biz.varkon.shelvesom.unlocker")));
+												Uri.parse("market://search?q=pname:net.avabook.shelves.unlocker")));
 										finish();
 									} catch (ActivityNotFoundException e) {
 										Log.e("MarketNotFound", e.toString());

@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package biz.varkon.shelvesom.provider;
+package net.avabook.shelves.provider;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -25,7 +25,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
-import biz.varkon.shelvesom.base.BaseItem;
+import net.avabook.shelves.base.BaseItem;
 
 public class InternalAdapter {
 	public static final String KEY_TIMES = "times";

@@ -1,4 +1,4 @@
-package biz.varkon.shelvesom.util.loan;
+package net.avabook.shelves.util.loan;
 
 import android.annotation.TargetApi;
 import android.content.ContentResolver;
@@ -12,11 +12,11 @@ import android.preference.ListPreference;
 import android.provider.CalendarContract;
 import android.util.Log;
 
-import biz.varkon.shelvesom.R;
-import biz.varkon.shelvesom.ShelvesomApplication;
-import biz.varkon.shelvesom.base.BaseItem;
-import biz.varkon.shelvesom.util.Preferences;
-import biz.varkon.shelvesom.util.UIUtilities;
+import net.avabook.shelves.R;
+import net.avabook.shelves.ShelvesApplication;
+import net.avabook.shelves.base.BaseItem;
+import net.avabook.shelves.util.Preferences;
+import net.avabook.shelves.util.UIUtilities;
 
 public class Calendars {
 
@@ -213,7 +213,7 @@ public class Calendars {
 		if (id == null)
 			return false;
 
-		if (ShelvesomApplication.mCalendarAPIAvailable)
+		if (ShelvesApplication.mCalendarAPIAvailable)
 			return true;
 
 		ContentResolver cr = context.getContentResolver();

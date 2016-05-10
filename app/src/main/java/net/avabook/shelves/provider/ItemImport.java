@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package biz.varkon.shelvesom.provider;
+package net.avabook.shelves.provider;
 
 import android.os.Parcel;
 import android.os.Parcelable;

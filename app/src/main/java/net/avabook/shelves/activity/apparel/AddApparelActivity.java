@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package biz.varkon.shelvesom.activity.apparel;
+package net.avabook.shelves.activity.apparel;
 
 import java.util.ArrayList;
 
@@ -44,17 +44,17 @@ import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import biz.varkon.shelvesom.R;
-import biz.varkon.shelvesom.activity.SettingsActivity;
-import biz.varkon.shelvesom.base.AddBaseItemActivity;
-import biz.varkon.shelvesom.base.BaseItem;
-import biz.varkon.shelvesom.drawable.FastBitmapDrawable;
-import biz.varkon.shelvesom.provider.apparel.ApparelManager;
-import biz.varkon.shelvesom.provider.apparel.ApparelStore;
-import biz.varkon.shelvesom.provider.apparel.ApparelStore.Apparel;
-import biz.varkon.shelvesom.util.ImageUtilities;
-import biz.varkon.shelvesom.util.TextUtilities;
-import biz.varkon.shelvesom.util.UIUtilities;
+import net.avabook.shelves.R;
+import net.avabook.shelves.activity.SettingsActivity;
+import net.avabook.shelves.base.AddBaseItemActivity;
+import net.avabook.shelves.base.BaseItem;
+import net.avabook.shelves.drawable.FastBitmapDrawable;
+import net.avabook.shelves.provider.apparel.ApparelManager;
+import net.avabook.shelves.provider.apparel.ApparelStore;
+import net.avabook.shelves.provider.apparel.ApparelStore.Apparel;
+import net.avabook.shelves.util.ImageUtilities;
+import net.avabook.shelves.util.TextUtilities;
+import net.avabook.shelves.util.UIUtilities;
 
 public class AddApparelActivity extends AddBaseItemActivity implements
 		AdapterView.OnItemClickListener {

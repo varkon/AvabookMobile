@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package biz.varkon.shelvesom.util;
+package net.avabook.shelves.util;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -41,98 +41,98 @@ import org.xml.sax.SAXException;
 import android.graphics.Bitmap;
 import android.util.Log;
 
-import biz.varkon.shelvesom.R;
-import biz.varkon.shelvesom.ShelvesomApplication;
-import biz.varkon.shelvesom.base.BaseItem;
-import biz.varkon.shelvesom.provider.ItemImport;
+import net.avabook.shelves.R;
+import net.avabook.shelves.ShelvesApplication;
+import net.avabook.shelves.base.BaseItem;
+import net.avabook.shelves.provider.ItemImport;
 
 public final class ImportUtilities extends IOUtilities {
 
-	private static final String IMPORT_FILE_DL_APPAREL = ShelvesomApplication
+	private static final String IMPORT_FILE_DL_APPAREL = ShelvesApplication
 			.getContext().getString(R.string.IMPORT_FILE_DL_APPAREL);
-	private static final String IMPORT_FILE_SHELVES_APPAREL = ShelvesomApplication
+	private static final String IMPORT_FILE_SHELVES_APPAREL = ShelvesApplication
 			.getContext().getString(R.string.IMPORT_FILE_SHELVES_APPAREL);
-	private static final String IMPORT_FILE_LIST_OF_APPAREL = ShelvesomApplication
+	private static final String IMPORT_FILE_LIST_OF_APPAREL = ShelvesApplication
 			.getContext().getString(R.string.IMPORT_FILE_LIST_OF_APPAREL);
 
-	private static final String IMPORT_FILE_BOARDGAMEGEEK_BOARDGAMES = ShelvesomApplication
+	private static final String IMPORT_FILE_BOARDGAMEGEEK_BOARDGAMES = ShelvesApplication
 			.getContext().getString(
 					R.string.IMPORT_FILE_BOARDGAMEGEEK_BOARDGAMES);
-	private static final String IMPORT_FILE_SHELVES_BOARDGAMES = ShelvesomApplication
+	private static final String IMPORT_FILE_SHELVES_BOARDGAMES = ShelvesApplication
 			.getContext().getString(R.string.IMPORT_FILE_SHELVES_BOARDGAMES);
 
-	private static final String IMPORT_FILE_DL_BOOKS = ShelvesomApplication
+	private static final String IMPORT_FILE_DL_BOOKS = ShelvesApplication
 			.getContext().getString(R.string.IMPORT_FILE_DL_BOOKS);
-	private static final String IMPORT_FILE_SHELFARI_BOOKS = ShelvesomApplication
+	private static final String IMPORT_FILE_SHELFARI_BOOKS = ShelvesApplication
 			.getContext().getString(R.string.IMPORT_FILE_SHELFARI_BOOKS);
 	private static final String[] IMPORT_FILE_GOOGLE_LIBRARY_BOOKS = {
 			"Reviewed.xml", "Favorites.xml", "Reading_now.xml", "To_read.xml",
 			"Have_read.xml" };
-	private static final String IMPORT_FILE_LIBRARY_THING_BOOKS = ShelvesomApplication
+	private static final String IMPORT_FILE_LIBRARY_THING_BOOKS = ShelvesApplication
 			.getContext().getString(R.string.IMPORT_FILE_LIBRARY_THING_BOOKS);
-	private static final String IMPORT_FILE_MEDIAMAN_BOOKS = ShelvesomApplication
+	private static final String IMPORT_FILE_MEDIAMAN_BOOKS = ShelvesApplication
 			.getContext().getString(R.string.IMPORT_FILE_MEDIAMAN_BOOKS);
-	private static final String IMPORT_FILE_SHELVES_BOOKS = ShelvesomApplication
+	private static final String IMPORT_FILE_SHELVES_BOOKS = ShelvesApplication
 			.getContext().getString(R.string.IMPORT_FILE_SHELVES_BOOKS);
-	private static final String IMPORT_FILE_LIST_OF_BOOKS = ShelvesomApplication
+	private static final String IMPORT_FILE_LIST_OF_BOOKS = ShelvesApplication
 			.getContext().getString(R.string.IMPORT_FILE_LIST_OF_BOOKS);
 
-	private static final String IMPORT_FILE_SHELVES_COMICS = ShelvesomApplication
+	private static final String IMPORT_FILE_SHELVES_COMICS = ShelvesApplication
 			.getContext().getString(R.string.IMPORT_FILE_SHELVES_COMICS);
 
-	private static final String IMPORT_FILE_DL_GADGETS = ShelvesomApplication
+	private static final String IMPORT_FILE_DL_GADGETS = ShelvesApplication
 			.getContext().getString(R.string.IMPORT_FILE_DL_GADGETS);
-	private static final String IMPORT_FILE_SHELVES_GADGETS = ShelvesomApplication
+	private static final String IMPORT_FILE_SHELVES_GADGETS = ShelvesApplication
 			.getContext().getString(R.string.IMPORT_FILE_SHELVES_GADGETS);
-	private static final String IMPORT_FILE_LIST_OF_GADGETS = ShelvesomApplication
+	private static final String IMPORT_FILE_LIST_OF_GADGETS = ShelvesApplication
 			.getContext().getString(R.string.IMPORT_FILE_LIST_OF_GADGETS);
 
-	private static final String IMPORT_FILE_DL_MOVIES = ShelvesomApplication
+	private static final String IMPORT_FILE_DL_MOVIES = ShelvesApplication
 			.getContext().getString(R.string.IMPORT_FILE_DL_MOVIES);
-	private static final String IMPORT_FILE_MEDIAMAN_MOVIES = ShelvesomApplication
+	private static final String IMPORT_FILE_MEDIAMAN_MOVIES = ShelvesApplication
 			.getContext().getString(R.string.IMPORT_FILE_MEDIAMAN_MOVIES);
-	private static final String IMPORT_FILE_SHELVES_MOVIES = ShelvesomApplication
+	private static final String IMPORT_FILE_SHELVES_MOVIES = ShelvesApplication
 			.getContext().getString(R.string.IMPORT_FILE_SHELVES_MOVIES);
-	private static final String IMPORT_FILE_LIST_OF_MOVIES = ShelvesomApplication
+	private static final String IMPORT_FILE_LIST_OF_MOVIES = ShelvesApplication
 			.getContext().getString(R.string.IMPORT_FILE_LIST_OF_MOVIES);
 
-	private static final String IMPORT_FILE_DL_MUSIC = ShelvesomApplication
+	private static final String IMPORT_FILE_DL_MUSIC = ShelvesApplication
 			.getContext().getString(R.string.IMPORT_FILE_DL_MUSIC);
-	private static final String IMPORT_FILE_MEDIAMAN_MUSIC = ShelvesomApplication
+	private static final String IMPORT_FILE_MEDIAMAN_MUSIC = ShelvesApplication
 			.getContext().getString(R.string.IMPORT_FILE_MEDIAMAN_MUSIC);
-	private static final String IMPORT_FILE_SHELVES_MUSIC = ShelvesomApplication
+	private static final String IMPORT_FILE_SHELVES_MUSIC = ShelvesApplication
 			.getContext().getString(R.string.IMPORT_FILE_SHELVES_MUSIC);
-	private static final String IMPORT_FILE_LIST_OF_MUSIC = ShelvesomApplication
+	private static final String IMPORT_FILE_LIST_OF_MUSIC = ShelvesApplication
 			.getContext().getString(R.string.IMPORT_FILE_LIST_OF_MUSIC);
 
-	private static final String IMPORT_FILE_DL_SOFTWARE = ShelvesomApplication
+	private static final String IMPORT_FILE_DL_SOFTWARE = ShelvesApplication
 			.getContext().getString(R.string.IMPORT_FILE_DL_SOFTWARE);
-	private static final String IMPORT_FILE_SHELVES_SOFTWARE = ShelvesomApplication
+	private static final String IMPORT_FILE_SHELVES_SOFTWARE = ShelvesApplication
 			.getContext().getString(R.string.IMPORT_FILE_SHELVES_SOFTWARE);
-	private static final String IMPORT_FILE_LIST_OF_SOFTWARE = ShelvesomApplication
+	private static final String IMPORT_FILE_LIST_OF_SOFTWARE = ShelvesApplication
 			.getContext().getString(R.string.IMPORT_FILE_LIST_OF_SOFTWARE);
 
-	private static final String IMPORT_FILE_DL_TOOLS = ShelvesomApplication
+	private static final String IMPORT_FILE_DL_TOOLS = ShelvesApplication
 			.getContext().getString(R.string.IMPORT_FILE_DL_TOOLS);
-	private static final String IMPORT_FILE_SHELVES_TOOLS = ShelvesomApplication
+	private static final String IMPORT_FILE_SHELVES_TOOLS = ShelvesApplication
 			.getContext().getString(R.string.IMPORT_FILE_SHELVES_TOOLS);
-	private static final String IMPORT_FILE_LIST_OF_TOOLS = ShelvesomApplication
+	private static final String IMPORT_FILE_LIST_OF_TOOLS = ShelvesApplication
 			.getContext().getString(R.string.IMPORT_FILE_LIST_OF_TOOLS);
 
-	private static final String IMPORT_FILE_DL_TOYS = ShelvesomApplication
+	private static final String IMPORT_FILE_DL_TOYS = ShelvesApplication
 			.getContext().getString(R.string.IMPORT_FILE_DL_TOYS);
-	private static final String IMPORT_FILE_SHELVES_TOYS = ShelvesomApplication
+	private static final String IMPORT_FILE_SHELVES_TOYS = ShelvesApplication
 			.getContext().getString(R.string.IMPORT_FILE_SHELVES_TOYS);
-	private static final String IMPORT_FILE_LIST_OF_TOYS = ShelvesomApplication
+	private static final String IMPORT_FILE_LIST_OF_TOYS = ShelvesApplication
 			.getContext().getString(R.string.IMPORT_FILE_LIST_OF_TOYS);
 
-	private static final String IMPORT_FILE_DL_VIDEOGAMES = ShelvesomApplication
+	private static final String IMPORT_FILE_DL_VIDEOGAMES = ShelvesApplication
 			.getContext().getString(R.string.IMPORT_FILE_DL_VIDEOGAMES);
-	private static final String IMPORT_FILE_MEDIAMAN_VIDEOGAMES = ShelvesomApplication
+	private static final String IMPORT_FILE_MEDIAMAN_VIDEOGAMES = ShelvesApplication
 			.getContext().getString(R.string.IMPORT_FILE_MEDIAMAN_VIDEOGAMES);
-	private static final String IMPORT_FILE_SHELVES_VIDEOGAMES = ShelvesomApplication
+	private static final String IMPORT_FILE_SHELVES_VIDEOGAMES = ShelvesApplication
 			.getContext().getString(R.string.IMPORT_FILE_SHELVES_VIDEOGAMES);
-	private static final String IMPORT_FILE_LIST_OF_VIDEOGAMES = ShelvesomApplication
+	private static final String IMPORT_FILE_LIST_OF_VIDEOGAMES = ShelvesApplication
 			.getContext().getString(R.string.IMPORT_FILE_LIST_OF_VIDEOGAMES);
 
 	public static String[] header;

@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package biz.varkon.shelvesom.provider.comics;
+package net.avabook.shelves.provider.comics;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -47,15 +47,15 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.provider.BaseColumns;
 
-import biz.varkon.shelvesom.base.BaseItem;
-import biz.varkon.shelvesom.base.BaseItem.ImageSize;
-import biz.varkon.shelvesom.server.CVInfo;
-import biz.varkon.shelvesom.util.Entities;
-import biz.varkon.shelvesom.util.IOUtilities;
-import biz.varkon.shelvesom.util.IOUtilities.inputTypes;
-import biz.varkon.shelvesom.util.ImageUtilities;
-import biz.varkon.shelvesom.util.Preferences;
-import biz.varkon.shelvesom.util.TextUtilities;
+import net.avabook.shelves.base.BaseItem;
+import net.avabook.shelves.base.BaseItem.ImageSize;
+import net.avabook.shelves.server.CVInfo;
+import net.avabook.shelves.util.Entities;
+import net.avabook.shelves.util.IOUtilities;
+import net.avabook.shelves.util.IOUtilities.inputTypes;
+import net.avabook.shelves.util.ImageUtilities;
+import net.avabook.shelves.util.Preferences;
+import net.avabook.shelves.util.TextUtilities;
 
 /**
  * Utility class to load comics from a comics store.
@@ -567,7 +567,7 @@ public class ComicsStore extends CVInfo {
 
 	/**
 	 * Creates an instance of
-	 * {@link biz.varkon.shelvesom.provider.comics.ComicsStore.Comic} with this
+	 * {@link net.avabook.shelves.provider.comics.ComicsStore.Comic} with this
 	 * comic store's name.
 	 * 
 	 * @return A new instance of Comic.
@@ -708,7 +708,7 @@ public class ComicsStore extends CVInfo {
 
 	/**
 	 * Listener invoked by
-	 * {@link biz.varkon.shelvesom.provider.comics.ComicsStore#searchComics(String, biz.varkon.shelvesom.provider.comics.ComicsStore.ComicSearchListener)}
+	 * {@link net.avabook.shelves.provider.comics.ComicsStore#searchComics(String, net.avabook.shelves.provider.comics.ComicsStore.ComicSearchListener)}
 	 * .
 	 */
 	public static interface ComicSearchListener {

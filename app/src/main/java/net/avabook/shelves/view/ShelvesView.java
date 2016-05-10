@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package biz.varkon.shelvesom.view;
+package net.avabook.shelves.view;
 
 import java.io.IOException;
 
@@ -32,10 +32,10 @@ import android.util.AttributeSet;
 import android.view.ViewConfiguration;
 import android.widget.GridView;
 
-import biz.varkon.shelvesom.R;
-import biz.varkon.shelvesom.base.BaseItemActivity;
-import biz.varkon.shelvesom.drawable.SpotlightDrawable;
-import biz.varkon.shelvesom.drawable.TransitionDrawable;
+import net.avabook.shelves.R;
+import net.avabook.shelves.base.BaseItemActivity;
+import net.avabook.shelves.drawable.SpotlightDrawable;
+import net.avabook.shelves.drawable.TransitionDrawable;
 
 public class ShelvesView extends GridView {
 	private Bitmap mShelfBackground;

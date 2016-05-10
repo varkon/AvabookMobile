@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package biz.varkon.shelvesom.util;
+package net.avabook.shelves.util;
 
 import java.text.SimpleDateFormat;
 import java.util.Locale;
@@ -26,9 +26,9 @@ import android.graphics.Bitmap;
 import android.preference.PreferenceManager;
 import android.util.DisplayMetrics;
 
-import biz.varkon.shelvesom.R;
-import biz.varkon.shelvesom.ShelvesomApplication;
-import biz.varkon.shelvesom.base.BaseItem;
+import net.avabook.shelves.R;
+import net.avabook.shelves.ShelvesApplication;
+import net.avabook.shelves.base.BaseItem;
 
 public final class Preferences {
 	public static final String NAME = "Shelves";
@@ -173,7 +173,7 @@ public final class Preferences {
 	}
 
 	public static int getDPI() {
-		switch (ShelvesomApplication.getContext().getResources()
+		switch (ShelvesApplication.getContext().getResources()
 				.getDisplayMetrics().densityDpi) {
 		case DisplayMetrics.DENSITY_LOW:
 			return 120;

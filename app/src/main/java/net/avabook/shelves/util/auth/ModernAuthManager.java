@@ -14,7 +14,7 @@
  * the License.
  */
 
-package biz.varkon.shelvesom.util.auth;
+package net.avabook.shelves.util.auth;
 
 import java.io.IOException;
 

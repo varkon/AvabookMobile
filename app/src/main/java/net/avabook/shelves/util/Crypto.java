@@ -1,4 +1,4 @@
-package biz.varkon.shelvesom.util;
+package net.avabook.shelves.util;
 
 import java.io.UnsupportedEncodingException;
 import java.security.InvalidAlgorithmParameterException;

@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package biz.varkon.shelvesom.base;
+package net.avabook.shelves.base;
 
 import android.database.CharArrayBuffer;
 import android.widget.CheckBox;
@@ -23,7 +23,7 @@ import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
-import biz.varkon.shelvesom.drawable.CrossFadeDrawable;
+import net.avabook.shelves.drawable.CrossFadeDrawable;
 
 public class BaseItemViewHolder {
 	public String itemType;

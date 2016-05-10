@@ -1,4 +1,4 @@
-package biz.varkon.shelvesom.base;
+package net.avabook.shelves.base;
 
 import android.content.Context;
 import android.database.CharArrayBuffer;
@@ -17,11 +17,11 @@ import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
-import biz.varkon.shelvesom.R;
-import biz.varkon.shelvesom.drawable.CrossFadeDrawable;
-import biz.varkon.shelvesom.drawable.FastBitmapDrawable;
-import biz.varkon.shelvesom.util.ImageUtilities;
-import biz.varkon.shelvesom.util.TextUtilities;
+import net.avabook.shelves.R;
+import net.avabook.shelves.drawable.CrossFadeDrawable;
+import net.avabook.shelves.drawable.FastBitmapDrawable;
+import net.avabook.shelves.util.ImageUtilities;
+import net.avabook.shelves.util.TextUtilities;
 
 public class BaseItemAdapter extends CursorAdapter implements
 		FilterQueryProvider {

@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package biz.varkon.shelvesom.activity;
+package net.avabook.shelves.activity;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -42,16 +42,16 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListView;
 
-import biz.varkon.shelvesom.R;
-import biz.varkon.shelvesom.ShelvesomApplication;
-import biz.varkon.shelvesom.base.BaseItem;
-import biz.varkon.shelvesom.util.ActivityHelper;
-import biz.varkon.shelvesom.util.AnalyticsUtils;
-import biz.varkon.shelvesom.util.TextUtilities;
-import biz.varkon.shelvesom.util.UIUtilities;
-import biz.varkon.shelvesom.view.TagLayout;
-import biz.varkon.shelvesom.view.TagLayoutListener;
-import biz.varkon.shelvesom.view.TagListAdapter;
+import net.avabook.shelves.R;
+import net.avabook.shelves.ShelvesApplication;
+import net.avabook.shelves.base.BaseItem;
+import net.avabook.shelves.util.ActivityHelper;
+import net.avabook.shelves.util.AnalyticsUtils;
+import net.avabook.shelves.util.TextUtilities;
+import net.avabook.shelves.util.UIUtilities;
+import net.avabook.shelves.view.TagLayout;
+import net.avabook.shelves.view.TagLayoutListener;
+import net.avabook.shelves.view.TagListAdapter;
 
 public class TagActivity extends Activity {
 	private ActivityHelper mActivityHelper;
@@ -173,7 +173,7 @@ public class TagActivity extends Activity {
 				tagValues.put(BaseItem.TAGS, mTagLayout.getTagsAsString());
 
 				getContentResolver().update(
-						ShelvesomApplication.TYPES_TO_URI.get(mType), tagValues,
+						ShelvesApplication.TYPES_TO_URI.get(mType), tagValues,
 						BaseItem.INTERNAL_ID + "=?", new String[] { mID });
 
 				UIUtilities.showToast(getBaseContext(), R.string.tags_set);
@@ -286,7 +286,7 @@ public class TagActivity extends Activity {
 			mUserTags = new ArrayList<String>();
 
 			c = contentResolver.query(
-					ShelvesomApplication.TYPES_TO_URI.get(mType), new String[] {
+					ShelvesApplication.TYPES_TO_URI.get(mType), new String[] {
 							BaseItem.INTERNAL_ID, BaseItem.TAGS },
 					BaseItem.TAGS + " NOT NULL", null, null);
 			if (c.moveToFirst()) {

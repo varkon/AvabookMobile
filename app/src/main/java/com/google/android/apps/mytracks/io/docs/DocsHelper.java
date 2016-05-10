@@ -38,8 +38,8 @@ import com.google.wireless.gdata.docs.SpreadsheetsClient.WorksheetEntry;
 import com.google.wireless.gdata.parser.GDataParser;
 import com.google.wireless.gdata.parser.ParseException;
 import com.google.wireless.gdata2.client.AuthenticationException;
-import biz.varkon.shelvesom.R;
-import biz.varkon.shelvesom.util.ResourceUtils;
+import net.avabook.shelves.R;
+import net.avabook.shelves.util.ResourceUtils;
 
 /**
  * This class contains helper methods for interacting with Google Docs and

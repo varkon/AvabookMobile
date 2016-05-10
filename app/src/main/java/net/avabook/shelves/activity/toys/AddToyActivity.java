@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package biz.varkon.shelvesom.activity.toys;
+package net.avabook.shelves.activity.toys;
 
 import java.util.ArrayList;
 
@@ -44,17 +44,17 @@ import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import biz.varkon.shelvesom.R;
-import biz.varkon.shelvesom.activity.SettingsActivity;
-import biz.varkon.shelvesom.base.AddBaseItemActivity;
-import biz.varkon.shelvesom.base.BaseItem;
-import biz.varkon.shelvesom.drawable.FastBitmapDrawable;
-import biz.varkon.shelvesom.provider.toys.ToysManager;
-import biz.varkon.shelvesom.provider.toys.ToysStore;
-import biz.varkon.shelvesom.provider.toys.ToysStore.Toy;
-import biz.varkon.shelvesom.util.ImageUtilities;
-import biz.varkon.shelvesom.util.TextUtilities;
-import biz.varkon.shelvesom.util.UIUtilities;
+import net.avabook.shelves.R;
+import net.avabook.shelves.activity.SettingsActivity;
+import net.avabook.shelves.base.AddBaseItemActivity;
+import net.avabook.shelves.base.BaseItem;
+import net.avabook.shelves.drawable.FastBitmapDrawable;
+import net.avabook.shelves.provider.toys.ToysManager;
+import net.avabook.shelves.provider.toys.ToysStore;
+import net.avabook.shelves.provider.toys.ToysStore.Toy;
+import net.avabook.shelves.util.ImageUtilities;
+import net.avabook.shelves.util.TextUtilities;
+import net.avabook.shelves.util.UIUtilities;
 
 public class AddToyActivity extends AddBaseItemActivity implements
 		AdapterView.OnItemClickListener {

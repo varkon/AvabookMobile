@@ -18,7 +18,7 @@
  *   Free Software Foundation, Inc.,                                       *
  *   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.         *
  ***************************************************************************/
-package biz.varkon.shelvesom.view;
+package net.avabook.shelves.view;
 
 import java.util.ArrayList;
 
@@ -29,7 +29,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import biz.varkon.shelvesom.R;
+import net.avabook.shelves.R;
 
 /**
  * Adapter class for tags used within TagActivity, implements specific behavior

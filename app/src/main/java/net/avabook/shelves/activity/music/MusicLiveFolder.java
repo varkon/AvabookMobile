@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package biz.varkon.shelvesom.activity.music;
+package net.avabook.shelves.activity.music;
 
 import android.app.Activity;
 import android.content.Context;
@@ -23,8 +23,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.provider.LiveFolders;
 
-import biz.varkon.shelvesom.R;
-import biz.varkon.shelvesom.provider.music.MusicStore;
+import net.avabook.shelves.R;
+import net.avabook.shelves.provider.music.MusicStore;
 
 public class MusicLiveFolder extends Activity {
 	public static final Uri CONTENT_URI = Uri

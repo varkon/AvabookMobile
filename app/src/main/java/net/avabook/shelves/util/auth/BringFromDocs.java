@@ -15,7 +15,7 @@
  * the License.
  */
 
-package biz.varkon.shelvesom.util.auth;
+package net.avabook.shelves.util.auth;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -40,11 +40,11 @@ import com.google.wireless.gdata.client.HttpException;
 import com.google.wireless.gdata.docs.DocumentsClient;
 import com.google.wireless.gdata.docs.SpreadsheetsClient;
 import com.google.wireless.gdata.docs.XmlDocsGDataParserFactory;
-import biz.varkon.shelvesom.R;
-import biz.varkon.shelvesom.activity.SettingsActivity;
-import biz.varkon.shelvesom.util.IOUtilities;
-import biz.varkon.shelvesom.util.TextUtilities;
-import biz.varkon.shelvesom.util.UIUtilities;
+import net.avabook.shelves.R;
+import net.avabook.shelves.activity.SettingsActivity;
+import net.avabook.shelves.util.IOUtilities;
+import net.avabook.shelves.util.TextUtilities;
+import net.avabook.shelves.util.UIUtilities;
 
 /**
  * A helper class used to transmit tracks statistics from Google Docs/Trix.

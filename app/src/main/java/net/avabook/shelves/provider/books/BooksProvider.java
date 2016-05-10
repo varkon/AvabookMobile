@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package biz.varkon.shelvesom.provider.books;
+package net.avabook.shelves.provider.books;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -43,16 +43,16 @@ import android.provider.BaseColumns;
 import android.provider.LiveFolders;
 import android.util.Log;
 
-import biz.varkon.shelvesom.R;
-import biz.varkon.shelvesom.ShelvesomApplication;
-import biz.varkon.shelvesom.activity.SettingsActivity;
-import biz.varkon.shelvesom.activity.books.BooksActivity;
-import biz.varkon.shelvesom.base.BaseItem;
-import biz.varkon.shelvesom.util.IOUtilities;
-import biz.varkon.shelvesom.util.ImageUtilities;
-import biz.varkon.shelvesom.util.ImportUtilities;
-import biz.varkon.shelvesom.util.TSVWriter;
-import biz.varkon.shelvesom.util.TextUtilities;
+import net.avabook.shelves.R;
+import net.avabook.shelves.ShelvesApplication;
+import net.avabook.shelves.activity.SettingsActivity;
+import net.avabook.shelves.activity.books.BooksActivity;
+import net.avabook.shelves.base.BaseItem;
+import net.avabook.shelves.util.IOUtilities;
+import net.avabook.shelves.util.ImageUtilities;
+import net.avabook.shelves.util.ImportUtilities;
+import net.avabook.shelves.util.TSVWriter;
+import net.avabook.shelves.util.TextUtilities;
 
 public class BooksProvider extends ContentProvider {
 	private static final String LOG_TAG = "BooksProvider";
@@ -199,9 +199,9 @@ public class BooksProvider extends ContentProvider {
 	public String getType(Uri uri) {
 		switch (URI_MATCHER.match(uri)) {
 		case BOOKS:
-			return "vnd.android.cursor.dir/vnd.biz.varkon.shelvesom.books";
+			return "vnd.android.cursor.dir/vnd.net.avabook.shelves.books";
 		case BOOK_ID:
-			return "vnd.android.cursor.item/vnd.biz.varkon.shelvesom.books";
+			return "vnd.android.cursor.item/vnd.net.avabook.shelves.books";
 		default:
 			throw new IllegalArgumentException("Unknown URI " + uri);
 		}
@@ -229,7 +229,7 @@ public class BooksProvider extends ContentProvider {
 			Uri insertUri = ContentUris.withAppendedId(
 					BooksStore.Book.CONTENT_URI, rowId);
 			getContext().getContentResolver().notifyChange(uri, null);
-			ShelvesomApplication.dataChanged();
+			ShelvesApplication.dataChanged();
 			return insertUri;
 		}
 
@@ -293,7 +293,7 @@ public class BooksProvider extends ContentProvider {
 		}
 
 		getContext().getContentResolver().notifyChange(uri, null);
-		ShelvesomApplication.dataChanged();
+		ShelvesApplication.dataChanged();
 
 		return count;
 	}
@@ -326,7 +326,7 @@ public class BooksProvider extends ContentProvider {
 			throw new IllegalArgumentException("Unknown URI " + uri);
 		}
 		getContext().getContentResolver().notifyChange(uri, null);
-		ShelvesomApplication.dataChanged();
+		ShelvesApplication.dataChanged();
 		return count;
 	}
 
