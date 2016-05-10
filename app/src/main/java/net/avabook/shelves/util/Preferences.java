@@ -31,7 +31,7 @@ import net.avabook.shelves.ShelvesApplication;
 import net.avabook.shelves.base.BaseItem;
 
 public final class Preferences {
-	public static final String NAME = "Shelves";
+	public static final String NAME = "AvabookMobail";
 
 	public static final String KEY_BOOKSTORE = "shelves.bookstore";
 	public static final String KEY_DATABASE = "shelves.database"; // GJT: Added

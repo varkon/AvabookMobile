@@ -185,7 +185,7 @@ public class SendToDocs {
 								new AndroidXmlParserFactory()));
 				docListWrapper.setClient(docsGdataClient);
 
-				final String sheetTitle = name + " (Shelves) ";
+				final String sheetTitle = name + " (AvabookMobail) ";
 
 				String spreadsheetId = null;
 				// First try to find the spreadsheet:

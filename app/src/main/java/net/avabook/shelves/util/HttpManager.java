@@ -52,7 +52,7 @@ public class HttpManager {
 		HttpClientParams.setRedirecting(params, true); // GJT: Changed this to
 														// true
 
-		HttpProtocolParams.setUserAgent(params, "Shelves/1.1");
+		HttpProtocolParams.setUserAgent(params, "AvabookMobail/1.1");
 
 		SchemeRegistry schemeRegistry = new SchemeRegistry();
 		schemeRegistry.register(new Scheme("http", PlainSocketFactory

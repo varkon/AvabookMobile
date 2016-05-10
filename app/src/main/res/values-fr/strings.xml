@@ -9,7 +9,7 @@
 	language governing permissions and limitations under the License. -->
 
 <resources>
-	<string name="application_name">Shelves</string>
+	<string name="application_name">AvabookMobail</string>
 	<string name="version">Version</string>
 
 	<string name="tab_item_selection">La collection</string>

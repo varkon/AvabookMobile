@@ -12,7 +12,7 @@
 
 <resources>
 
-    <string name="application_name">Shelves </string>
+    <string name="application_name">AvabookMobail </string>
     <string name="version">Versión</string>
     <string name="tab_item_selection">Ver colección</string>
     <string name="tab_loaned_items">Artículos prestados</string>

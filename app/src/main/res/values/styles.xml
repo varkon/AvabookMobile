@@ -9,7 +9,7 @@
 	governing permissions and limitations under the License. -->
 
 <resources>
-	<style name="Theme.Shelves" parent="@android:style/Theme">
+	<style name="Theme.AvabookMobail" parent="@android:style/Theme">
 		<item name="android:windowBackground">@drawable/background_shelf</item>
 		<item name="android:windowNoTitle">true</item>
 	</style>
